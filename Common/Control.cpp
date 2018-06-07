@@ -2,7 +2,7 @@
 
 
 
-Control::Control() : ()
+Control::Control() {}
 
 
 Control::~Control()

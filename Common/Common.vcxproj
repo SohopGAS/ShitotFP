@@ -114,11 +114,17 @@
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="EventEngine.cpp" />
     <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="TextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Control.h" />
     <ClInclude Include="EventEngine.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Panel.h" />
+    <ClInclude Include="TextBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

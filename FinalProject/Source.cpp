@@ -7,8 +7,6 @@
 
 using namespace std;
 
-
-
 class Form : public Panel
 {
 	TextBox tb;
@@ -18,7 +16,6 @@ public:
 
 	Form()
 	{
-		
 		string value("Enter Name:");
 		l.setValue(value);
 		l.setTop(1);
@@ -29,8 +26,7 @@ public:
 		tb.setWidth(10);
 		tb.setTop(1);
 		tb.setLeft(1 + (short)value.size() + 1);
-		Add(&tb);
-		
+		Add(&tb);		
 	}
 
 	};
@@ -39,9 +35,7 @@ public:
 
 int main(int argc, char** argv)
 {
-	
 	EventEngine e;
 	Form f;
-	e.run(f);
-	
+	e.run(f);	
 }

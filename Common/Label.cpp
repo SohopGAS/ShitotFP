@@ -16,9 +16,7 @@ void Label::setValue(string value)
 
 void Label::draw(Graphics& g, int x, int y, size_t z)
 {
-
 	g.moveTo(getLeft(), getTop());
 	if (!z)
 		g.write(value);
-
 }

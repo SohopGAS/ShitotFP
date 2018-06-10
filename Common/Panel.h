@@ -11,6 +11,6 @@ public:
 	void draw(Graphics& g, int x, int y, size_t z);
 
 	void Add(Control* control);
-	void getAllControls(vector<Control*>* Controls) { controls= Controls; }
+	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
 };
 

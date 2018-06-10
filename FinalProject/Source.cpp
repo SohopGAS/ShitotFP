@@ -14,20 +14,20 @@ class Form : public Panel
 
 public:
 
-	Form()
-	{
-		string value("Enter Name:");
-		l.setValue(value);
-		l.setTop(1);
-		l.setLeft(1);
+		Form()
+		{
+			string value("Enter Name:");
+			l.setValue(value);
+			l.setTop(1);
+			l.setLeft(1);
 		
-		Add(&l);
+			Add(&l);
 		
-		tb.setWidth(10);
-		tb.setTop(1);
-		tb.setLeft(1 + (short)value.size() + 1);
-		Add(&tb);		
-	}
+			tb.setWidth(10);
+			tb.setTop(1);
+			tb.setLeft(1 + (short)value.size() + 1);
+			Add(&tb);		
+		}
 
 	};
 

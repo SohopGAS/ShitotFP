@@ -4,6 +4,7 @@ class TextBox :public Control
 {
 protected:
 	string _value;
+	int _cursorPosition;
 
 public:
 	TextBox();

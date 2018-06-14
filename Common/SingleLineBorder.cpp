@@ -34,6 +34,11 @@ void SingleLineBorder::drawBorder(COORD start, COORD size)
 
 }
 
+SingleLineBorder * SingleLineBorder::getinstance()
+{
+	return nullptr;
+}
+
 
 SingleLineBorder::SingleLineBorder()
 {

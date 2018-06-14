@@ -14,3 +14,10 @@ public:
 	static SingleLineBorder* getinstance();
 
 };
+
+class SingleLineBorder
+{
+public:
+	SingleLineBorder();
+	~SingleLineBorder();
+};

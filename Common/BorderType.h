@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Graphics.h"
-#include "Control.h"
 #include <vector>
 
 
@@ -13,5 +12,12 @@ using namespace std;
 	virtual void drawBorder(COORD, COORD) = 0;
 	
 };
+
+ class BorderType
+ {
+ public:
+	 BorderType();
+	 ~BorderType();
+ };
 
 

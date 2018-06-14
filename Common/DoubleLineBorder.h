@@ -2,6 +2,7 @@
 #include "Graphics.h"
 #include <vector>
 #include <windows.h>
+#include "BorderType.h"
 
 
 
@@ -14,4 +15,11 @@ public:
 
 	static DoubleLineBorder* getinstance();
 
+};
+
+class DoubleLineBorder
+{
+public:
+	DoubleLineBorder();
+	~DoubleLineBorder();
 };

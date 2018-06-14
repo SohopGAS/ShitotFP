@@ -31,3 +31,13 @@ void DoubleLineBorder::drawBorder(COORD start, COORD size)
 
 }
 
+
+
+DoubleLineBorder::DoubleLineBorder()
+{
+}
+
+
+DoubleLineBorder::~DoubleLineBorder()
+{
+}

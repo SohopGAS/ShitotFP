@@ -1,7 +1,7 @@
 #include "SingleLineBorder.h"
 #include <iostream>
 
-//singlton instance
+//singleton instance
 static SingleLineBorder*::getinstance() {
 	if (!instance)
 		instance = new SingleLineBorder();
@@ -32,4 +32,14 @@ void SingleLineBorder::drawBorder(COORD start, COORD size)
 	for (int i = 0; i<size.X; i++)
 		cout << '*';
 
+}
+
+
+SingleLineBorder::SingleLineBorder()
+{
+}
+
+
+SingleLineBorder::~SingleLineBorder()
+{
 }

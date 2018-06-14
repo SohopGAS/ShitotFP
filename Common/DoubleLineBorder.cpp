@@ -9,7 +9,7 @@ static DoubleLineBorder*:: getinstance() {
 	return instance;
 }
 
-DoubleLineBorder::DoubleLineBorder() : BorderType() {};
+DoubleLineBorder::DoubleLineBorder() {};
 
 void DoubleLineBorder::drawBorder(COORD start, COORD size)
 {
@@ -32,12 +32,3 @@ void DoubleLineBorder::drawBorder(COORD start, COORD size)
 }
 
 
-
-DoubleLineBorder::DoubleLineBorder()
-{
-}
-
-
-DoubleLineBorder::~DoubleLineBorder()
-{
-}

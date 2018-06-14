@@ -10,14 +10,10 @@ using namespace std;
  class BorderType{
  public:
 	virtual void drawBorder(COORD, COORD) = 0;
-	
+	BorderType();
+	virtual ~BorderType() = 0;
 };
 
- class BorderType
- {
- public:
-	 BorderType();
-	 ~BorderType();
- };
+
 
 

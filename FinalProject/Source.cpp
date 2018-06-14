@@ -11,10 +11,10 @@ int main(int argc, char** argv)
 	printf("hello world!");
 	//// code start here --- 
 	
-	//Label l("hello World!");
-//	Control& l2 = l;
-	//EventEngine eng;
-	//eng.run(l);
+	Label l("hello World!");
+	Control& l2 = l;
+	EventEngine eng;
+	eng.run(l);
 
 	// pause system
 	cin >> t;

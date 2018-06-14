@@ -4,22 +4,16 @@
 #include <windows.h>
 #include "BorderType.h"
 
-
-
 class DoubleLineBorder : public BorderType {
-	void drawBorder(COORD start, COORD size);
+
+private:
 	static BorderType* instance;
+
+public:
+	void drawBorder(COORD start, COORD size);
 	DoubleLineBorder() {};
 
-public:
-
-	static DoubleLineBorder* getinstance();
-
-};
-
-class DoubleLineBorder
-{
-public:
-	DoubleLineBorder();
+	static BorderType* getinstance();
 	~DoubleLineBorder();
+
 };

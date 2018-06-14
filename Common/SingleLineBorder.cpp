@@ -1,15 +1,15 @@
 #include "SingleLineBorder.h"
 #include <iostream>
 
+BorderType* SingleLineBorder::instance = NULL;
+
 //singleton instance
-static SingleLineBorder*::getinstance() {
+BorderType* SingleLineBorder::getinstance() {
 	if (!instance)
 		instance = new SingleLineBorder();
 
 	return instance;
 }
-
-SingleLineBorder::SingleLineBorder() {};
 
 void SingleLineBorder::drawBorder(COORD start, COORD size)
 {
@@ -17,9 +17,9 @@ void SingleLineBorder::drawBorder(COORD start, COORD size)
 	
 	//draw upper line
 	SetConsoleCursorPosition(handle, start);
-	for (int i = 0; i<size.X; i++)
+	for (short i = 0; i<size.X; i++)
 
-		for (int i = 1; i<size.Y - 1; i++)
+		for (short i = 1; i<size.Y - 1; i++)
 		{
 			//draw left and right lines
 			SetConsoleCursorPosition(handle, { start.X, start.Y + i });
@@ -32,16 +32,6 @@ void SingleLineBorder::drawBorder(COORD start, COORD size)
 	for (int i = 0; i<size.X; i++)
 		cout << '*';
 
-}
-
-SingleLineBorder * SingleLineBorder::getinstance()
-{
-	return nullptr;
-}
-
-
-SingleLineBorder::SingleLineBorder()
-{
 }
 
 

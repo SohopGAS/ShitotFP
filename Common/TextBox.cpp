@@ -10,7 +10,7 @@ TextBox::~TextBox()
 
 void TextBox::draw(Graphics& g, int x, int y, size_t z) {
 	//g.setCursorVisibility(true);
-	g.setBackground(Color::Red);
+	g.setBackground(ColorType::Red);
 	g.moveTo(10, 10);
 
 	g.write(1,1,this->value);
@@ -18,7 +18,7 @@ void TextBox::draw(Graphics& g, int x, int y, size_t z) {
 }
 
 void TextBox::keyDown(int keyCode, char charecter) {
-	
+
 	//check if you can change the content in textbox
 	if (_value.size() < width - 2) {
 		if (charecter > '\x1F' && charecter < '\x7F') {//check if value is not a navigation key

@@ -20,10 +20,10 @@ public:
 			l.setValue(value);
 			l.setTop(1);
 			l.setLeft(1);
-			l.setColor(Color::Blue, Color::Red);
+			l.setColor(ColorType::Blue, ColorType::Red);
 
 			Add(&l);
-		
+
 			tb.setWidth(50);
 			tb.setTop(1);
 			tb.setValue("hello world");

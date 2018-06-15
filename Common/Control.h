@@ -18,25 +18,27 @@ protected:
 public:
 	Control();
 	// position setter
-	void setTop(short Top) { this->top = Top; };
-	void setLeft(short Left) { this->left = Left; };
-	void setWidth(short Width) { this->width= Width; };
-	void setHeight(short Height) { this->height = Height; };
+	void setTop(short _top) { this->top = _top; };
+	void setLeft(short _left) { this->left = _left; };
+	void setWidth(short _width) { this->width= _width; };
+	void setHeight(short _height) { this->height = _height; };
 
 	// position getter
-	virtual	short getLeft() { return left; };
 	virtual	short getTop() { return top; };
+	virtual	short getLeft() { return left; };
 	virtual	short getWidth() { return width; };
 	virtual	short getHeight() { return height; };
 
 	// set ColorType background and fourground
-	void setColor(ColorType BG, ColorType FG) { this->bg = BG; this->fg = FG; };
+	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
+
 	// Colors getter
 	ColorType getBackground() { return bg; };
-	ColorType getFourground() { return fg; };
+	ColorType getForeground() { return fg; };
 
 	// set foucus
 	static void setFocus(Control& control) { static_control = &control; };
+
 	// get fouces
 	static Control* getFocus() { return static_control; };
 

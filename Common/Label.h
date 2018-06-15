@@ -16,5 +16,5 @@ public:
 	void setValue(string);
 	void draw(Graphics& g, int x, int y, size_t z);
 	bool myPureFunction() {}
-	
+
 };

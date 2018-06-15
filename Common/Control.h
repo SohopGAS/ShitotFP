@@ -36,6 +36,9 @@ public:
 	ColorType getBackground() { return bg; };
 	ColorType getForeground() { return fg; };
 
+	// Color setter
+	void setBackground(ColorType _bg) {this->bg = _bg;};
+	void setForeground(ColorType _fg) {this->fg = _fg;};
 	// set foucus
 	static void setFocus(Control& control) { static_control = &control; };
 

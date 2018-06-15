@@ -18,7 +18,7 @@ void TextBox::draw(Graphics& g, int x, int y, size_t z) {
 }
 
 void TextBox::keyDown(int keyCode, char charecter) {
-
+/*
 	//check if you can change the content in textbox
 	if (_value.size() < width - 2) {
 		if (charecter > '\x1F' && charecter < '\x7F') {//check if value is not a navigation key
@@ -62,7 +62,7 @@ void TextBox::keyDown(int keyCode, char charecter) {
 			}
 			break;
 		}
-	}
+	}*/
 }
 
 void TextBox::mousePressed(int x, int y, bool isLeft) {

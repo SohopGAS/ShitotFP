@@ -20,13 +20,15 @@ public:
 			l.setValue(value);
 			l.setTop(1);
 			l.setLeft(1);
-		
+			l.setColor(Color::Blue, Color::Red);
+
 			Add(&l);
 		
-			tb.setWidth(10);
+			tb.setWidth(50);
 			tb.setTop(1);
+			tb.setValue("hello world");
 			tb.setLeft(1 + (short)value.size() + 1);
-			Add(&tb);		
+			Add(&tb);
 		}
 
 	};
@@ -37,5 +39,5 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	e.run(f);	
+	e.run(f);
 }

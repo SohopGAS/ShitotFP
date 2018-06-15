@@ -1,23 +1,24 @@
 #include "DoubleLineBorder.h"
 #include <iostream>
 
+BorderType* DoubleLineBorder::instance = NULL;
 
-static DoubleLineBorder*:: getinstance() {
+BorderType* DoubleLineBorder::getinstance() {
+
 	if (!instance)
 		instance = new DoubleLineBorder();
 
 	return instance;
 }
 
-DoubleLineBorder::DoubleLineBorder() {};
 
 void DoubleLineBorder::drawBorder(COORD start, COORD size)
 {
 	auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorPosition(handle, start);
-	for (int i = 0; i<size.X; i++)
+	for (short i = 0; i<size.X; i++)
 
-	for (int i = 1; i<size.Y - 1; i++)
+	for (short i = 1; i<size.Y - 1; i++)
 	{
 		SetConsoleCursorPosition(handle, { start.X, start.Y + i });
 		cout << "*";
@@ -31,4 +32,6 @@ void DoubleLineBorder::drawBorder(COORD start, COORD size)
 
 }
 
-
+DoubleLineBorder::~DoubleLineBorder()
+{
+}

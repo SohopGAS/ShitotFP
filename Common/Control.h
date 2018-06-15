@@ -29,7 +29,7 @@ public:
 	virtual	short getWidth() { return width; };
 	virtual	short getHeight() { return height; };
 
-	// set ColorType background and fourground
+	// set ColorType background and foreground
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 
 	// Colors getter

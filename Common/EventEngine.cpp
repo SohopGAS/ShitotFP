@@ -1,4 +1,5 @@
 #include "EventEngine.h"
+#include "Logger.h"
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -12,6 +13,7 @@ EventEngine::EventEngine(DWORD input, DWORD output)
 
 void EventEngine::run(Control &c)
 {
+	CLogger::GetLogger()->Log("event engine runinng");
 	for (bool redraw = true;;)
 	{
 		if (redraw)
@@ -32,6 +34,7 @@ void EventEngine::run(Control &c)
 		{
 		case KEY_EVENT:
 		{
+			CLogger::GetLogger()->Log("key event");
 			auto f = Control::getFocus();
 			if (f != nullptr && record.Event.KeyEvent.bKeyDown)
 			{
@@ -47,12 +50,14 @@ void EventEngine::run(Control &c)
 		}
 		case MOUSE_EVENT:
 		{
+			CLogger::GetLogger()->Log("MouseEvent");
 			auto button = record.Event.MouseEvent.dwButtonState;
 			auto coord = record.Event.MouseEvent.dwMousePosition;
 			auto x = coord.X - c.getLeft();
 			auto y = coord.Y - c.getTop();
 			if (button == FROM_LEFT_1ST_BUTTON_PRESSED || button == RIGHTMOST_BUTTON_PRESSED)
 			{
+				CLogger::GetLogger()->Log("Mouse option left or right");
 				c.mousePressed(x, y, button == FROM_LEFT_1ST_BUTTON_PRESSED);
 				redraw = true;
 			}

@@ -1,6 +1,6 @@
 #include "Label.h"
 #include "Control.h"
-
+#include "Logger.h"
 #include <iostream>
 
 Label::Label(string value) : Control(), value(value) {};
@@ -14,6 +14,7 @@ void Label::setValue(string value)
 
 void Label::draw(Graphics& g, int x, int y, size_t z)
 {
+	CLogger::GetLogger()->Log("draw label");
 	g.setBackground(this->bg);
 	g.setForeground(this->fg);
 	g.moveTo(getLeft(), getTop());

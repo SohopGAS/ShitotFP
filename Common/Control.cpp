@@ -28,7 +28,7 @@ void Control::draw(Graphics& g, int x, int y, size_t z) {
 
 void Control::mousePressed(int x, int y, bool isLeft)
 {
-	
+
 	if (isInside(x, y, this->left, this->top, this->width, this->height))
 	{
 		const vector<Control*>* temp = this->controls;
@@ -62,13 +62,13 @@ void Control::setAllControls(vector<Control*>* controls)
 	if (controls == NULL) {
 		return;
 	}
-	
+
 	this->hasChildren = TRUE;
 	const vector<Control*>* temp = controls;
 	for (Control* c : *temp) {
-			this->controls->push_back(c);
-		}
-	
+		this->controls->push_back(c);
+	}
+
 }
 
 void Control::addControl(Control* newC)

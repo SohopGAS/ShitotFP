@@ -69,7 +69,7 @@ EventEngine::~EventEngine()
 	SetConsoleMode(_console, _consoleMode);
 }
 
-void EventEngine::moveFocus(Control &main, Control *focused)
+public void EventEngine::moveFocus(Control &main, Control *focused)
 {
 	vector<Control*> controls;
 	main.getAllControls(&controls);

@@ -4,9 +4,9 @@
 
 CheckList::CheckList()
 {
-}
+};
 
 
 CheckList::~CheckList()
 {
-}
+};

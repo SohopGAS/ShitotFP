@@ -20,16 +20,20 @@ public:
 			l.setValue(value);
 			l.setTop(1);
 			l.setLeft(1);
-			l.setColor(Color::Blue, Color::Red);
-			Add(&l);
-		
-			tb.setWidth(50);
-			tb.setTop(1);
-			tb.setValue("hello world");
-			tb.setLeft(1 + (short)value.size() + 1);
-			Add(&tb);	
-		}
+			l.setColor(ColorType::Blue, ColorType::Red);
 
+			Add(&l);
+
+			tb.setValue("My TextBox Example");
+			tb.setTop(1);
+			tb.setLeft(1 + (short)value.size() + 1);
+			tb.setHeight(50);
+			tb.setWidth(50);
+
+
+
+			Add(&tb);
+		}
 	};
 
 
@@ -37,7 +41,15 @@ public:
 int main(int argc, char** argv)
 {
 	EventEngine e;
-	Form f;
-	e.run(f);
+	TextBox tb;
+	tb.setValue("muuuuuuuuuhahahaha");
+	tb.setTop(1);
+	tb.setLeft(50);
+	tb.setHeight(50);
+	tb.setWidth(50);
+	tb.setColor(ColorType::Red, ColorType::White);
+	e.run(tb);
 
+	//Form f;
+	//e.run(f);
 }

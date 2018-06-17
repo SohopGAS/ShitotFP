@@ -31,15 +31,15 @@ void TextBox::draw(Graphics& g, int x, int y, size_t z) {
 
 
 void TextBox::keyDown(int keyCode, char charecter) {
-	switch (keyDown) {
-		case VK_LEFT:
-			cursorPosition = left + value.size();
-			
-		case VK_RIGHT:
-			moveTo(x + 1, y);
-
-
-	}
+	// switch (keyDown) {
+	// 	case VK_LEFT:
+	// 		cursorPosition = left + value.size();
+	//
+	// 	case VK_RIGHT:
+	// 		moveTo(x + 1, y);
+	//
+	//
+	// }
 
 
 }

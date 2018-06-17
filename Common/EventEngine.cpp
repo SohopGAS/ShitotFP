@@ -27,9 +27,9 @@ void EventEngine::run(Control &c)
 
 		auto whichPAKADisFocus = Control::getFocus();
 
-		if (whichPAKADisFocus.class == TextBox.class) {
-
-		}
+		// if (whichPAKADisFocus.class == TextBox.class) {
+		//
+		// }
 
 		INPUT_RECORD record;
 		DWORD count;

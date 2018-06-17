@@ -5,7 +5,7 @@
 
 using namespace std;
 
-enum class Color { Black, Blue, Green, Red, Cyan, Purple, Orange, White };
+enum class ColorType { Black, Blue, Green, Red, Cyan, Purple, Orange, White };
 
 class Graphics
 {
@@ -13,16 +13,17 @@ public:
 	Graphics(DWORD stdHandle = STD_OUTPUT_HANDLE);
 	void clearScreen();
 	void moveTo(int x, int y);
-	void setBackground(Color color);
-	void setForeground(Color color);
+	void setBackground(ColorType color);
+	void setForeground(ColorType color);
 	void write(string s);
 	void write(int x, int y, string s);
 	void write(wstring s);
 	void write(int x, int y, wstring s);
 	void setCursorVisibility(bool isVisible);
 private:
+
 	HANDLE _console;
-	Color _background, _foreground;
+	ColorType _background, _foreground;
 
 	void updateConsoleAttributes();
 };

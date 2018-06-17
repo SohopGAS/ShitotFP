@@ -13,3 +13,7 @@ public:
 	void Add(Control* control);
 	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> master

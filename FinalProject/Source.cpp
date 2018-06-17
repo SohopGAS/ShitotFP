@@ -24,6 +24,7 @@ public:
 
 			Add(&l);
 
+<<<<<<< HEAD
 			tb.setWidth(50);
 			tb.setTop(1);
 			tb.setValue("hello world");
@@ -31,13 +32,31 @@ public:
 			Add(&tb);
 		}
 
+=======
+			tb.setValue("My TextBox Example");
+			tb.setTop(1);
+			tb.setLeft(1 + (short)value.size() + 1);
+			tb.setHeight(50);
+			tb.setWidth(50);
+			
+			Add(&tb);
+
+		}
+>>>>>>> master
 	};
 
 
 
 int main(int argc, char** argv)
 {
+<<<<<<< HEAD
 	EventEngine e;
 	Form f;
 	e.run(f);
+=======
+	Form f;
+	EventEngine e;
+	e.run(f);
+
+>>>>>>> master
 }

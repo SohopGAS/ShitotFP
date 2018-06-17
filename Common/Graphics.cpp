@@ -1,7 +1,7 @@
 #include "Graphics.h"
 
 Graphics::Graphics(DWORD stdHandle)
-	: _console(GetStdHandle(stdHandle)), _background(Color::Black), _foreground(Color::White)
+	: _console(GetStdHandle(stdHandle)), _background(ColorType::Black), _foreground(ColorType::White)
 {
 	updateConsoleAttributes();
 }
@@ -24,13 +24,13 @@ void Graphics::moveTo(int x, int y)
 	SetConsoleCursorPosition(_console, c);
 }
 
-void Graphics::setBackground(Color color)
+void Graphics::setBackground(ColorType color)
 {
 	_background = color;
 	updateConsoleAttributes();
 }
 
-void Graphics::setForeground(Color color)
+void Graphics::setForeground(ColorType color)
 {
 	_foreground = color;
 	updateConsoleAttributes();
@@ -72,26 +72,26 @@ void Graphics::updateConsoleAttributes()
 
 	switch (_foreground)
 	{
-		case Color::Black:	break;
-		case Color::Blue:	attributes |= FOREGROUND_BLUE; break;
-		case Color::Green:	attributes |= FOREGROUND_GREEN; break;
-		case Color::Red:	attributes |= FOREGROUND_RED; break;
-		case Color::Cyan:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN; break;
-		case Color::Purple:	attributes |= FOREGROUND_BLUE | FOREGROUND_RED; break;
-		case Color::Orange: attributes |= FOREGROUND_GREEN | FOREGROUND_RED; break;
-		case Color::White:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED; break;
+		case ColorType::Black:	break;
+		case ColorType::Blue:	attributes |= FOREGROUND_BLUE; break;
+		case ColorType::Green:	attributes |= FOREGROUND_GREEN; break;
+		case ColorType::Red:	attributes |= FOREGROUND_RED; break;
+		case ColorType::Cyan:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN; break;
+		case ColorType::Purple:	attributes |= FOREGROUND_BLUE | FOREGROUND_RED; break;
+		case ColorType::Orange: attributes |= FOREGROUND_GREEN | FOREGROUND_RED; break;
+		case ColorType::White:	attributes |= FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED; break;
 	}
 
 	switch (_background)
 	{
-		case Color::Black:	break;
-		case Color::Blue:	attributes |= BACKGROUND_BLUE; break;
-		case Color::Green:	attributes |= BACKGROUND_GREEN; break;
-		case Color::Red:	attributes |= BACKGROUND_RED; break;
-		case Color::Cyan:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN; break;
-		case Color::Purple:	attributes |= BACKGROUND_BLUE | BACKGROUND_RED; break;
-		case Color::Orange: attributes |= BACKGROUND_GREEN | BACKGROUND_RED; break;
-		case Color::White:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED; break;
+		case ColorType::Black:	break;
+		case ColorType::Blue:	attributes |= BACKGROUND_BLUE; break;
+		case ColorType::Green:	attributes |= BACKGROUND_GREEN; break;
+		case ColorType::Red:	attributes |= BACKGROUND_RED; break;
+		case ColorType::Cyan:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN; break;
+		case ColorType::Purple:	attributes |= BACKGROUND_BLUE | BACKGROUND_RED; break;
+		case ColorType::Orange: attributes |= BACKGROUND_GREEN | BACKGROUND_RED; break;
+		case ColorType::White:	attributes |= BACKGROUND_BLUE | BACKGROUND_GREEN | BACKGROUND_RED; break;
 	}
 
 	SetConsoleTextAttribute(_console, attributes);

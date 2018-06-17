@@ -9,6 +9,11 @@ enum class ColorType { Black, Blue, Green, Red, Cyan, Purple, Orange, White };
 
 class Graphics
 {
+private:
+	HANDLE _console;
+	ColorType _background, _foreground;
+	void updateConsoleAttributes();
+
 public:
 	Graphics(DWORD stdHandle = STD_OUTPUT_HANDLE);
 	void clearScreen();
@@ -20,12 +25,6 @@ public:
 	void write(wstring s);
 	void write(int x, int y, wstring s);
 	void setCursorVisibility(bool isVisible);
-private:
-
-	HANDLE _console;
-	ColorType _background, _foreground;
-
-	void updateConsoleAttributes();
 };
 
 bool isInside(int x, int y, int left, int top, int width, int height);

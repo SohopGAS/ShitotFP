@@ -21,8 +21,14 @@ void EventEngine::run(Control &c)
 			for (size_t z = 0; z < 5; ++z)
 			{
 				c.draw(_graphics, 0, 0, z);
-			}	
+			}
 			redraw = false;
+		}
+
+		auto whichPAKADisFocus = Control::getFocus();
+
+		if (whichPAKADisFocus.class == TextBox.class) {
+
 		}
 
 		INPUT_RECORD record;

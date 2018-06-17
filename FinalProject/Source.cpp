@@ -29,10 +29,9 @@ public:
 			tb.setLeft(1 + (short)value.size() + 1);
 			tb.setHeight(50);
 			tb.setWidth(50);
-
-
-
+			
 			Add(&tb);
+
 		}
 	};
 
@@ -40,16 +39,8 @@ public:
 
 int main(int argc, char** argv)
 {
+	Form f;
 	EventEngine e;
-	TextBox tb;
-	tb.setValue("muuuuuuuuuhahahaha");
-	tb.setTop(1);
-	tb.setLeft(50);
-	tb.setHeight(50);
-	tb.setWidth(50);
-	tb.setColor(ColorType::Red, ColorType::White);
-	e.run(tb);
+	e.run(f);
 
-	//Form f;
-	//e.run(f);
 }

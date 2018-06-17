@@ -1,21 +1,24 @@
 #include "../Common/Graphics.h"
-#include "../Common/Label.h"
+//#include "../Common/Label.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
+#include "../Common/Button.h"
 #include <iostream>
-
+#include <fstream>
+#include "../Common/Logger.h"
 using namespace std;
 
 class Form : public Panel
 {
 	TextBox tb;
 	Label l;
+	Button b;
 
 public:
-
 		Form()
 		{
+
 			string value("Enter Name:");
 			l.setValue(value);
 			l.setTop(1);

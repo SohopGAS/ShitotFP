@@ -140,6 +140,7 @@
     <ClInclude Include="Label.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="MessageBox.h" />
+    <ClInclude Include="MouseListener.h" />
     <ClInclude Include="NumericBox.h" />
     <ClInclude Include="Panel.h" />
     <ClInclude Include="RadioBox.h" />

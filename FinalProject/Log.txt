@@ -10,3 +10,63 @@
 2018-06-17.22:48:24:	draw label
 2018-06-17.22:48:24:	draw label
 2018-06-17.22:48:24:	draw label
+2018-06-17.23:02:41:	event engine runinng
+2018-06-17.23:02:41:	draw label
+2018-06-17.23:02:41:	draw label
+2018-06-17.23:02:41:	draw label
+2018-06-17.23:02:41:	draw label
+2018-06-17.23:02:41:	draw label
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:41:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent
+2018-06-17.23:02:42:	MouseEvent

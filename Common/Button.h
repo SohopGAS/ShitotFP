@@ -4,7 +4,6 @@
 #include "../Common/MouseListener.h"
 
 #include "Logger.h"
-#include  "ActionListener.h"
 using namespace std;
 
 class Button : public Label

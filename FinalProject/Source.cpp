@@ -3,6 +3,7 @@
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
+#include "../Common/BorderType.h"
 #include <iostream>
 
 using namespace std;
@@ -39,5 +40,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
+	BorderType* b = new SingleLineBorder->getinstance();
+	f.setBorderType(b);
 	e.run(f);
 }

@@ -9,5 +9,6 @@ Control::~Control()
 }
 
 void Control::draw(Graphics& g, int x, int y, size_t z) {
-	// TODO: add drow border 
+	bt->drawBorder(x,y,this->getWidth,this->getHeight);
+
 }

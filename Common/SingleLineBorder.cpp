@@ -1,4 +1,5 @@
 #include "SingleLineBorder.h"
+#include "Graphics.h"
 #include <iostream>
 
 BorderType* SingleLineBorder::instance = NULL;
@@ -11,10 +12,11 @@ BorderType* SingleLineBorder::getinstance() {
 	return instance;
 }
 
-void SingleLineBorder::drawBorder(COORD start, COORD size)
+void SingleLineBorder::drawBorder(short start_x, short start_y, short width, short height)
 {
 	auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
-	
+	COORD start = { start_x, start_y };
+	COORD size = { width, height };
 	//draw upper line
 	SetConsoleCursorPosition(handle, start);
 	for (short i = 0; i<size.X; i++)

@@ -1,3 +1,8 @@
+#pragma once
+#ifndef BORDERTYPE_H
+#define BORDERTYPE_H
+
+
 #include <iostream>
 #include "Graphics.h"
 #include <vector>
@@ -6,8 +11,9 @@ using namespace std;
 
 /* border type virtual class */
  class BorderType{
- private:
-
  public:
-   virtual void drawBorder(COORD, COORD) = 0;
+	virtual void drawBorder(Graphics& g,short start_x, short start_y, short width, short height) = 0;
 };
+
+#endif 
+

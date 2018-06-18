@@ -1,6 +1,7 @@
 #pragma once
 #include "Graphics.h"
 #include <vector>
+#include "BorderType.h"
 
 using namespace std;
 
@@ -8,6 +9,7 @@ class Control
 {
 
 protected:
+	
 	short left;
 	short top;
 	short width;
@@ -15,8 +17,11 @@ protected:
 	static Control* static_control;
 	ColorType bg, fg;
 
+
 public:
 	Control();
+	Control(BorderType* _bt) :bt(_bt) {};
+	Control(Graphics& g, short x, short y, short width, short height);
 	// position setter
 	void setTop(short _top) 			{ this->top = _top; 			};
 	void setLeft(short _left) 		{ this->left = _left; 		};
@@ -28,13 +33,10 @@ public:
 	static void setFocus(Control& control) { static_control = &control; };
 
 	// position getter
-	virtual	short getTop() 		{ return top; 		};
-	virtual	short getLeft() 	{ return left; 		};
-	virtual	short getWidth() 	{ return width; 	};
-	virtual	short getHeight() { return height; 	};
-	ColorType getBackground() { return bg; 			};
-	ColorType getForeground() { return fg; 			};
-
+	virtual	short getLeft() { return left; };
+	virtual	short getTop() { return top; };
+	virtual	short getWidth() { return width; };
+	virtual	short getHeight() { return height; };
 
 
 	// get fouces

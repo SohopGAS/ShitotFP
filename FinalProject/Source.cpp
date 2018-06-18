@@ -2,6 +2,8 @@
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
+#include "../Common/BorderType.h"
+#include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
 #include <iostream>
 #include <fstream>
@@ -53,5 +55,10 @@ int main(int argc, char** argv)
 {
 	Form f;
 	EventEngine e;
+	Form f;
+	f.setWidth(30);
+	f.setHeight(15);
+	BorderType* bo = SingleLineBorder::getinstance();
+	f.setBorderType(bo);
 	e.run(f);
 }

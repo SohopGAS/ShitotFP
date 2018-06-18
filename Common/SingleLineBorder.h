@@ -1,7 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include "Graphics.h"
 #include "BorderType.h"
 
 #define TOP_LEFT '\xDA'
@@ -13,12 +11,11 @@
 
 class SingleLineBorder : public BorderType {
 private:
-	void drawBorder(short start_x, short start_y, short width, short height);
 	static BorderType* instance;
 	SingleLineBorder() {};
 
 public:
 	static BorderType* getinstance();
-
+	void drawBorder(Graphics& g,short start_x, short start_y, short width, short height);
 	~SingleLineBorder();
 };

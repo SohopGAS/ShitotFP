@@ -9,6 +9,7 @@ class Control
 {
 
 protected:
+	
 	short left;
 	short top;
 	short width;
@@ -20,13 +21,16 @@ protected:
 
 public:
 	Control();
+	Control(BorderType* _bt) :bt(_bt) {};
 	Control(Graphics& g, short x, short y, short width, short height);
 	// position setter
 	void setTop(short Top) { this->top = Top; };
 	void setLeft(short Left) { this->left = Left; };
 	void setWidth(short Width) { this->width= Width; };
 	void setHeight(short Height) { this->height = Height; };
-	void setBorderType(BorderType* _bt) { this->bt= _bt; };
+	void setBorderType(BorderType* _bt) { this->bt= _bt;
+	int z;
+	};
 	
 	// position getter
 	virtual	short getLeft() { return left; };
@@ -47,7 +51,7 @@ public:
 	static Control* getFocus() { return static_control; };
 	
 	// virual function implemnted by every component
-	virtual void draw(Graphics& g, int x, int y, size_t z) ;
+	virtual void draw(Graphics& g, short x, short y, size_t z) ;
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};
 	

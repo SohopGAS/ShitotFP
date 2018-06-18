@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include "Graphics.h"
 #include <vector>
 #include <windows.h>
 #include "BorderType.h"
@@ -17,10 +16,11 @@ class DoubleLineBorder : public BorderType {
 
 private:
 	static BorderType* instance;
+	DoubleLineBorder() {};
 
 public:
-	void drawBorder(COORD start, COORD size);
-	DoubleLineBorder() {};
+	void drawBorder(Graphics& g,short start_x, short start_y, short width, short height);
+
 
 	static BorderType* getinstance();
 	~DoubleLineBorder();

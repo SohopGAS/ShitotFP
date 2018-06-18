@@ -12,9 +12,14 @@ BorderType* DoubleLineBorder::getinstance() {
 }
 
 
-void DoubleLineBorder::drawBorder(COORD start, COORD size)
+void DoubleLineBorder::drawBorder(Graphics& g,short start_x, short start_y, short width, short height)
 {
+	
 	auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	COORD start = { start_x, start_y };
+	COORD size = { width, height };
+
+
 	SetConsoleCursorPosition(handle, start);
 	for (short i = 0; i<size.X; i++)
 

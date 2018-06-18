@@ -14,7 +14,18 @@ TextBox::TextBox(short _left = 0, short _top = 0, short _width = 0, short _heigh
 }
 
 
-TextBox::~TextBox() {}
+TextBox::~TextBox()
+{
+}
+
+void TextBox::draw(Graphics& g, short x, short y, size_t z) {
+	//g.setCursorVisibility(true);
+	//g.setBackground(ColorType::Red);
+	//g.moveTo(10, 10);
+	//g.write(1,1,this->value);
+	// char* fn = __FUNCTION__;
+	Control::draw(g, 10, 10, 2);
+	setValue("heeyyyyyy");
 
 
 void TextBox::draw(Graphics& g, short x, short y, size_t z) {

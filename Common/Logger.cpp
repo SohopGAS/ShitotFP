@@ -1,4 +1,5 @@
 #include "Logger.h"
+<<<<<<< HEAD
 #include "Utilities.h"
 
 const string CLogger::m_sFileName = "Log.txt";
@@ -8,6 +9,17 @@ ofstream CLogger::m_Logfile;
 CLogger::CLogger()
 {}
 
+=======
+#include "Logger.h"
+#include"Utilities.h"
+const string CLogger::m_sFileName = "Log.txt";
+CLogger* CLogger::m_pThis = NULL;
+ofstream CLogger::m_Logfile;
+CLogger::CLogger()
+{
+
+}
+>>>>>>> origin/master
 CLogger* CLogger::GetLogger() {
 	if (m_pThis == NULL) {
 		m_pThis = new CLogger();
@@ -46,4 +58,8 @@ CLogger& CLogger::operator<<(const string& sMessage)
 	m_Logfile << "\n" << Util::CurrentDateTime() << ":\t";
 	m_Logfile << sMessage << "\n";
 	return *this;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

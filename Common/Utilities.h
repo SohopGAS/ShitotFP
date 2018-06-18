@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+#ifndef UTILITIES_H
+#define UTILITIES_H
+
+>>>>>>> origin/master
 #include <iostream>
 #include <string>
 #include <time.h>
@@ -15,3 +21,7 @@ namespace Util
 		return buf;
 	}
 }
+<<<<<<< HEAD
+=======
+#endif#pragma once
+>>>>>>> origin/master

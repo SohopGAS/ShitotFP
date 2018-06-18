@@ -1,12 +1,21 @@
 #pragma once
+<<<<<<< HEAD
 
+=======
+#ifndef CUSTOM_CLogger_H
+#define CUSTOM_CLogger_H
+>>>>>>> origin/master
 #include <fstream>
 #include <iostream>
 #include <cstdarg>
 #include <string>
+<<<<<<< HEAD
 
 using namespace std;
 
+=======
+using namespace std;
+>>>>>>> origin/master
 #define LOGGER CLogger::GetLogger()
 /**
 *   Singleton Logger Class.
@@ -60,3 +69,7 @@ private:
 	**/
 	static ofstream m_Logfile;
 };
+<<<<<<< HEAD
+=======
+#endif
+>>>>>>> origin/master

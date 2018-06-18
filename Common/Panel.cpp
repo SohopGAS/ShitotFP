@@ -1,20 +1,5 @@
 #include "Panel.h"
 
-
-
-Panel::Panel()
-{
-
-
-
-
-}
-
-
-Panel::~Panel()
-{
-
-}
 void Panel::mousePressed(int x, int y, bool isLeft)
 {
 	int i;

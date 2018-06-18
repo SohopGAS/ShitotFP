@@ -5,8 +5,8 @@ class Panel : public Control
 protected:
 	vector<Control*> controls;
 public:
-	Panel();
-	~Panel();
+	Panel() {};
+	~Panel() {};
 
 	void draw(Graphics& g, int x, int y, size_t z);
 	virtual void mousePressed(int x, int y, bool isLeft) ;

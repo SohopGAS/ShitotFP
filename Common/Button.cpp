@@ -20,12 +20,14 @@ void Button::setValue(string s)
 void Button::mousePressed(int x, int y, bool isLeft)
 {
 	CLogger::GetLogger()->Log("mouse pressed");
+	CLogger::GetLogger()->Log("COORD %d ,%d , %d ", x, y, left);
+	if (isInside(x, y, getLeft(), getTop(), getWidth(), getHeight())) {
+		for (MouseListener* listener : listeners) {
+			listener->MousePressed(x, y, isLeft);
 
-//	if (isInside(x, y, _left + panelLeft, _top + panelTop, _width, _height)) {
-	///	for (MouseListener* listener : listeners) {
-		//	listener->MousePressed(x, y, isLeft);
-	//	}
-	//}
+
+		}
+	}
 
 }
 

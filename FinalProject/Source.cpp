@@ -1,5 +1,4 @@
 #include "../Common/Graphics.h"
-//#include "../Common/Label.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
@@ -24,8 +23,18 @@ public:
 			l.setTop(1);
 			l.setLeft(1);
 			l.setColor(ColorType::Blue, ColorType::Red);
-
+			
 			Add(&l);
+			
+			string buttonOf("BUTTON");
+			b.setValue(buttonOf);
+			b.setTop(5);
+			b.setLeft(10);
+			b.setColor(ColorType::Red, ColorType::Green);
+			string buttonChange("button1");
+			b.setValue(buttonChange);
+
+			Add(&b);
 
 			tb.setValue("My TextBox Example");
 			tb.setTop(1);
@@ -34,7 +43,7 @@ public:
 			tb.setWidth(50);
 			
 			Add(&tb);
-
+			
 		}
 	};
 
@@ -45,5 +54,4 @@ int main(int argc, char** argv)
 	Form f;
 	EventEngine e;
 	e.run(f);
-
 }

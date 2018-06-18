@@ -11,6 +11,6 @@ MessageBox::~MessageBox()
 {
 }
 
-void MessageBox::draw(Graphics& g, int x, int y, size_t z) {
+void MessageBox::draw(Graphics& g, short x, short y, size_t z) {
 
 }

@@ -1,7 +1,7 @@
 #include "NumericBox.h"
 
 
-void NumericBox::draw(Graphics& g, int x, int y, size_t z) {
+void NumericBox::draw(Graphics& g, short x, short y, size_t z) {
 
 }
 

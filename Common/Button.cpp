@@ -41,7 +41,7 @@ void Button::expand_string(string &s) {
 
 
 
-void Button::draw(Graphics& g, int x, int y, size_t z)
+void Button::draw(Graphics& g, short x, short y, size_t z)
 {
 	CLogger::GetLogger()->Log("DRAW BUTTON");
 	Label::draw(g, x, y, z);

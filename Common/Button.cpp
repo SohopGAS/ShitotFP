@@ -45,12 +45,4 @@ void Button::draw(Graphics& g, int x, int y, size_t z)
 	Label::draw(g, x, y, z);
 }
 
-////////////////////////*
-/*void Button::draw(Graphics g, int left, int top, int layer) {
 
-	if (layer == getZIndex()) {
-		Label::draw(g, _left + (panelLeft = left), _top + (panelTop = top), layer);
-		g.setCursorVisibility(false);
-	}
-}*/
-////////////////////////

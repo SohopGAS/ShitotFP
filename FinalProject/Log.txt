@@ -10,3 +10,261 @@
 2018-06-17.22:48:24:	draw label
 2018-06-17.22:48:24:	draw label
 2018-06-17.22:48:24:	draw label
+2018-06-18.17:03:12:	event engine runinng
+2018-06-18.17:03:12:	draw label
+2018-06-18.17:03:12:	draw label
+2018-06-18.17:03:12:	draw label
+2018-06-18.17:03:12:	draw label
+2018-06-18.17:03:12:	draw label
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:12:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:13:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	MouseEvent
+2018-06-18.17:03:14:	Mouse option left or right
+2018-06-18.17:03:14:	draw label
+2018-06-18.17:03:14:	draw label
+2018-06-18.17:03:14:	draw label
+2018-06-18.17:03:14:	draw label
+2018-06-18.17:03:14:	draw label
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	MouseEvent
+2018-06-18.17:03:15:	Mouse option left or right
+2018-06-18.17:03:15:	draw label
+2018-06-18.17:03:15:	draw label
+2018-06-18.17:03:15:	draw label
+2018-06-18.17:03:15:	draw label
+2018-06-18.17:03:15:	draw label
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	Mouse option left or right
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	Mouse option left or right
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	MouseEvent
+2018-06-18.17:03:16:	Mouse option left or right
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:16:	draw label
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	Mouse option left or right
+2018-06-18.17:03:17:	draw label
+2018-06-18.17:03:17:	draw label
+2018-06-18.17:03:17:	draw label
+2018-06-18.17:03:17:	draw label
+2018-06-18.17:03:17:	draw label
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent
+2018-06-18.17:03:17:	MouseEvent

@@ -12,11 +12,15 @@ void Label::setValue(string value)
 }
 
 
-void Label::draw(Graphics& g, int x, int y, size_t z)
+void Label::draw(Graphics& g, short x, short y, size_t z)
 {
+	Control::draw(g, x, y, z);
+
 	g.setBackground(this->bg);
 	g.setForeground(this->fg);
 	g.moveTo(getLeft(), getTop());
 	if (!z)
 		g.write(value);
+	g.setBackground(Color::Black);
+	g.setForeground(Color::White);
 }

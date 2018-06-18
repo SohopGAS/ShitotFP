@@ -14,8 +14,8 @@ BorderType* SingleLineBorder::getinstance() {
 void SingleLineBorder::drawBorder(Graphics& g,short start_x, short start_y, short _width, short _height)
 {
 	//auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
-	COORD start = { start_x, start_y };
-	COORD size = { _width, _height };
+	//COORD start = { start_x, start_y };
+	//COORD size = { _width, _height };
 
 	short newYPos = start_y;
 	short newXPos = start_x;

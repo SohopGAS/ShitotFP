@@ -14,7 +14,7 @@ public:
 	Label(string);
 	string getValue() { return value; };
 	void setValue(string);
-	void draw(Graphics& g, int x, int y, size_t z);
+	void draw(Graphics& g, short x, short y, size_t z);
 	bool myPureFunction() {}
 	
 };

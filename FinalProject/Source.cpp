@@ -21,10 +21,10 @@ public:
 			
 			string value("Enter Name:");
 			l.setValue(value);
-			l.setTop(2);
-			l.setLeft(2);
-			l.setHeight(4);
-			l.setWidth(4);
+			l.setTop(3);
+			l.setLeft(10);
+			l.setHeight(1);
+			l.setWidth(12);
 			l.setColor(Color::Blue, Color::Red);
 			
 			BorderType* b = SingleLineBorder::getinstance();
@@ -32,10 +32,15 @@ public:
 
 			Add(&l);
 		
-			tb.setWidth(50);
-			tb.setTop(1);
+			tb.setWidth((short)value.size() );
+			tb.setTop(8);
+			tb.setHeight(1);
+			tb.setBorderType(b);
+			
 			tb.setValue("hello world");
+			tb.setColor(Color::Green, Color::Orange);
 			tb.setLeft(1 + (short)value.size() + 1);
+
 			Add(&tb);
 		}
 
@@ -47,5 +52,9 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
+	f.setWidth(30);
+	f.setHeight(15);
+	BorderType* bo = SingleLineBorder::getinstance();
+	f.setBorderType(bo);
 	e.run(f);
 }

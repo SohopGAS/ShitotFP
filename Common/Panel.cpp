@@ -18,10 +18,8 @@ void Panel::Add(Control* control) {
 
 void Panel::draw(Graphics& g, short x, short y, size_t z) {
 	
-	//Control::draw(g, x, y, z);
+		Control::draw(g, x, y, z);
+		for(Control* c : this->controls)
+			c->draw(g, x, y, z);
 	
-	int i;
-	for (i = 0; i < controls.size() - 1; i++) {
-		controls[i]->draw(g, x, y, z);
-	}	
 }

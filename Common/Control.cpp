@@ -20,7 +20,7 @@ void Control::draw(Graphics& g, short x, short y, size_t z) {
 	if (this->bt != NULL)
 	{ 
 	BorderType* border = this->getBorderType();
-	border->drawBorder(g , getLeft()-1, getTop()+1, getWidth()+2, getHeight()+2);
+	border->drawBorder(g , getLeft()-1, getTop()-1, getWidth()+2, getHeight()+2);
 	}
 	
 }

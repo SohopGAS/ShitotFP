@@ -9,7 +9,7 @@ protected:
 public:
 	TextBox();
 	void setValue(string str) { this->_value = str; };
-	void draw(Graphics& g, int x, int y, size_t z);
+	void draw(Graphics& g, short x, short y, size_t z);
 	void keyDown(int keyCode, char charecter);
 	void mousePressed(int x, int y, bool isLeft);
 	~TextBox();

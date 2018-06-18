@@ -18,7 +18,7 @@ TextBox::~TextBox()
 {
 }
 
-void TextBox::draw(Graphics& g, short x, short y, size_t z) {
+void TextBox::draw(Graphics& g, short int x, short int y, size_t z) {
 	g.setCursorVisibility(true);
 	g.setBackground(ColorType::Red);
 	g.moveTo(10, 10);
@@ -28,7 +28,7 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	setValue("heeyyyyyy");
 }
 
-void TextBox::draw(Graphics& g, short x, short y, size_t z) {
+void TextBox::draw(Graphics& g, short int x, short int y, size_t z) {
 	g.setBackground(this->bg);
 	g.setForeground(this->fg);
 	g.moveTo(getLeft(), getTop());

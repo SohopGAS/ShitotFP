@@ -11,7 +11,7 @@ class Button : public Label
 private:
 	vector<MouseListener*> listeners;
 public:
-	Button() {};
+	Button();
 	Button(string& s);
 	~Button() {};
 	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }

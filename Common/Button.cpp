@@ -3,9 +3,13 @@
 
 using namespace std;
 
+Button::Button() {
+	
+};
+
 Button::Button(string & s)
 {
-	expand_string(s);	
+	expand_string(s);
 }
 
 void Button::setValue(string s)
@@ -36,7 +40,7 @@ void Button::expand_string(string &s) {
 
 	unsigned sz = s.size();
 	s.resize(sz + 2, ' ');
-	
+
 }
 
 
@@ -46,5 +50,3 @@ void Button::draw(Graphics& g, short x, short y, size_t z)
 	CLogger::GetLogger()->Log("DRAW BUTTON");
 	Label::draw(g, x, y, z);
 }
-
-

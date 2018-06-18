@@ -13,10 +13,7 @@ CheckList::~CheckList()
 
 };
 
-
-void CheckList::draw(Graphics& g, int x, int y, size_t z) {
-
-};
+void CheckList::draw(Graphics& g, short x, short y, size_t z){};
 
 void CheckList::keyDown(int keyCode, char charecter) {
 

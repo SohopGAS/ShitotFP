@@ -12,7 +12,7 @@ class Form : public Panel
 {
 	TextBox tb;
 	Label l;
-	Button b;
+	// Button b;
 
 public:
 		Form()
@@ -26,15 +26,15 @@ public:
 
 			Add(&l);
 
-			string buttonOf("BUTTON");
-			b.setValue(buttonOf);
-			b.setTop(5);
-			b.setLeft(10);
-			b.setColor(ColorType::Red, ColorType::Green);
-			string buttonChange("button1");
-			b.setValue(buttonChange);
-
-			Add(&b);
+			// string buttonOf("BUTTON");
+			// b.setValue(buttonOf);
+			// b.setTop(5);
+			// b.setLeft(10);
+			// b.setColor(ColorType::Red, ColorType::Green);
+			// string buttonChange("button1");
+			// b.setValue(buttonChange);
+			//
+			// Add(&b);
 
 			tb.setValue("My TextBox Example");
 			tb.setTop(50);

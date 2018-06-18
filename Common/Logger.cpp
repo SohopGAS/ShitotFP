@@ -1,5 +1,4 @@
 #include "Logger.h"
-#include "Logger.h"
 #include "Utilities.h"
 
 const string CLogger::m_sFileName = "Log.txt";

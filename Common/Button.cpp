@@ -20,12 +20,14 @@ void Button::setValue(string s)
 void Button::mousePressed(int x, int y, bool isLeft)
 {
 	CLogger::GetLogger()->Log("mouse pressed");
-
-//	if (isInside(x, y, _left + panelLeft, _top + panelTop, _width, _height)) {
-	///	for (MouseListener* listener : listeners) {
-		//	listener->MousePressed(x, y, isLeft);
-	//	}
-	//}
+	CLogger::GetLogger()->Log("COORD %d ,%d , %d ", x, y, left);
+	if (isInside(x, y,getLeft(),getTop() , getWidth(), getHeight())) {
+		for (MouseListener* listener : listeners) {
+			listener->MousePressed(x, y, isLeft);
+			
+		
+		}
+	}
 
 }
 
@@ -43,14 +45,6 @@ void Button::draw(Graphics& g, int x, int y, size_t z)
 {
 	CLogger::GetLogger()->Log("DRAW BUTTON");
 	Label::draw(g, x, y, z);
+	g.setCursorVisibility(false);
 }
 
-////////////////////////*
-/*void Button::draw(Graphics g, int left, int top, int layer) {
-
-	if (layer == getZIndex()) {
-		Label::draw(g, _left + (panelLeft = left), _top + (panelTop = top), layer);
-		g.setCursorVisibility(false);
-	}
-}*/
-////////////////////////

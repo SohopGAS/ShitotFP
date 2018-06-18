@@ -70,3 +70,23 @@
 2018-06-17.23:02:42:	MouseEvent
 2018-06-17.23:02:42:	MouseEvent
 2018-06-17.23:02:42:	MouseEvent
+2018-06-18.14:27:41:	event engine runinng
+2018-06-18.14:27:41:	draw label
+2018-06-18.14:27:41:	draw label
+2018-06-18.14:27:41:	draw label
+2018-06-18.14:27:41:	draw label
+2018-06-18.14:27:41:	draw label
+2018-06-18.14:27:41:	MouseEvent
+2018-06-18.14:27:41:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:42:	MouseEvent
+2018-06-18.14:27:43:	MouseEvent
+2018-06-18.14:27:43:	key event
+2018-06-18.14:27:43:	key event
+2018-06-18.14:27:44:	MouseEvent

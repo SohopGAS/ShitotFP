@@ -22,38 +22,35 @@ public:
 
 			string value("Enter Name:");
 			l.setValue(value);
-			l.setTop(1);
-			l.setLeft(1);
+			l.setTop(3);
+			l.setLeft(10);
+			l.setHeight(1);
+			l.setWidth(12);
 			l.setColor(ColorType::Blue, ColorType::Red);
-			
+
+			BorderType* b = SingleLineBorder::getinstance();
+			l.setBorderType(b);
+
 			Add(&l);
-			
-			string buttonOf("BUTTON");
-			b.setValue(buttonOf);
-			b.setTop(5);
-			b.setLeft(10);
-			b.setColor(ColorType::Red, ColorType::Green);
-			string buttonChange("button1");
-			b.setValue(buttonChange);
 
-			Add(&b);
+			tb.setWidth((short)value.size());
+			tb.setTop(8);
+			tb.setHeight(1);
+			tb.setBorderType(b);
 
-			tb.setValue("My TextBox Example");
-			tb.setTop(1);
+			tb.setValue("hello world");
+			tb.setColor(ColorType::Green, ColorType::Orange);
 			tb.setLeft(1 + (short)value.size() + 1);
-			tb.setHeight(50);
-			tb.setWidth(50);
-			
+
 			Add(&tb);
-			
 		}
-	};
+
+};
 
 
 
 int main(int argc, char** argv)
 {
-	Form f;
 	EventEngine e;
 	Form f;
 	f.setWidth(30);

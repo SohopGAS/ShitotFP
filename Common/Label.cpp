@@ -20,6 +20,6 @@ void Label::draw(Graphics& g, short x, short y, size_t z)
 	g.moveTo(getLeft(), getTop());
 	if (!z)
 		g.write(value);
-	g.setBackground(Color::Black);
-	g.setForeground(Color::White);
+	g.setBackground(ColorType::Black);
+	g.setForeground(ColorType::White);
 }

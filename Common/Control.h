@@ -16,6 +16,7 @@ protected:
 	short height;
 	static Control* static_control;
 	ColorType bg, fg;
+	BorderType* bt;
 
 
 public:
@@ -31,13 +32,13 @@ public:
 	void setForeground(ColorType _fg) {this->fg = _fg; };
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 	static void setFocus(Control& control) { static_control = &control; };
-
+	void setBorderType(BorderType* _bt) { bt = _bt; };
 	// position getter
 	virtual	short getLeft() { return left; };
 	virtual	short getTop() { return top; };
 	virtual	short getWidth() { return width; };
 	virtual	short getHeight() { return height; };
-
+	BorderType* getBorderType() { return bt; };
 
 	// get fouces
 	static Control* getFocus() { return static_control; };

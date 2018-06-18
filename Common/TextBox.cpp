@@ -26,9 +26,9 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	g.moveTo(getLeft(), getTop());
 	g.setCursorVisibility(true);
 	if (!z)
-		g.write(_value);
-	g.setBackground(Color::Black);
-	g.setForeground(Color::White);
+		g.write(value);
+	g.setBackground(ColorType::Black);
+	g.setForeground(ColorType::White);
 
 
 	

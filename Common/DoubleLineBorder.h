@@ -12,7 +12,6 @@ private:
 public:
 	void drawBorder(COORD start, COORD size);
 	DoubleLineBorder() {};
-
 	static BorderType* getinstance();
 	~DoubleLineBorder();
 

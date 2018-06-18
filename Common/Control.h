@@ -29,7 +29,7 @@ public:
 	void setWidth(short Width) { this->width= Width; };
 	void setHeight(short Height) { this->height = Height; };
 	void setBorderType(BorderType* _bt) { this->bt= _bt;
-	int z;
+	
 	};
 	
 	// position getter
@@ -51,7 +51,7 @@ public:
 	static Control* getFocus() { return static_control; };
 	
 	// virual function implemnted by every component
-	virtual void draw(Graphics& g, short x, short y, size_t z) ;
+	virtual void draw(Graphics& g, short x, short y, size_t z);
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};
 	

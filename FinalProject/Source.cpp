@@ -26,6 +26,7 @@ public:
 			l.setHeight(4);
 			l.setWidth(4);
 			l.setColor(Color::Blue, Color::Red);
+			
 			BorderType* b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
 

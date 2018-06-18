@@ -15,12 +15,6 @@ Control::~Control() {
 
 };
 
-<<<<<<< HEAD
-void Control::draw(Graphics& g, int x, int y, size_t z) {
-	// TODO: add draw border
-}
-=======
 void Control::draw(Graphics& g, short x, short y, size_t z) {
-	// TODO: add drow border 
+	// TODO: add drow border
 }
->>>>>>> origin/master

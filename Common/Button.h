@@ -9,20 +9,13 @@ using namespace std;
 class Button : public Label
 {
 private:
-<<<<<<< HEAD
-	
-=======
 	vector<MouseListener*> listeners;
->>>>>>> origin/master
 public:
 	Button() {};
 	Button(string& s);
 	~Button() {};
 	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }
 
-<<<<<<< HEAD
-/*
-=======
 
 	virtual void implement_function() {};
 	void mousePressed(int x, int y, bool isLeft);
@@ -30,4 +23,3 @@ public:
 	void draw(Graphics& g, short x, short y, size_t z);
 	virtual void setValue(string s) ;
 };
->>>>>>> origin/master

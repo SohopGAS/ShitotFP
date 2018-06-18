@@ -25,11 +25,14 @@ public:
 			l.setLeft(1);
 			l.setColor(ColorType::Blue, ColorType::Red);
 
-			string buttonOf("ok");
+			string buttonOf("BUTTON");
 			b.setValue(buttonOf);
 			b.setTop(5);
 			b.setLeft(10);
 			b.setColor(ColorType::Red, ColorType::Green);
+			string buttonChange("button1");
+			b.setValue(buttonChange);
+
 
 			Add(&b);
 

@@ -13,6 +13,7 @@ CheckList::~CheckList()
 
 };
 
+
 void CheckList::draw(Graphics& g, int x, int y, size_t z) {
 
 };

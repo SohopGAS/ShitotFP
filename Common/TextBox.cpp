@@ -19,15 +19,23 @@ TextBox::~TextBox()
 
 void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
+	g.moveTo(getLeft(), getTop());
 
+	g.setBackground(this->bg);
+	g.setForeground(this->fg);
+	g.moveTo(getLeft(), getTop());
 	g.setCursorVisibility(true);
-	g.setBackground(ColorType::Red);
-	g.setForeground(ColorType::Black);
-	g.moveTo(x, y);
+	if (!z)
+		g.write(value);
+	g.setBackground(ColorType::Black);
+	g.setForeground(ColorType::White);
 
-	// char* fn = __FUNCTION__;
-	Control::draw(g, 10, 10, 2);
+
+	// Control::draw(g, 10, 10, 2);
 	setValue("heeyyyyyy");
+
+
+//	g.write(this->_value);
 }
 
 

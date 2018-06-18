@@ -5,7 +5,7 @@ TextBox::TextBox()
 }
 
 
-TextBox::TextBox(short _left = 0, short _top = 0, short _width = 0, short _height = 0) : Control()
+TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 10) : Control()
 {
 	setLeft(_left);
 	setTop(_top);
@@ -19,10 +19,10 @@ TextBox::~TextBox()
 }
 
 void TextBox::draw(Graphics& g, short x, short y, size_t z) {
-	//g.setCursorVisibility(true);
-	//g.setBackground(ColorType::Red);
-	//g.moveTo(10, 10);
-	//g.write(1,1,this->value);
+	g.setCursorVisibility(true);
+	g.setBackground(ColorType::Red);
+	g.moveTo(10, 10);
+	g.write(1,1,this->value);
 	// char* fn = __FUNCTION__;
 	Control::draw(g, 10, 10, 2);
 	setValue("heeyyyyyy");
@@ -34,23 +34,6 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	g.moveTo(getLeft(), getTop());
 	if (!z)
 		g.write(value);
-	// // if (z == getZIndex()) {
-	// y = this->getTop();
-	// x = this->getLeft();
-	// // draw(g, panelLeft, panelTop, z);
-	// g.setCursorVisibility(true);
-	// g.setBackground(this->bg);
-	// g.setForeground(this->fg);
-	//
-	// g.moveTo(getLeft(), getTop());
-	// if (!z)
-	// 	g.write(value);
-	//
-	//
-	//
-	// g.write(left + 1, top + 1, value);
-	// g.moveTo(left + 1 + value.size(), top + 1);
-	// //}
 }
 
 

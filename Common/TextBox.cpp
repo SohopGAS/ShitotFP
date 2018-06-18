@@ -28,15 +28,6 @@ void TextBox::draw(Graphics& g, short int x, short int y, size_t z) {
 	setValue("heeyyyyyy");
 }
 
-// void TextBox::draw(Graphics& g, short int x, short int y, size_t z) {
-// 	g.setBackground(this->bg);
-// 	g.setForeground(this->fg);
-// 	g.moveTo(getLeft(), getTop());
-// 	if (!z)
-// 		g.write(value);
-// }
-
-
 void TextBox::keyDown(int keyCode, char charecter) {
 	if (value.size() < width - 2) {//check if you can change the content in textbox
 		if (charecter > '\x1F' && charecter < '\x7F') {//check if value is not a navigation key

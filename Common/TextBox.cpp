@@ -17,7 +17,7 @@ TextBox::~TextBox()
 {
 }
 
-void TextBox::draw(Graphics& g, int x, int y, size_t z) {
+void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	//g.setCursorVisibility(true);
 	//g.setBackground(ColorType::Red);
 	//g.moveTo(10, 10);

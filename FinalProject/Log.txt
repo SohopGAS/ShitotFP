@@ -1,883 +1,455 @@
-2018-06-18.17:36:47:	event engine runinng
-2018-06-18.17:36:47:	DRAW BUTTON
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	DRAW BUTTON
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	DRAW BUTTON
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	DRAW BUTTON
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	DRAW BUTTON
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	draw label
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:47:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:48:	MouseEvent
-2018-06-18.17:36:49:	MouseEvent
-2018-06-18.17:36:49:	Mouse option left or right
-2018-06-18.17:36:49:	mouse pressed
-2018-06-18.17:36:49:	COORD 13121 ,13113 , 10 
-2018-06-18.17:36:49:	DRAW BUTTON
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	DRAW BUTTON
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	DRAW BUTTON
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	DRAW BUTTON
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	DRAW BUTTON
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	draw label
-2018-06-18.17:36:49:	MouseEvent
-2018-06-18.17:36:49:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	Mouse option left or right
-2018-06-18.17:36:50:	mouse pressed
-2018-06-18.17:36:50:	COORD 13121 ,13113 , 10 
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	Mouse option left or right
-2018-06-18.17:36:50:	mouse pressed
-2018-06-18.17:36:50:	COORD 13186 ,13114 , 10 
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	DRAW BUTTON
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	draw label
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:50:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:36:51:	MouseEvent
-2018-06-18.17:37:04:	event engine runinng
-2018-06-18.17:37:04:	DRAW BUTTON
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	DRAW BUTTON
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	DRAW BUTTON
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	DRAW BUTTON
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	DRAW BUTTON
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	draw label
-2018-06-18.17:37:04:	MouseEvent
-2018-06-18.17:37:04:	MouseEvent
-2018-06-18.17:37:04:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:05:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:06:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	Mouse option left or right
-2018-06-18.17:37:07:	mouse pressed
-2018-06-18.17:37:07:	COORD 13121 ,13113 , 10 
-2018-06-18.17:37:07:	DRAW BUTTON
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	DRAW BUTTON
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	DRAW BUTTON
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	DRAW BUTTON
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	DRAW BUTTON
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	draw label
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:07:	MouseEvent
-2018-06-18.17:37:08:	MouseEvent
-2018-06-18.17:37:08:	MouseEvent
-2018-06-18.17:37:08:	MouseEvent
-2018-06-18.17:38:23:	event engine runinng
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	MouseEvent
-2018-06-18.17:38:23:	Mouse option left or right
-2018-06-18.17:38:23:	mouse pressed
-2018-06-18.17:38:23:	COORD 13196 ,13129 , 10 
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	DRAW BUTTON
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:23:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13196 ,13128 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13198 ,13125 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13200 ,13122 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13202 ,13121 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13203 ,13120 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13204 ,13119 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13205 ,13119 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13205 ,13119 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13205 ,13119 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	Mouse option left or right
-2018-06-18.17:38:24:	mouse pressed
-2018-06-18.17:38:24:	COORD 13205 ,13119 , 10 
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	DRAW BUTTON
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	draw label
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:24:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:38:25:	MouseEvent
-2018-06-18.17:50:39:	event engine runinng
-2018-06-18.17:50:39:	DRAW BUTTON
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	DRAW BUTTON
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	DRAW BUTTON
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	DRAW BUTTON
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	DRAW BUTTON
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	draw label
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:39:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	Mouse option left or right
-2018-06-18.17:50:40:	mouse pressed
-2018-06-18.17:50:40:	COORD 13123 ,13113 , 10 
-2018-06-18.17:50:40:	DRAW BUTTON
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	DRAW BUTTON
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	DRAW BUTTON
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	DRAW BUTTON
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	DRAW BUTTON
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	draw label
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:40:	MouseEvent
-2018-06-18.17:50:41:	MouseEvent
-2018-06-18.17:50:41:	MouseEvent
-2018-06-18.17:50:41:	Mouse option left or right
-2018-06-18.17:50:41:	mouse pressed
-2018-06-18.17:50:41:	COORD 13123 ,13113 , 10 
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	MouseEvent
-2018-06-18.17:50:41:	Mouse option left or right
-2018-06-18.17:50:41:	mouse pressed
-2018-06-18.17:50:41:	COORD 13123 ,13113 , 10 
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	DRAW BUTTON
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	draw label
-2018-06-18.17:50:41:	MouseEvent
-2018-06-18.17:50:41:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	Mouse option left or right
-2018-06-18.17:50:42:	mouse pressed
-2018-06-18.17:50:42:	COORD 13123 ,13113 , 10 
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	Mouse option left or right
-2018-06-18.17:50:42:	mouse pressed
-2018-06-18.17:50:42:	COORD 13123 ,13113 , 10 
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	DRAW BUTTON
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	draw label
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:42:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
-2018-06-18.17:50:43:	MouseEvent
+2018-06-18.18:10:39:	event engine runinng
+2018-06-18.18:10:39:	DRAW BUTTON
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	DRAW BUTTON
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	DRAW BUTTON
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	DRAW BUTTON
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	DRAW BUTTON
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:39:	draw label
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:40:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	MouseEvent
+2018-06-18.18:10:41:	Mouse option left or right
+2018-06-18.18:10:41:	mouse pressed
+2018-06-18.18:10:41:	COORD 13124 ,13113 , 10 
+2018-06-18.18:10:41:	DRAW BUTTON
+2018-06-18.18:10:41:	draw label
+2018-06-18.18:12018-06-18.20:34:11:	event engine runinng
+2018-06-18.20:34:11:	DRAW BUTTON
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	DRAW BUTTON
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	DRAW BUTTON
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	DRAW BUTTON
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	DRAW BUTTON
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	draw label
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:11:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:34:12:	MouseEvent
+2018-06-18.20:35:36:	event engine runinng
+2018-06-18.20:35:36:	DRAW BUTTON
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	DRAW BUTTON
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	DRAW BUTTON
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	DRAW BUTTON
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	DRAW BUTTON
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	draw label
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:36:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:37:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:38:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:35:39:	MouseEvent
+2018-06-18.20:37:52:	event engine runinng
+2018-06-18.20:37:52:	DRAW BUTTON
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	DRAW BUTTON
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	DRAW BUTTON
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	DRAW BUTTON
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	DRAW BUTTON
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	draw label
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:52:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:53:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:54:	MouseEvent
+2018-06-18.20:37:55:	MouseEvent
+2018-06-18.20:37:55:	Mouse option left or right
+2018-06-18.20:37:55:	mouse pressed
+2018-06-18.20:37:55:	COORD 13179 ,13125 , 10 
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	MouseEvent
+2018-06-18.20:37:56:	MouseEvent
+2018-06-18.20:37:56:	MouseEvent
+2018-06-18.20:37:56:	Mouse option left or right
+2018-06-18.20:37:56:	mouse pressed
+2018-06-18.20:37:56:	COORD 13179 ,13125 , 10 
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	DRAW BUTTON
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	draw label
+2018-06-18.20:37:56:	MouseEvent
+2018-06-18.20:37:56:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-06-18.20:37:57:	MouseEvent
+2018-

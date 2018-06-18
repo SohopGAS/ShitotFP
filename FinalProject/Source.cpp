@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include "../Common/Logger.h"
+#include "../Common/NumericBox.h"
 using namespace std;
 
 class Form : public Panel
@@ -14,6 +15,7 @@ class Form : public Panel
 	TextBox tb;
 	Label l;
 	Button b;
+	
 
 public:
 		Form()
@@ -32,8 +34,8 @@ public:
 			b.setColor(ColorType::Red, ColorType::Green);
 			string buttonChange("button1");
 			b.setValue(buttonChange);
-
-
+			NumericBox n(5, 10);
+			Add(&n);
 			Add(&b);
 
 			Add(&l);

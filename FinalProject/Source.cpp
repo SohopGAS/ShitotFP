@@ -25,6 +25,14 @@ public:
 			l.setLeft(1);
 			l.setColor(ColorType::Blue, ColorType::Red);
 
+			string buttonOf("ok");
+			b.setValue(buttonOf);
+			b.setTop(5);
+			b.setLeft(10);
+			b.setColor(ColorType::Red, ColorType::Green);
+
+			Add(&b);
+
 			Add(&l);
 
 			tb.setValue("My TextBox Example");
@@ -42,6 +50,7 @@ public:
 
 int main(int argc, char** argv)
 {
+
 	Form f;
 	EventEngine e;
 	e.run(f);

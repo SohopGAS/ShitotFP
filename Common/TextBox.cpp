@@ -26,7 +26,7 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	// char* fn = __FUNCTION__;
 	Control::draw(g, 10, 10, 2);
 	setValue("heeyyyyyy");
-
+}
 
 void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	g.setBackground(this->bg);

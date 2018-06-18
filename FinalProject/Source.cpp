@@ -23,9 +23,9 @@ public:
 			l.setTop(1);
 			l.setLeft(1);
 			l.setColor(ColorType::Blue, ColorType::Red);
-			
+
 			Add(&l);
-			
+
 			string buttonOf("BUTTON");
 			b.setValue(buttonOf);
 			b.setTop(5);
@@ -41,14 +41,9 @@ public:
 			tb.setLeft(1 + (short)value.size() + 1);
 			tb.setHeight(50);
 			tb.setWidth(50);
-<<<<<<< HEAD
 
 			Add(&tb);
-=======
-			
-			Add(&tb);
-			
->>>>>>> origin/master
+
 		}
 	};
 

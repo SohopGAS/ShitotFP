@@ -19,11 +19,13 @@ TextBox::~TextBox()
 
 void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
+
+
 	g.moveTo(getLeft(), getTop());
 
 	g.setBackground(this->bg);
 	g.setForeground(this->fg);
-	g.moveTo(getLeft(), getTop());
+	
 	g.setCursorVisibility(true);
 	if (!z)
 		g.write(value);
@@ -37,6 +39,7 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 
 
 void TextBox::keyDown(int keyCode, char charecter) {
+	CLogger::GetLogger()->Log("DRAW TEXTBox");
 
 }
 void TextBox::mousePressed(int x, int y, bool isLeft) {

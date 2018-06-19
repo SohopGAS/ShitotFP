@@ -1,5 +1,6 @@
 #include "EventEngine.h"
 #include "Logger.h"
+#include "TextBox.h"
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -34,6 +35,22 @@ void EventEngine::run(Control &c)
 			redraw = false;
 		}
 
+		
+		auto f = Control::getFocus();
+
+		if (dynamic_cast<TextBox*>(control) != NULL)
+		{
+			//do what ever u need here
+			g.move(f.getLeft(), f.getTop());
+		}
+
+
+
+
+
+
+
+
 		INPUT_RECORD record;
 		DWORD count;
 		ReadConsoleInput(_console, &record, 1, &count);
@@ -42,7 +59,7 @@ void EventEngine::run(Control &c)
 		case KEY_EVENT:
 		{
 			CLogger::GetLogger()->Log("key event");
-			auto f = Control::getFocus();
+//			auto f = Control::getFocus();
 			if (f != nullptr && record.Event.KeyEvent.bKeyDown)
 			{
 				auto code = record.Event.KeyEvent.wVirtualKeyCode;

@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include "../Common/Logger.h"
+
 using namespace std;
 
 class Form : public Panel
@@ -38,7 +39,7 @@ public:
 			tb.setHeight(1);
 			tb.setBorderType(b);
 
-			tb.setValue("hello world");
+			tb.setValue("muhahah");
 			tb.setColor(ColorType::Green, ColorType::Orange);
 			tb.setLeft(1 + (short)value.size() + 1);
 

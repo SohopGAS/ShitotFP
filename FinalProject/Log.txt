@@ -239,3 +239,113 @@
 2018-06-19.00:41:16:	draw label
 2018-06-19.00:43:28:	event engine runinng
 2018-06-19.00:43:28:	draw label
+2018-06-19.00:47:10:	event engine runinng
+2018-06-19.00:47:10:	draw label
+2018-06-19.00:47:16:	event engine runinng
+2018-06-19.00:47:16:	draw label
+2018-06-19.00:48:24:	event engine runinng
+2018-06-19.00:48:24:	draw label
+2018-06-19.00:48:32:	key event
+2018-06-19.00:48:32:	key event
+2018-06-19.00:48:32:	key event
+2018-06-19.00:48:33:	key event
+2018-06-19.00:50:11:	event engine runinng
+2018-06-19.00:50:11:	draw label
+2018-06-19.00:50:11:	DRAW BUTTON
+2018-06-19.00:50:11:	draw label
+2018-06-19.00:51:11:	event engine runinng
+2018-06-19.00:51:12:	draw label
+2018-06-19.00:51:12:	DRAW BUTTON
+2018-06-19.00:51:12:	draw label
+2018-06-19.00:51:46:	event engine runinng
+2018-06-19.00:51:46:	draw label
+2018-06-19.00:51:46:	DRAW BUTTON
+2018-06-19.00:51:46:	draw label
+2018-06-19.00:51:59:	event engine runinng
+2018-06-19.00:51:59:	draw label
+2018-06-19.00:51:59:	DRAW BUTTON
+2018-06-19.00:51:59:	draw label
+2018-06-19.00:52:59:	event engine runinng
+2018-06-19.00:52:59:	draw label
+2018-06-19.00:52:59:	DRAW BUTTON
+2018-06-19.00:52:59:	draw label
+2018-06-19.00:55:35:	event engine runinng
+2018-06-19.00:55:35:	draw label
+2018-06-19.00:55:35:	DRAW BUTTON
+2018-06-19.00:55:35:	draw label
+2018-06-19.11:17:19:	event engine runinng
+2018-06-19.11:17:19:	draw label
+2018-06-19.11:17:19:	DRAW BUTTON
+2018-06-19.11:17:19:	draw label
+2018-06-19.11:19:14:	event engine runinng
+2018-06-19.11:19:15:	draw label
+2018-06-19.11:19:15:	DRAW BUTTON
+2018-06-19.11:19:15:	draw label
+2018-06-19.11:19:31:	event engine runinng
+2018-06-19.11:19:31:	draw label
+2018-06-19.11:19:31:	DRAW BUTTON
+2018-06-19.11:19:31:	draw label
+2018-06-19.11:19:35:	key event
+2018-06-19.11:19:35:	key event
+2018-06-19.11:19:35:	key event
+2018-06-19.11:19:35:	key event
+2018-06-19.11:20:50:	event engine runinng
+2018-06-19.11:20:50:	draw label
+2018-06-19.11:20:50:	DRAW BUTTON
+2018-06-19.11:20:50:	draw label
+2018-06-19.11:21:25:	event engine runinng
+2018-06-19.11:21:25:	draw label
+2018-06-19.11:21:25:	DRAW BUTTON
+2018-06-19.11:21:25:	draw label
+2018-06-19.11:21:47:	event engine runinng
+2018-06-19.11:21:47:	draw label
+2018-06-19.11:21:47:	DRAW BUTTON
+2018-06-19.11:21:47:	draw label
+2018-06-19.11:22:04:	event engine runinng
+2018-06-19.11:22:04:	draw label
+2018-06-19.11:22:04:	DRAW BUTTON
+2018-06-19.11:22:04:	draw label
+2018-06-19.11:22:53:	event engine runinng
+2018-06-19.11:22:53:	draw label
+2018-06-19.11:22:53:	DRAW BUTTON
+2018-06-19.11:22:53:	draw label
+2018-06-19.11:23:52:	event engine runinng
+2018-06-19.11:23:52:	draw label
+2018-06-19.11:23:52:	DRAW BUTTON
+2018-06-19.11:23:52:	draw label
+2018-06-19.11:24:44:	event engine runinng
+2018-06-19.11:24:44:	draw label
+2018-06-19.11:24:44:	DRAW BUTTON
+2018-06-19.11:24:44:	draw label
+2018-06-19.11:25:05:	event engine runinng
+2018-06-19.11:25:05:	draw label
+2018-06-19.11:25:05:	DRAW BUTTON
+2018-06-19.11:25:05:	draw label
+2018-06-19.11:25:48:	event engine runinng
+2018-06-19.11:25:49:	draw label
+2018-06-19.11:25:49:	DRAW BUTTON
+2018-06-19.11:25:49:	draw label
+2018-06-19.11:26:27:	event engine runinng
+2018-06-19.11:26:27:	draw label
+2018-06-19.11:26:27:	DRAW BUTTON
+2018-06-19.11:26:27:	draw label
+2018-06-19.11:26:48:	event engine runinng
+2018-06-19.11:26:48:	draw label
+2018-06-19.11:26:48:	DRAW BUTTON
+2018-06-19.11:26:48:	draw label
+2018-06-19.11:27:08:	event engine runinng
+2018-06-19.11:27:08:	draw label
+2018-06-19.11:27:08:	DRAW BUTTON
+2018-06-19.11:27:08:	draw label
+2018-06-19.11:27:23:	event engine runinng
+2018-06-19.11:27:23:	draw label
+2018-06-19.11:27:23:	DRAW BUTTON
+2018-06-19.11:27:23:	draw label
+2018-06-19.11:28:01:	event engine runinng
+2018-06-19.11:28:02:	draw label
+2018-06-19.11:28:02:	DRAW BUTTON
+2018-06-19.11:28:02:	draw label
+2018-06-19.11:29:15:	event engine runinng
+2018-06-19.11:29:15:	draw label
+2018-06-19.11:29:15:	DRAW BUTTON
+2018-06-19.11:29:15:	draw label

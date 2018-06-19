@@ -14,35 +14,44 @@ class Form : public Panel
 {
 	TextBox tb;
 	Label l;
-	Button b;
+	Button button;
 
 public:
 		Form()
 		{
 
-			string value("Enter Name:");
+			BorderType* b = SingleLineBorder::getinstance();
+
+			string value("label");
 			l.setValue(value);
 			l.setTop(3);
-			l.setLeft(10);
+			l.setLeft(5);
 			l.setHeight(1);
-			l.setWidth(12);
-			l.setColor(ColorType::Blue, ColorType::Red);
-
-			BorderType* b = SingleLineBorder::getinstance();
+			l.setWidth( value.size() ) ;
 			l.setBorderType(b);
+			l.setColor(ColorType::Blue, ColorType::Red);
 
 			Add(&l);
 
-			tb.setWidth((short)value.size());
+			tb.setValue("text box");
+			tb.setWidth( tb.getValue().size() );
+			tb.setLeft(1 + (short)value.size() + 1);
 			tb.setTop(8);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-
-			tb.setValue("hello world");
 			tb.setColor(ColorType::Green, ColorType::Orange);
-			tb.setLeft(1 + (short)value.size() + 1);
-
+			
 			Add(&tb);
+
+			button.setValue("button");
+			button.setBorderType(b);
+			button.setTop(12);
+			button.setHeight(1);
+			button.setWidth(button.getValue().size() );
+			button.setLeft(2);
+			button.setColor(ColorType::Purple,ColorType::Orange);
+			Add(&button);
+
 		}
 
 };
@@ -53,8 +62,8 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(30);
-	f.setHeight(15);
+	f.setWidth(70);
+	f.setHeight(25);
 	BorderType* bo = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
 	e.run(f);

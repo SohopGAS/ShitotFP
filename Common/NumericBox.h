@@ -46,7 +46,7 @@ public:
 	
 
 	// need 
-	void draw(Graphics& g, int x, int y, size_t z);
+	void draw(Graphics& g, short x, short y, size_t z);
 	
 	// need 
 	void mousePressed(int x, int y, bool isLeft);

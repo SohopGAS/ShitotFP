@@ -111,7 +111,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ActionListener.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="BorderType.cpp" />
     <ClCompile Include="CheckList.cpp" />
@@ -130,7 +129,6 @@
     <ClCompile Include="TextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ActionListener.h" />
     <ClInclude Include="BorderType.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="CheckList.h" />

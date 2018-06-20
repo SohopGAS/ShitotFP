@@ -16,7 +16,6 @@ public:
 	~Button() {};
 	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }
 
-
 	virtual void implement_function() {};
 	void mousePressed(int x, int y, bool isLeft);
 	void expand_string(string &s);

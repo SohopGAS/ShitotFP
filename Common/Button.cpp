@@ -7,15 +7,11 @@ Button::Button(string & s)
 {
 	expand_string(s);	
 }
-
 void Button::setValue(string s)
 {
 	expand_string(s);
 	Label::setValue(s);
 }
-
-
-
 
 void Button::mousePressed(int x, int y, bool isLeft)
 {
@@ -31,7 +27,6 @@ void Button::mousePressed(int x, int y, bool isLeft)
 
 }
 
-
 void Button::expand_string(string &s) {
 
 	unsigned sz = s.size();
@@ -39,13 +34,9 @@ void Button::expand_string(string &s) {
 	
 }
 
-
-
 void Button::draw(Graphics& g, short x, short y, size_t z)
 {	
 	Control::draw(g, x, y, z);
 	CLogger::GetLogger()->Log("DRAW BUTTON");
 	Label::draw(g, x, y, z);
 }
-
-

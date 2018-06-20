@@ -2,6 +2,7 @@
 #include "Control.h"
 #include "../Common/Button.h"
 #include"../Common/Panel.h"
+#include "..//Common/Label.h"
 
 
 class OnClickPlus : public MouseListener
@@ -42,6 +43,7 @@ protected:
 
 
 public:
+	NumericBox() {};
 	NumericBox(int minVal, int maxVal) ;
 	
 

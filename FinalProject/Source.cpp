@@ -10,6 +10,7 @@ using namespace std;
 
 class Form : public Panel
 {
+	
 	TextBox tb;
 	Label l;
 	Button b;

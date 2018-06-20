@@ -50,6 +50,4 @@ int main(int argc, char** argv)
 	tb.setColor(ColorType::Red, ColorType::White);
 	e.run(tb);
 
-	//Form f;
-	//e.run(f);
 }

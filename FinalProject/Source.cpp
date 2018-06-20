@@ -27,8 +27,8 @@ public:
 			l.setHeight(1);
 			l.setWidth(12);
 			l.setColor(ColorType::Blue, ColorType::Red);
-
-			BorderType* b = SingleLineBorder::getinstance();
+			BorderType* b;
+			// BorderType* b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
 
 			Add(&l);
@@ -55,7 +55,8 @@ int main(int argc, char** argv)
 	Form f;
 	f.setWidth(30);
 	f.setHeight(15);
-	BorderType* bo = SingleLineBorder::getinstance();
+	BorderType* bo;
+	// BorderType* bo = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
 	e.run(f);
 }

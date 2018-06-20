@@ -24,3 +24,9 @@ void Panel::draw(Graphics& g, short x, short y, size_t z) {
 			c->draw(g, x, y, z);
 	
 }
+
+void Panel::getAllControls(vector<Control*>* Controls) {
+	for (Control* c: this->controls) {
+		controls.pop_back(c);
+	}
+}

@@ -12,8 +12,8 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft) ;
 	virtual void keyDown(int keyCode, char charecter) ;
 
-
+	
 	void Add(Control* control);
-	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
+	void getAllControls(vector<Control*>* Controls);
 };
 

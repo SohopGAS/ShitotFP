@@ -48,7 +48,7 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};
 
-	virtual void getAllControls(vector<Control*>* controls) {};
+	virtual void getAllControls(vector<Control*>* controls);
 	virtual bool canGetFocus() { return FALSE; };
     //virtual bool myPureFunction() = 0;
 

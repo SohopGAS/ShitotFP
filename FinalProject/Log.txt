@@ -1,4 +1,0 @@
-2018-06-20.20:43:31:	event engine runinng
-2018-06-20.20:43:31:	draw label
-2018-06-20.20:43:31:	DRAW BUTTON
-2018-06-20.20:43:31:	draw label

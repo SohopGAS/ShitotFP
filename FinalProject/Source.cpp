@@ -22,7 +22,7 @@ public:
 		{
 
 			BorderType* b = SingleLineBorder::getinstance();
-
+			
 			string value("label");
 			l.setValue(value);
 			l.setTop(3);
@@ -73,5 +73,6 @@ int main(int argc, char** argv)
 	f.setHeight(25);
 	BorderType* bo = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
+	f.setFocus(f);
 	e.run(f);
 }

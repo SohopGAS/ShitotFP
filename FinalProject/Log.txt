@@ -239,3 +239,236 @@
 2018-06-19.00:41:16:	draw label
 2018-06-19.00:43:28:	event engine runinng
 2018-06-19.00:43:28:	draw label
+2018-06-20.17:32:54:	event engine runinng
+2018-06-20.17:32:54:	draw label
+2018-06-20.17:47:03:	event engine runinng
+2018-06-20.17:47:03:	draw label
+2018-06-20.17:59:22:	event engine runinng
+2018-06-20.17:59:22:	draw label
+2018-06-20.18:03:20:	event engine runinng
+2018-06-20.18:03:20:	draw label
+2018-06-20.18:09:48:	event engine runinng
+2018-06-20.18:09:48:	draw label
+2018-06-20.18:10:17:	event engine runinng
+2018-06-20.18:10:17:	draw label
+2018-06-20.18:11:09:	event engine runinng
+2018-06-20.18:11:09:	draw label
+2018-06-20.18:12:22:	event engine runinng
+2018-06-20.18:12:22:	draw label
+2018-06-20.18:15:46:	event engine runinng
+2018-06-20.18:15:46:	draw label
+2018-06-20.18:16:15:	event engine runinng
+2018-06-20.18:16:15:	draw label
+2018-06-20.18:17:46:	event engine runinng
+2018-06-20.18:17:46:	draw label
+2018-06-20.18:18:27:	event engine runinng
+2018-06-20.18:18:28:	draw label
+2018-06-20.18:18:28:	key event
+2018-06-20.18:18:29:	key event
+2018-06-20.18:18:29:	key event
+2018-06-20.18:18:29:	key event
+2018-06-20.18:19:17:	event engine runinng
+2018-06-20.18:19:17:	draw label
+2018-06-20.18:19:35:	event engine runinng
+2018-06-20.18:19:36:	draw label
+2018-06-20.18:19:59:	event engine runinng
+2018-06-20.18:19:59:	draw label
+2018-06-20.18:22:52:	event engine runinng
+2018-06-20.18:22:52:	draw label
+2018-06-20.18:23:10:	event engine runinng
+2018-06-20.18:23:10:	draw label
+2018-06-20.18:26:40:	event engine runinng
+2018-06-20.18:26:40:	draw label
+2018-06-20.18:26:44:	key event
+2018-06-20.18:29:14:	event engine runinng
+2018-06-20.18:29:14:	draw label
+2018-06-20.18:30:13:	event engine runinng
+2018-06-20.18:30:13:	draw label
+2018-06-20.18:30:38:	event engine runinng
+2018-06-20.18:30:38:	draw label
+2018-06-20.18:31:32:	event engine runinng
+2018-06-20.18:31:32:	draw label
+2018-06-20.18:45:56:	event engine runinng
+2018-06-20.18:45:56:	draw label
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:37:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:38:	key event
+2018-06-20.18:46:39:	key event
+2018-06-20.18:46:39:	key event
+2018-06-20.18:47:33:	key event
+2018-06-20.18:47:36:	key event
+2018-06-20.18:53:03:	event engine runinng
+2018-06-20.18:53:03:	draw label
+2018-06-20.18:53:15:	event engine runinng
+2018-06-20.18:53:15:	draw label
+2018-06-20.18:57:38:	event engine runinng
+2018-06-20.18:57:38:	draw label
+2018-06-20.18:58:00:	key event
+2018-06-20.18:58:15:	key event
+2018-06-20.18:58:35:	key event
+2018-06-20.18:58:53:	key event
+2018-06-20.18:59:04:	key event
+2018-06-20.18:59:06:	key event
+2018-06-20.18:59:10:	key event
+2018-06-20.18:59:24:	key event
+2018-06-20.18:59:24:	key event
+2018-06-20.18:59:25:	key event
+2018-06-20.18:59:26:	key event
+2018-06-20.18:59:27:	key event
+2018-06-20.18:59:27:	key event
+2018-06-20.18:59:27:	key event
+2018-06-20.18:59:27:	key event
+2018-06-20.18:59:39:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:47:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:50:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:51:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:52:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:53:	key event
+2018-06-20.18:59:58:	key event
+2018-06-20.18:59:58:	key event
+2018-06-20.18:59:59:	key event
+2018-06-20.18:59:59:	key event
+2018-06-20.18:59:59:	key event
+2018-06-20.18:59:59:	key event
+2018-06-20.19:00:00:	key event
+2018-06-20.19:00:00:	key event
+2018-06-20.19:00:34:	key event
+2018-06-20.19:00:34:	key event
+2018-06-20.19:00:34:	key event
+2018-06-20.19:00:34:	key event
+2018-06-20.19:00:35:	key event
+2018-06-20.19:00:35:	key event
+2018-06-20.19:00:35:	key event
+2018-06-20.19:00:35:	key event
+2018-06-20.19:00:37:	key event
+2018-06-20.19:00:37:	key event
+2018-06-20.19:01:09:	key event
+2018-06-20.19:01:09:	key event
+2018-06-20.19:01:09:	key event
+2018-06-20.19:01:09:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:10:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:11:	key event
+2018-06-20.19:01:12:	key event
+2018-06-20.19:01:12:	key event
+2018-06-20.19:01:12:	key event
+2018-06-20.19:01:20:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:58:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:01:59:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:00:	key event
+2018-06-20.19:02:01:	key event
+2018-06-20.19:02:01:	key event

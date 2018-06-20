@@ -7,6 +7,7 @@
 #include "../Common/Button.h"
 #include <iostream>
 #include <fstream>
+#include "../Common/CheckList.h"
 #include "../Common/Logger.h"
 using namespace std;
 
@@ -14,6 +15,7 @@ class Form : public Panel
 {
 	TextBox tb;
 	Label l;
+	CheckList ck;
 	Button b;
 
 public:
@@ -22,8 +24,8 @@ public:
 
 			string value("Enter Name:");
 			l.setValue(value);
-			l.setTop(3);
-			l.setLeft(10);
+			l.setTop(1);
+			l.setLeft(5);
 			l.setHeight(1);
 			l.setWidth(12);
 			l.setColor(ColorType::Blue, ColorType::Red);
@@ -34,15 +36,23 @@ public:
 			Add(&l);
 
 			tb.setWidth((short)value.size());
-			tb.setTop(8);
+			tb.setTop(3);
 			tb.setHeight(1);
 			tb.setBorderType(b);
 
 			tb.setValue("hello world");
 			tb.setColor(ColorType::Green, ColorType::Orange);
-			tb.setLeft(1 + (short)value.size() + 1);
-
+			tb.setLeft(5);
 			Add(&tb);
+
+			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
+			ck.setTop(5);
+			ck.setLeft(5);
+			ck.setBorderType(b);
+			ck.setColor(ColorType::Green, ColorType::Orange);
+			
+			Add(&ck);
+			
 		}
 
 };

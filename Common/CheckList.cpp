@@ -8,7 +8,7 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 
 	Control::draw(g, this->getLeft() + left, this->getTop() + top, layer);
 	int vector_size = _options.size();
-	g.moveTo(this->getLeft() + 1, this->getTop() + 1);
+	g.moveTo(this->getLeft() , this->getTop() );
 	for (int i = 0; i < vector_size; i++) {
 		g.setBackground(this->bg);
 		g.setForeground(this->fg);
@@ -17,14 +17,14 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 				g.setBackground(this->fg);
 			}
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left+1, this->getLeft() + left + i + 2);
+			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);
 
 		}
 		else {
 			g.setBackground(this->bg);
 			g.setForeground(this->fg);
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left + 1, this->getLeft() + left + i + 2);
+			g.moveTo(this->getLeft() + left , this->getLeft() + left + i + 1);
 		}
 
 	}
@@ -37,7 +37,7 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 //	this->draw(Control::graphics, panelLeft, panelTop, 1);
 //	Control::graphics.moveTo(panelLeft + 2, panelTop + logicalPosition + 1);
 //}
-void CheckList::keyDown(WORD code, CHAR chr) {
+void CheckList::keyDown(WORD code, char chr) {
 	
 	switch (code) {
 	case VK_UP:
@@ -67,8 +67,39 @@ void CheckList::keyDown(WORD code, CHAR chr) {
 
 	}
 }
-
-
+//void CheckList::mousePressed(int x, int y, bool isLeft) {
+//	if (isInside(x, y, this->getLeft(), this->getTop(), this->getWidth(), this->getHeight()))
+//	{
+//		//dos
+//	}
+//	
+//}
+void CheckList::SetList(vector<string> ListOfStrings, string Square_shape = "( ) ") {
+	_options = ListOfStrings;
+	int size = ListOfStrings.size();
+	int maxsize = 0;
+	int ezer = 0;
+	int heCalc = 1;
+	for (int i = 0; i < size; i++) {
+		
+		_options[i].insert(0, Square_shape);
+		if (maxsize < _options[i].size() - 1)
+			maxsize = _options[i].size() - 1;
+	}
+	this->setWidth(maxsize + 1);
+	this->setHeight(_options.size());
+	for (int i = 0; i < size; i++) {
+		ezer = maxsize - _options[i].size() +1;
+		if (_options[i].size() -1 < maxsize)
+			for (int j = 0; j < ezer; j++) {
+				_options[i].insert(_options[i].size(), " ");
+				
+			}
+		
+	}
+	
+	optionsSelected = vector<bool>(ListOfStrings.size());
+}
 
 void CheckList::SelectIndex(size_t index) {
 	logicalPosition = index;

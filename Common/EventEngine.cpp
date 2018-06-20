@@ -19,6 +19,7 @@ void EventEngine::run(Control &c)
 		if (redraw)
 		{
 			_graphics.clearScreen();
+			_graphics.setBackground(ColorType::Black);
 			_graphics.setCursorVisibility(false);
 
 			/* chenge z < 5 to z < 1 to fix bug  

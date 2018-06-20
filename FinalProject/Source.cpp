@@ -18,18 +18,19 @@ class Form : public Panel
 	CheckList ck;
 	Button b;
 
+
 public:
+	Control* _control;
 		Form()
 		{
-
+			
 			string value("Enter Name:");
 			l.setValue(value);
 			l.setTop(1);
 			l.setLeft(5);
 			l.setHeight(1);
 			l.setWidth(12);
-			l.setColor(ColorType::Blue, ColorType::Red);
-
+			l.setColor(ColorType::Black, ColorType::Orange);
 			BorderType* b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
 
@@ -39,18 +40,18 @@ public:
 			tb.setTop(3);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-
 			tb.setValue("hello world");
-			tb.setColor(ColorType::Green, ColorType::Orange);
+			tb.setColor(ColorType::Black, ColorType::Orange);
 			tb.setLeft(5);
+			
 			Add(&tb);
 
 			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
 			ck.setTop(5);
 			ck.setLeft(5);
 			ck.setBorderType(b);
-			ck.setColor(ColorType::Green, ColorType::Orange);
-			
+			ck.setColor(ColorType::Black, ColorType::Orange);
+			_control = &tb;
 			Add(&ck);
 			
 		}
@@ -65,7 +66,10 @@ int main(int argc, char** argv)
 	Form f;
 	f.setWidth(30);
 	f.setHeight(15);
+	f.setTop(0);
+	f.setLeft(0);
 	BorderType* bo = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
+	f.setFocus(*f._control);
 	e.run(f);
 }

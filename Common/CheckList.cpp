@@ -14,7 +14,7 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 		g.setForeground(this->fg);
 		if (i == logicalPosition) {
 			if (Control::getFocus() == this) {
-				g.setBackground(this->fg);
+				g.setBackground(ColorType::Red);
 			}
 			g.write(_options[i]);
 			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);

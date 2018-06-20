@@ -22,4 +22,7 @@ public:
 	void expand_string(string &s);
 	void draw(Graphics& g, short x, short y, size_t z);
 	virtual void setValue(string s) ;
+	void getAllControls(vector<Control*>* controls) {};
+	virtual void keyDown(WORD keyCode, char charecter) {};
+
 };

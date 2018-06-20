@@ -22,16 +22,10 @@ void EventEngine::run(Control &c)
 			_graphics.setBackground(ColorType::Black);
 			_graphics.setCursorVisibility(false);
 
-			/* chenge z < 5 to z < 1 to fix bug  
 			for (size_t z = 0; z < 1; ++z)
 			{
 				c.draw(_graphics, 0, 0, z);
-			}	*/
-
-			for (size_t z = 0; z < 1; ++z)
-			{
-				c.draw(_graphics, 0, 0, z);
-			}	
+			}
 			redraw = false;
 		}
 

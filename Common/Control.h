@@ -9,7 +9,7 @@ class Control
 {
 
 protected:
-	
+
 	short left;
 	short top;
 	short width;
@@ -22,7 +22,7 @@ protected:
 
 public:
 	Control();
-	Control(BorderType* _bt) :bt(_bt) {};
+	Control(BorderType* _bt) : bt(_bt) {};
 	Control(Graphics& g, short x, short y, short width, short height);
 	// position setter
 	

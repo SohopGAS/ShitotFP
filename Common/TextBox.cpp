@@ -4,7 +4,7 @@ TextBox::TextBox()
 {
 }
 
-TextBox::TextBox(short _left = 0, short _top = 0, short _width = 0, short _height = 0) : Control()
+TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 10) : Control()
 {
 	setLeft(_left);
 	setTop(_top);
@@ -30,7 +30,10 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	
 
 
-	
+	// Control::draw(g, 10, 10, 2);
+	setValue("heeyyyyyy");
+
+
 //	g.write(this->_value);
 }
 //
@@ -109,6 +112,8 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 void TextBox::keyDown(int keyCode, char charecter) {
 
 }
-void TextBox::mousePressed(int x, int y, bool isLeft) {
-
+void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
+	g.setCursorVisibility(true);
+	g.setBackground(bg);
+	g.setForeground(fg);
 }

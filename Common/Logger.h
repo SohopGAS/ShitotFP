@@ -1,11 +1,12 @@
 #pragma once
-#ifndef CUSTOM_CLogger_H
-#define CUSTOM_CLogger_H
+
 #include <fstream>
 #include <iostream>
 #include <cstdarg>
 #include <string>
+
 using namespace std;
+
 #define LOGGER CLogger::GetLogger()
 /**
 *   Singleton Logger Class.
@@ -59,4 +60,3 @@ private:
 	**/
 	static ofstream m_Logfile;
 };
-#endif

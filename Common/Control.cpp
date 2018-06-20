@@ -48,13 +48,14 @@ vector<Control*>* Control::getAllControls(vector<Control*>* controls)
 {
 	if (hasChildren == TRUE && this->controls != NULL) {
 		if (controls == NULL) {
-			return;
+			return this->controls;
 		}
 		const vector<Control*>* temp = this->controls;
 		for (Control* c : *temp) {
 			controls->push_back(c);
 		}
 	}
+	return this->controls;
 }
 
 void Control::setAllControls(vector<Control*>* controls)

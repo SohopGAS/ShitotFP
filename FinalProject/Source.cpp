@@ -3,6 +3,7 @@
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
 #include "../Common/BorderType.h"
+#include "../Common/CheckList.h"
 #include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
 #include <iostream>
@@ -15,7 +16,7 @@ class Form : public Panel
 	TextBox tb;
 	Label l;
 	Button button;
-
+	CheckList ck;
 public:
 		Form()
 		{
@@ -52,6 +53,13 @@ public:
 			button.setColor(ColorType::Purple,ColorType::Orange);
 			Add(&button);
 
+			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
+			ck.setTop(15);
+			ck.setLeft(15);
+			ck.setBorderType(b);
+			ck.setColor(ColorType::Green, ColorType::Orange);
+			Add(&ck);
+			
 		}
 
 };

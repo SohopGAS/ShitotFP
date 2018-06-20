@@ -57,11 +57,8 @@ public:
 };
 
 
-
 int main(int argc, char** argv)
 {
-	
-	CLogger::GetLogger("herr");
 	EventEngine e;
 	Form f;
 	f.setWidth(70);

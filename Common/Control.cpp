@@ -13,6 +13,9 @@ Control::Control():bt(NULL)
 
 Control::Control(Graphics & g, short x, short y, short width, short height) : bt(NULL)
 {
+	
+	
+
 }
 
 void Control::draw(Graphics& g, short x, short y, size_t z) {

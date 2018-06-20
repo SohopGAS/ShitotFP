@@ -20,9 +20,10 @@ public:
 
 	void keyDown(int keyCode, char charecter) {};
 	void mousePressed(int x, int y, bool isLeft) {};
-	bool canGetFocus() { return TRUE; };
+	bool canGetFocus() { return true; };
 	boolean SelectedItem(int index) {};
 	boolean ClearSelection() {};
+
 
 };
 

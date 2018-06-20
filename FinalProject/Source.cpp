@@ -18,6 +18,7 @@ class Form : public Panel
 	Button button;
 	CheckList ck;
 public:
+	Control* _control;
 		Form()
 		{
 
@@ -31,7 +32,7 @@ public:
 			l.setWidth( value.size() ) ;
 			l.setBorderType(b);
 			l.setColor(ColorType::Blue, ColorType::Red);
-
+			
 			Add(&l);
 
 			tb.setValue("text box");
@@ -42,6 +43,7 @@ public:
 			tb.setBorderType(b);
 			tb.setColor(ColorType::Green, ColorType::Orange);
 			
+			_control = &tb  ;
 			Add(&tb);
 
 			button.setValue("button");
@@ -73,6 +75,6 @@ int main(int argc, char** argv)
 	f.setHeight(25);
 	BorderType* bo = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
-	f.setFocus(f);
+	f.setFocus(*f._control);
 	e.run(f);
 }

@@ -17,5 +17,5 @@ public:
 	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }
 	virtual void mousePressed(int x, int y, bool isLeft);
 	virtual void draw(Graphics& g, short x, short y, size_t z);
-	virtual bool canGetFocus() { return FALSE; };
+	virtual bool canGetFocus() { return false; };
 };

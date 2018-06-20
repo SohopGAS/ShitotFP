@@ -32,6 +32,11 @@ public:
 	void selectOption();
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
-	bool canGetFocus() { return TRUE; };
+	bool canGetFocus() { return true; };
+	void focusOn() {
+		_gaphics.moveTo(this->getLeft()+ 2, getTop()+ logicalPosition + 1);
+		_gaphics.setCursorVisibility(true);
+	}
+	
 };
 

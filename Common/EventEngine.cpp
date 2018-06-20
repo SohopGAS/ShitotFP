@@ -27,7 +27,7 @@ void EventEngine::run(Control &c)
 				c.draw(_graphics, 0, 0, z);
 			}	*/
 
-			for (size_t z = 0; z < 5; ++z)
+			for (size_t z = 0; z < 1; ++z)
 			{
 				c.draw(_graphics, 0, 0, z);
 			}	

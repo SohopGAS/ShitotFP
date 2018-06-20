@@ -32,5 +32,6 @@ public:
 	void selectOption();
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
+	bool canGetFocus() { return TRUE; };
 };
 

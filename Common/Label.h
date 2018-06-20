@@ -10,7 +10,8 @@ class Label : public Control
 private:
 	string value="";
 public:
-	Label() {};
+	Label(){};
+
 	Label(string);
 	string getValue() { return value; };
 	void setValue(string);
@@ -18,6 +19,7 @@ public:
 
 	void keyDown(int keyCode, char charecter) {};
 	void mousePressed(int x, int y, bool isLeft) {};
+	bool canGetFocus() { return FALSE; };
 	bool myPureFunction() {}
 
 };

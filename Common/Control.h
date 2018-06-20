@@ -18,7 +18,6 @@ protected:
 	ColorType bg, fg;
 	BorderType* bt;
 
-
 public:
 	Control();
 	Control(BorderType* _bt) :bt(_bt) {};
@@ -33,6 +32,7 @@ public:
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 	static void setFocus(Control& control) { static_control = &control; };
 	void setBorderType(BorderType* _bt) { bt = _bt; };
+	
 	// position getter
 	virtual	short getLeft() { return left; };
 	virtual	short getTop() { return top; };
@@ -48,7 +48,7 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(int keyCode, char charecter) {};
 
-	virtual void getAllControls(vector<Control*>* controls);
+	virtual void getAllControls(vector<Control*>* controls) {};
 	virtual bool canGetFocus() { return FALSE; };
     //virtual bool myPureFunction() = 0;
 

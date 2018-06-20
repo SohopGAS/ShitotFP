@@ -15,5 +15,6 @@ public:
 	
 	// no need to handel keydown
 	void keyDown(int keyCode, char charecter) {};
+	bool canGetFocus() { return TRUE; };
 };
 

@@ -1,5 +1,4 @@
-#ifndef UTILITIES_H
-#define UTILITIES_H
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -18,4 +17,3 @@ namespace Util
 		return buf;
 	}
 }
-#endif#pragma once

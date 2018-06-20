@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef CUSTOM_CLogger_H
-#define CUSTOM_CLogger_H
-
 #include <fstream>
 #include <iostream>
 #include <cstdarg>
@@ -63,4 +60,3 @@ private:
 	**/
 	static ofstream m_Logfile;
 };
-#endif

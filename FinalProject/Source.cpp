@@ -9,6 +9,7 @@
 #include <fstream>
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
+#include "../Common/DoubleLineBorder.h"
 using namespace std;
 
 class Form : public Panel
@@ -31,7 +32,7 @@ public:
 			l.setHeight(1);
 			l.setWidth(12);
 			l.setColor(ColorType::Black, ColorType::Orange);
-			BorderType* b = SingleLineBorder::getinstance();
+			BorderType* b = DoubleLineBorder::getinstance();
 			l.setBorderType(b);
 
 			Add(&l);
@@ -68,7 +69,7 @@ int main(int argc, char** argv)
 	f.setHeight(20);
 	f.setTop(0);
 	f.setLeft(0);
-	BorderType* bo = SingleLineBorder::getinstance();
+	BorderType* bo = DoubleLineBorder::getinstance();
 	f.setBorderType(bo);
 	f.setFocus(*f._control);
 	e.run(f);

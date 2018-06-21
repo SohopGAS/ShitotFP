@@ -11,8 +11,8 @@ public:
 	void draw(Graphics& g, short x, short y, size_t z);
 	virtual void mousePressed(int x, int y, bool isLeft) ;
 	virtual void keyDown(int keyCode, char charecter) ;
-
-
+	void getAllControls(vector<Control*>* controls);
+	bool canGetFocus() { return false; };
 	void Add(Control* control);
 	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
 };

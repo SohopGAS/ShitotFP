@@ -27,8 +27,7 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	g.setCursorVisibility(true);
 	if (!z)
 		g.write(value);
-	g.setBackground(ColorType::Black);
-	g.setForeground(ColorType::White);
+	
 
 
 	// Control::draw(g, 10, 10, 2);
@@ -37,8 +36,79 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 
 //	g.write(this->_value);
 }
-
-
+//
+//void TextBox::keyDown(WORD code, CHAR c) {
+//	if (code == 0x46) { // F key for debaging
+//		string str = "";
+//		_graphics.write(10, 10, _value);
+//		getchar();
+//	}
+//	if (_value.size() < _width - 2) {
+//		if (c >= ' ' && c <= '~') {
+//			cout << c;
+//			if (_value.size() == logicalPosition - 1) {
+//				_value += c;
+//			}
+//			else {
+//				char temp[] = { c };
+//				_value.insert(logicalPosition, temp, 1);
+//			}
+//			graphics.moveTo(_left + 1 + _value.size(), _top + 1);
+//			logicalPosition++;
+//			return;
+//		}
+//	}
+//
+//	switch (code) {
+//	case VK_RIGHT: {
+//
+//		if (_value.size() < _width - 3) {
+//			logicalPosition++;
+//			_value += " ";
+//			graphics.moveTo(_left + 1 + _value.size(), _top + 2);
+//		}
+//		break;
+//	}
+//	case VK_LEFT: {
+//		if (logicalPosition >= 1) {
+//			logicalPosition--;
+//			graphics.moveTo(_left + 1 + _value.size(), _top + 2);
+//		}
+//		break;
+//	}
+//
+//	case VK_BACK: {
+//		if (logicalPosition  > 0) {
+//			logicalPosition--;
+//			_value.erase(logicalPosition, 1);
+//		}
+//		break;
+//	}
+//
+//	case VK_DELETE: {
+//		if (logicalPosition > 0) {
+//
+//			_value.erase(logicalPosition, 1);
+//		}
+//		break;
+//	}
+//
+//	}
+//}
+//
+//
+//void TextBox::mousePressed(int x, int y, bool ifFirstButton) {
+//	
+//		int pressed = x - this->getLeft() - 2;
+//		int yTest = y;
+//		if (pressed >= value.size() || (yTest != this->getTop() + 2)) { //checking if the mouse is on the textbox.
+//			return;
+//		
+//		Control::setFocus(*this);
+//
+//		logicalPosition = pressed;
+//	
+//}
 void TextBox::keyDown(int keyCode, char charecter) {
 
 }

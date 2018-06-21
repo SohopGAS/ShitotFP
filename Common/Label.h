@@ -15,8 +15,9 @@ public:
 	string getValue() { return value; };
 	void setValue(string);
 	void draw(Graphics& g, short x, short y, size_t z);
+	void getAllControls(vector<Control*>* controls) {};
+	virtual void keyDown(WORD keyCode, char charecter) {};
 
-	void keyDown(int keyCode, char charecter) {};
 	void mousePressed(int x, int y, bool isLeft) {};
 	bool myPureFunction() {}
 

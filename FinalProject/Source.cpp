@@ -14,7 +14,7 @@ class Form : public Panel
 {
 	TextBox tb;
 	Label l;
-	Button b;
+	// Button b;
 
 public:
 		Form()
@@ -43,6 +43,8 @@ public:
 			tb.setLeft(1 + (short)value.size() + 1);
 
 			Add(&tb);
+
+
 		}
 
 };

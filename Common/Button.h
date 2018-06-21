@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 #include "../Common/MouseListener.h"
-
 #include "Logger.h"
+
 using namespace std;
 
 class Button : public Label
@@ -19,7 +19,7 @@ public:
 
 	virtual void implement_function() {};
 	void mousePressed(int x, int y, bool isLeft);
-	void expand_string(string& s);
+	// void expand_string(string& s);
 	void draw(Graphics& g, short x, short y, size_t z);
 	virtual void setValue(string s);
 };

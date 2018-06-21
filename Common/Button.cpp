@@ -5,14 +5,7 @@ using namespace std;
 
 
 Button::Button() {
-	listeners = 0;
 };
-
-Button::Button(string& s)
-{
-	expand_string(s);
-};
-
 
 Button::~Button() {
 
@@ -20,7 +13,6 @@ Button::~Button() {
 
 void Button::setValue(string s)
 {
-	expand_string(s);
 	Label::setValue(s);
 }
 
@@ -37,13 +29,6 @@ void Button::mousePressed(int x, int y, bool isLeft)
 		}
 	}
 }
-
-
-void Button::expand_string(string& s) {
-	unsigned int sz = s.size();
-	s.resize(sz + 2, ' ');
-}
-
 
 
 void Button::draw(Graphics& g, short x, short y, size_t z)

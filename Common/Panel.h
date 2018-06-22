@@ -13,7 +13,6 @@ public:
 	virtual void keyDown(int keyCode, char charecter) ;
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return false; };
-	void Add(Control* control);
+	void Add(Control* control);	
 	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
 };
-

@@ -1,6 +1,17 @@
 CXX = i686-w64-mingw32-g++
 CPPFLAGS = -std=c++1z -static -g
-OBJS += Common/Control.o Common/EventEngine.o Common/Graphics.o FinalProject/Source.o Common/Label.o Common/Panel.o Common/TextBox.o Common/Logger.o
+OBJS += Common/Control.o \
+	Common/EventEngine.o \
+	Common/Graphics.o \
+	FinalProject/Source.o \
+	Common/Label.o \
+	Common/Panel.o \
+	Common/TextBox.o \
+	Common/Logger.o \
+	Common/CheckList.o \
+	Common/Button.o \
+	Common/SingleLineBorder.o \
+	Common/Logger.o \
 
 %.o: %.cpp
 	$(CXX) $(CPPFLAGS) -c $< -o $@

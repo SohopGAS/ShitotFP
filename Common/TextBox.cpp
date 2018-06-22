@@ -27,7 +27,7 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	g.setCursorVisibility(true);
 	if (!z)
 		g.write(value);
-	
+
 
 
 	// Control::draw(g, 10, 10, 2);
@@ -98,20 +98,55 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 //
 //
 //void TextBox::mousePressed(int x, int y, bool ifFirstButton) {
-//	
+//
 //		int pressed = x - this->getLeft() - 2;
 //		int yTest = y;
 //		if (pressed >= value.size() || (yTest != this->getTop() + 2)) { //checking if the mouse is on the textbox.
 //			return;
-//		
+//
 //		Control::setFocus(*this);
 //
 //		logicalPosition = pressed;
-//	
+//
 //}
 void TextBox::keyDown(int keyCode, char charecter) {
+	if (keyCode == VK_NUMPAD4 || keyCode == VK_LEFT) {
+		// todo: left button
 
+	}
+	else if (keyCode == VK_NUMPAD6 || keyCode == VK_RIGHT) {
+		// todo: right button
+	}
+	else if (keyCode == VK_NUMPAD8 || keyCode == VK_UP) {
+		// todo: up button
+	}
+	else if (keyCode == VK_NUMPAD2 || keyCode == VK_DOWN) {
+		// todo: down button
+	}
+	else if (keyCode == VK_BACK) {
+		// todo: backspace button
+	}
+	else if (keyCode == VK_TAB) {
+		// todo: tab button
+	}
+	else if (keyCode == VK_RETURN) {
+		// todo: return/enter button
+	}
+	else if (keyCode == VK_DELETE) {
+		// todo: delete button
+	}
+	else if ((keyCode >= 0x30 && keyCode <= 0x39) || (keyCode >= 0x60 && keyCode <= 0x69)) {
+		// todo: number button
+		setValue(value + charecter);
+	}
+	else if (keyCode >= 0x41 && keyCode <= 0x5A) {
+		// todo: capital letter button
+		//CLogger
+		setValue(getValue() + charecter);
+	}
 }
+
+
 void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
 	g.setCursorVisibility(true);
 	g.setBackground(bg);

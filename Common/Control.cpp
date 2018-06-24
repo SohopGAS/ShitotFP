@@ -36,7 +36,7 @@ void Control::draw(Graphics& g, short x, short y, size_t z)
 
 }
 
-static void Control::setFocus(Control& control)
+void Control::setFocus(Control& control)
 {
 	Control::static_control = &control;
 	if (static_control == nullptr)

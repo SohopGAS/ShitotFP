@@ -17,7 +17,7 @@ class Form : public Panel
 	TextBox tb;
 	Label l;
 	CheckList ck;
-	Button b;
+	Button button;
 
 
 public:
@@ -37,13 +37,23 @@ public:
 
 			Add(&l);
 
+			button.setValue("button");
+			button.setTop(2);
+			button.setLeft(20);
+			button.setWidth(button.getValue().size() + 2);
+			button.setHeight(1);
+			button.setColor(ColorType::Black, ColorType::Orange);
+			button.setBorderType(b);
+			
+			Add(&button);
+
 			tb.setWidth((short)value.size());
 			tb.setTop(5);
+			tb.setLeft(5);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-			tb.setValue("hello world");
+			//tb.setValue("hello world");
 			tb.setColor(ColorType::Black, ColorType::Orange);
-			tb.setLeft(5);
 			
 			Add(&tb);
 

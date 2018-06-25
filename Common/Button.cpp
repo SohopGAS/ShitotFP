@@ -20,6 +20,17 @@ void Button::mousePressed(int x, int y, bool isLeft)
 void Button::draw(Graphics& g, short x, short y, size_t z)
 {	
 	Control::draw(g, x, y, z);
-	CLogger::GetLogger()->Log("DRAW BUTTON");
-	Label::draw(g, x, y, z);
+	//CLogger::GetLogger()->Log("DRAW BUTTON");
+	OutputDebugStringW(L"Button::draw\n" );
+	
+	g.setBackground(this->bg);
+	g.setForeground(this->fg);
+	g.moveTo(getLeft(), getTop());
+	if (!z)
+		g.write( getValue() );
+	
+}
+
+void Button::keyDown(WORD keyCode, char charecter) {
+
 }

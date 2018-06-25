@@ -6,7 +6,6 @@ class CheckList:public Control
 	vector <string> _options;
 	vector <bool> optionsSelected;
 	int logicalPosition = 0;
-	//Graphics gg;
 public:
 	CheckList();
 	CheckList(int height, int width, vector<string> ListOfStrings, string Square_shape = "( ) ")  {
@@ -33,8 +32,9 @@ public:
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
 	void focusOn() {
-		//gg.moveTo(this->getLeft() + 2, this->getTop() + logicalPosition + 1);
-		//gg.setCursorVisibility(true);
+		OutputDebugStringW(L"focus on checklist\n");
+		graphic.moveTo(left+1, top + logicalPosition );
+		graphic.setCursorVisibility(true);
 	};
 	void getAllControls(vector<Control*>* controls) {};
 	bool canGetFocus() { return true; };

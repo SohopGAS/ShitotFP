@@ -3,12 +3,11 @@
 
 void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 {
-
-
-
-	Control::draw(g, this->getLeft() + left, this->getTop() + top, layer);
+	Control::draw(g, this->getLeft(), this->getTop() , layer);
+	
 	int vector_size = _options.size();
 	g.moveTo(this->getLeft() , this->getTop() );
+
 	for (int i = 0; i < vector_size; i++) {
 		g.setBackground(this->bg);
 		g.setForeground(this->fg);
@@ -17,18 +16,19 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 				g.setBackground(ColorType::Red);
 			}
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);
+			g.moveTo(this->getLeft() , this->getTop()  + i + 1);
 
 		}
 		else {
 			g.setBackground(this->bg);
 			g.setForeground(this->fg);
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left , this->getLeft() + left + i + 1);
+			g.moveTo(this->getLeft() , this->getTop() + i + 1);
 		}
 
 	}
-	g.setBackground(this->bg);
+	
+	//g.setBackground(this->bg);
 
 }
 
@@ -37,6 +37,7 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 //	this->draw(Control::graphics, panelLeft, panelTop, 1);
 //	Control::graphics.moveTo(panelLeft + 2, panelTop + logicalPosition + 1);
 //}
+
 void CheckList::keyDown(WORD code, char chr) {
 	
 	switch (code) {
@@ -67,6 +68,7 @@ void CheckList::keyDown(WORD code, char chr) {
 
 	}
 }
+
 //void CheckList::mousePressed(int x, int y, bool isLeft) {
 //	if (isInside(x, y, this->getLeft(), this->getTop(), this->getWidth(), this->getHeight()))
 //	{
@@ -74,6 +76,7 @@ void CheckList::keyDown(WORD code, char chr) {
 //	}
 //	
 //}
+
 void CheckList::SetList(vector<string> ListOfStrings, string Square_shape = "( ) ") {
 	_options = ListOfStrings;
 	int size = ListOfStrings.size();

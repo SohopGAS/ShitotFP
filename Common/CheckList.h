@@ -36,7 +36,9 @@ public:
 		graphic.moveTo(left+1, top + logicalPosition );
 		graphic.setCursorVisibility(true);
 	};
-	void getAllControls(vector<Control*>* controls) {};
+	void getAllControls(vector<Control*>* controls) {
+	};
+
 	bool canGetFocus() { return true; };
 };
 

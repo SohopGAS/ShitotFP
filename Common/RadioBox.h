@@ -1,21 +1,25 @@
 #pragma once
-#include "Control.h"
-#include "Label.h"
+
 #include "Panel.h"
+#include "../Common/Label.h"
 
 class RadioBox : public Panel
 {
+private:
+	Label lab1;
+	Label lab2;
+	Label lab3;
 
 public:
-	RadioBox();
+	RadioBox() {};
+	
 	~RadioBox() {};
-	void draw(Graphics& g, short x, short y, size_t z);
 
 	void keyDown(int keyCode, char charecter) {};
 	void mousePressed(int x, int y, bool isLeft) {};
-
-	boolean SelectedItem(int index) {};
-	boolean ClearSelection() {};
+	void init();
+	boolean SelectedItem(int index);
+	boolean ClearSelection();
 
 	bool canGetFocus() { return true; };
 

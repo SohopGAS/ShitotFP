@@ -1,3 +1,4 @@
+#pragma once
 #include "Control.h"
 #include "Graphics.h"
 #include <string>
@@ -10,7 +11,7 @@ class Label : public Control
 private:
 	string value="";
 public:
-	Label() {};
+	Label() { setHeight(1); };
 	Label(string);
 	string getValue() { return value; };
 	void setValue(string);

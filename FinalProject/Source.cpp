@@ -1,7 +1,6 @@
 #include "../Common/Graphics.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
-#include "../Common/Panel.h"
 #include "../Common/BorderType.h"
 #include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
@@ -10,6 +9,7 @@
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
 #include "../Common/DoubleLineBorder.h"
+#include "../Common/RadioBox.h"
 using namespace std;
 
 class Form : public Panel
@@ -18,7 +18,7 @@ class Form : public Panel
 	Label l;
 	CheckList ck;
 	Button button;
-
+	RadioBox rb;
 
 public:
 	Control* _control;
@@ -52,7 +52,6 @@ public:
 			tb.setLeft(5);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-			//tb.setValue("hello world");
 			tb.setColor(ColorType::Black, ColorType::Orange);
 			
 			Add(&tb);
@@ -65,6 +64,14 @@ public:
 			_control = &tb;
 			Add(&ck);
 			
+
+			rb.setTop(8);
+			rb.setLeft(20);
+			rb.setBorderType(b);
+			rb.setColor(ColorType::Black, ColorType::Orange);
+			rb.init();
+
+			Add(&rb);
 		}
 
 };
@@ -75,7 +82,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(30);
+	f.setWidth(40);
 	f.setHeight(20);
 	f.setTop(0);
 	f.setLeft(0);

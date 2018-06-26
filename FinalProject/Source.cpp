@@ -10,6 +10,7 @@
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
 #include "../Common/DoubleLineBorder.h"
+#include"../Common/NumericBox.h"
 using namespace std;
 
 class Form : public Panel
@@ -18,6 +19,7 @@ class Form : public Panel
 	Label l;
 	CheckList ck;
 	Button button;
+	NumericBox numric;
 
 
 public:
@@ -65,6 +67,25 @@ public:
 			_control = &tb;
 			Add(&ck);
 			
+
+			numric.SetMaxValue(5);
+			numric.SetMinValue(1);
+			//numric.setValue(value);
+			numric.setTop(20);
+			numric.setLeft(9);
+			numric.setHeight(1);
+			//numric.setWidth(value.size());
+			numric.setWidth(5);
+			numric.setBorderType(b);
+			numric.setColor(ColorType::Blue, ColorType::Red);
+
+
+
+			Add(&numric);
+
+
+
+
 		}
 
 };

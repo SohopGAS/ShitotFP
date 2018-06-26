@@ -1,3 +1,4 @@
+
 #include "NumericBox.h"
 
 
@@ -10,15 +11,15 @@ NumericBox::NumericBox()
 
 	plus.setValue("+");
 	minus.setValue("-");
-	plus.setTop(getTop());
-	plus.setLeft(getLeft());
+	plus.setTop(1);
+	plus.setLeft(2);
 	plus.setHeight(1);
 	plus.setWidth(plus.getValue().size());
 	//plus.setBorderType();
 	plus.setColor(ColorType::Blue, ColorType::Red);
 
-	minus.setTop(getTop());
-	minus.setLeft(getLeft());
+	minus.setTop(9);
+	minus.setLeft(10);
 	minus.setHeight(1);
 	minus.setWidth(plus.getValue().size());
 	//plus.setBorderType();

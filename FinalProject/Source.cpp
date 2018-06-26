@@ -7,69 +7,64 @@
 #include "../Common/Button.h"
 #include <iostream>
 #include <fstream>
+#include "../Common/CheckList.h"
 #include "../Common/Logger.h"
-#include "../Common/NumericBox.h"
-//#include "../Common/Button.h"
+#include "../Common/DoubleLineBorder.h"
 using namespace std;
 
 class Form : public Panel
 {
-	
 	TextBox tb;
 	Label l;
+	CheckList ck;
 	Button button;
-	NumericBox numric;
+
+
 public:
+	Control* _control;
 		Form()
 		{
-
-			BorderType* b = SingleLineBorder::getinstance();
-
-			string value("label");
+			
+			string value("Enter Name:");
 			l.setValue(value);
-			l.setTop(3);
+			l.setTop(2);
 			l.setLeft(5);
 			l.setHeight(1);
-			l.setWidth( value.size() ) ;
+			l.setWidth(12);
+			l.setColor(ColorType::Black, ColorType::Orange);
+			BorderType* b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
-			l.setColor(ColorType::Blue, ColorType::Red);
 
 			Add(&l);
 
-			tb.setValue("text box");
-			tb.setWidth( tb.getValue().size() );
-			tb.setLeft(1 + (short)value.size() + 1);
-			tb.setTop(8);
-			tb.setHeight(1);
-			tb.setBorderType(b);
-			tb.setColor(ColorType::Green, ColorType::Orange);
-			
-			Add(&tb);
-			//string button("button");
-			string bbb("button");
-			button.setValue(bbb);
-			button.setBorderType(b);
-			button.setTop(12);
+			button.setValue("button");
+			button.setTop(2);
+			button.setLeft(20);
+			button.setWidth(button.getValue().size() + 2);
 			button.setHeight(1);
-			button.setWidth(button.getValue().size() );
-			button.setLeft(2);
-			button.setColor(ColorType::Purple,ColorType::Orange);
+			button.setColor(ColorType::Black, ColorType::Orange);
+			button.setBorderType(b);
+			
 			Add(&button);
 
-			numric.SetMaxValue(5);
-			numric.SetMinValue(1);
-			//numric.setValue(value);
-			numric.setTop(19);
-			numric.setLeft(11);
-			numric.setHeight(1);
-			numric.setWidth(value.size());
-			numric.setBorderType(b);
-			numric.setColor(ColorType::Blue, ColorType::Red);
+			tb.setWidth((short)value.size());
+			tb.setTop(5);
+			tb.setLeft(5);
+			tb.setHeight(1);
+			tb.setBorderType(b);
+			//tb.setValue("hello world");
+			tb.setColor(ColorType::Black, ColorType::Orange);
+			
+			Add(&tb);
 
-
-
-			Add(&numric);
-
+			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
+			ck.setTop(8);
+			ck.setLeft(5);
+			ck.setBorderType(b);
+			ck.setColor(ColorType::Black, ColorType::Orange);
+			_control = &tb;
+			Add(&ck);
+			
 		}
 
 };
@@ -78,13 +73,14 @@ public:
 
 int main(int argc, char** argv)
 {
-	
-
 	EventEngine e;
 	Form f;
-	f.setWidth(70);
-	f.setHeight(25);
-	BorderType* bo = SingleLineBorder::getinstance();
+	f.setWidth(30);
+	f.setHeight(20);
+	f.setTop(0);
+	f.setLeft(0);
+	BorderType* bo = DoubleLineBorder::getinstance();
 	f.setBorderType(bo);
+	f.setFocus(*f._control);
 	e.run(f);
 }

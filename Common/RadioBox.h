@@ -22,6 +22,9 @@ public:
 	void mousePressed(int x, int y, bool isLeft) {};
 
 	boolean SelectedItem(int index) {};
-	boolean ClearSelection() {};
+	boolean ClearSelection() {};
+
+	bool canGetFocus() { return true; };
+
 };
 

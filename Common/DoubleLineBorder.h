@@ -5,10 +5,10 @@
 #include <windows.h>
 #include "BorderType.h"
 
-#define TOP_LEFT_CORNER '\xC9'
-#define TOP_RIGHT_CORNER '\xBB'
-#define BTM_LEFT_CORNER '\xC8'
-#define BTM_RIGHT_CORNER '\xBC'
+#define TOP_LEFT '\xC9'
+#define TOP_RIGHT '\xBB'
+#define BTM_LEFT '\xC8'
+#define BTM_RIGHT '\xBC'
 #define LINE_VERTICAL '\xBA'
 #define LINE_HORIZONTAL '\xCD'
 

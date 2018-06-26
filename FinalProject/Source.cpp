@@ -2,6 +2,8 @@
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/Panel.h"
+#include "../Common/BorderType.h"
+#include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
 #include <iostream>
 #include <fstream>
@@ -13,46 +15,59 @@ class Form : public Panel
 	
 	TextBox tb;
 	Label l;
-	Button b;
+	Button button;
 
 public:
 		Form()
 		{
 
-			string value("Enter Name:");
+			BorderType* b = SingleLineBorder::getinstance();
+
+			string value("label");
 			l.setValue(value);
-			l.setTop(1);
-			l.setLeft(1);
+			l.setTop(3);
+			l.setLeft(5);
+			l.setHeight(1);
+			l.setWidth( value.size() ) ;
+			l.setBorderType(b);
 			l.setColor(ColorType::Blue, ColorType::Red);
-			
+
 			Add(&l);
-			
-			string buttonOf("BUTTON");
-			b.setValue(buttonOf);
-			b.setTop(5);
-			b.setLeft(10);
-			b.setColor(ColorType::Red, ColorType::Green);
-			string buttonChange("button1");
-			b.setValue(buttonChange);
 
-			Add(&b);
-
-			tb.setValue("My TextBox Example");
-			tb.setTop(1);
+			tb.setValue("text box");
+			tb.setWidth( tb.getValue().size() );
 			tb.setLeft(1 + (short)value.size() + 1);
-			tb.setHeight(50);
-			tb.setWidth(50);
+			tb.setTop(8);
+			tb.setHeight(1);
+			tb.setBorderType(b);
+			tb.setColor(ColorType::Green, ColorType::Orange);
 			
 			Add(&tb);
-			
+
+			button.setValue("button");
+			button.setBorderType(b);
+			button.setTop(12);
+			button.setHeight(1);
+			button.setWidth(button.getValue().size() );
+			button.setLeft(2);
+			button.setColor(ColorType::Purple,ColorType::Orange);
+			Add(&button);
+
 		}
-	};
+
+};
 
 
 
 int main(int argc, char** argv)
 {
-	Form f;
+	
+
 	EventEngine e;
+	Form f;
+	f.setWidth(70);
+	f.setHeight(25);
+	BorderType* bo = SingleLineBorder::getinstance();
+	f.setBorderType(bo);
 	e.run(f);
 }

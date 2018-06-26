@@ -39,7 +39,8 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 //}
 
 void CheckList::keyDown(WORD code, char chr) {
-	
+	OutputDebugStringW(L"CheckList:: keyDown\n");
+
 	switch (code) {
 	case VK_UP:
 		if (logicalPosition >= 1) {
@@ -128,7 +129,6 @@ void CheckList::mousePressed(int x, int y, bool ifFirstButton) {
 		logicalPosition = pressed;
 		selectOption();
 	
-
 }
 
 void  CheckList::selectOption() {

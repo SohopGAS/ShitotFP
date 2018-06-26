@@ -1,4 +1,6 @@
-#include "Label.h"
+#pragma once
+#include "../Common/Label.h"
+
 #include <iostream>
 #include <vector>
 #include "../Common/MouseListener.h"
@@ -11,7 +13,7 @@ class Button : public Label
 private:
 	vector<MouseListener*> listeners;
 public:
-	Button() {};
+	Button() { setHeight(1); };
 	Button(string& _s) { this->setValue(_s); };
 	~Button() {};
 	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }

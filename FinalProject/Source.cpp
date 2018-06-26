@@ -1,15 +1,19 @@
+#include <iostream>
+#include <fstream>
+
 #include "../Common/Graphics.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
 #include "../Common/BorderType.h"
+#include "../Common/DoubleLineBorder.h"
 #include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
-#include <iostream>
-#include <fstream>
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
-#include "../Common/DoubleLineBorder.h"
 #include "../Common/RadioBox.h"
+#include "../Common/NumericBox.h"
+#include "../Common/Panel.h"
+
 using namespace std;
 
 class Form : public Panel
@@ -19,7 +23,8 @@ class Form : public Panel
 	CheckList ck;
 	Button button;
 	RadioBox rb;
-
+	NumericBox nb;
+	
 public:
 	Control* _control;
 		Form()
@@ -72,6 +77,15 @@ public:
 			rb.init();
 
 			Add(&rb);
+
+			nb.setTop(15);
+			nb.setLeft(20);
+			nb.setBorderType(b);
+			nb.SetMaxValue(10);
+			nb.SetMinValue(2);
+			nb.setColor(ColorType::Black, ColorType::Orange);
+			nb.init();
+			Add(&nb);
 		}
 
 };

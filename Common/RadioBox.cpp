@@ -12,9 +12,15 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 		g.setBackground(this->bg);
 		g.setForeground(this->fg);
 		if (i == logicalPosition) {
+			
+			
+			// check this again  ---- 
 			if (Control::getFocus() == this) {
 				g.setBackground(ColorType::Red);
 			}
+
+
+
 			Label* lb = (Label*) controls[i];
 			g.write( lb->getValue()  );
 			g.moveTo(this->getLeft(), this->getTop() + i + 1);

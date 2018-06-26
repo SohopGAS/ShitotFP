@@ -20,7 +20,7 @@ public:
 		this->setWidth(width);
 	}
 	~CheckList();
-	void draw(Graphics& g, short x, short y, size_t z) ;
+	void draw(Graphics& g, short x, short y, size_t z);
 	int getSize() { return _options.size(); };
 	void keyDown(WORD keyCode, char charecter);
 	void mousePressed(int x, int y, bool isLeft);

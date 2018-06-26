@@ -20,20 +20,26 @@ TextBox::~TextBox()
 void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
 
-	OutputDebugStringW(L"TextBox::draw\n");
+//	OutputDebugStringW(L"TextBox::draw\n");
 
 	g.setCursorVisibility(true);
 	g.write(left + 1, top + 1, value);
 	g.moveTo(left + value.size(), top);
 
-
-	//g.setBackground(this->bg);
-	//g.setForeground(this->fg);
-	//g.moveTo(getLeft(), getTop());
-	//if (!z)
-	//	g.write(value);
 }
 
+
+void TextBox::keyDown(int keyCode, char charecter) {
+	OutputDebugStringW(L"TextBox::keyDown\n");
+}
+void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
+
+	OutputDebugStringW(L"TextBox::mousePressed\n");
+
+	g.setCursorVisibility(true);
+	g.setBackground(bg);
+	g.setForeground(fg);
+}
 //
 //void TextBox::keyDown(WORD code, CHAR c) {
 //	if (code == 0x46) { // F key for debaging
@@ -107,11 +113,4 @@ void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 //		logicalPosition = pressed;
 //	
 //}
-void TextBox::keyDown(int keyCode, char charecter) {
 
-}
-void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
-	g.setCursorVisibility(true);
-	g.setBackground(bg);
-	g.setForeground(fg);
-}

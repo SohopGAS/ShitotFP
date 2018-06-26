@@ -32,7 +32,7 @@ public:
 			l.setHeight(1);
 			l.setWidth(12);
 			l.setColor(ColorType::Black, ColorType::Orange);
-			BorderType* b = DoubleLineBorder::getinstance();
+			BorderType* b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
 
 			Add(&l);

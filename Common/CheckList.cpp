@@ -114,6 +114,7 @@ void CheckList::DeselectIndex(size_t index) {
 }
 
 void CheckList::mousePressed(int x, int y, bool ifFirstButton) {
+
 	if (!ifFirstButton || !isInside(x, y, this->getLeft() , this->getTop(), this->getWidth(),this->getHeight()) ) {
 		//||x != this->getLeft() + 2
 		return;

@@ -1,8 +1,7 @@
 #pragma once
-#include "Control.h"
 #include "../Common/Button.h"
 #include"../Common/Panel.h"
-#include "..//Common/Label.h"
+
 
 
 class OnClickPlus : public MouseListener
@@ -29,7 +28,7 @@ public:
 
 
 
-class NumericBox : public Control
+class NumericBox : public Panel
 {
 
 protected:
@@ -38,18 +37,17 @@ protected:
 	OnClickMinus minus_;
 
 	Button plus, minus;
-	Label label_value;
+	//Label label_value;
 
 
 
 public:
-	NumericBox() {};
-	NumericBox(int minVal, int maxVal) ;
+	NumericBox();
 	
 
 	// need 
-	void draw(Graphics& g, short x, short y, size_t z);
-	
+	void set_minVal(int _minVal) {this->minVal = _minVal;};
+	void set_maxVal(int _maxVal) { this->maxVal = _maxVal; };
 	// need 
 	void mousePressed(int x, int y, bool isLeft);
 	
@@ -60,6 +58,7 @@ public:
 	//void SetValue(int val);
 	void SetMaxValue(int val) { maxVal = val; }
 	void SetMinValue(int val) { minVal = val; }
+
 	int GetValue() { return val; }
 	bool canGetFocus() { return false; }
 	~NumericBox() {};

@@ -24,12 +24,12 @@ public:
 	Control(BorderType* _bt) : bt(_bt) {};
 	Control(Graphics& g, short x, short y, short width, short height);
 	// position setter
-	void setTop(short _top) 			{ this->top = _top; 			};
-	void setLeft(short _left) 		{ this->left = _left; 		};
-	void setWidth(short _width) 	{ this->width= _width; 		};
+	void setTop(short _top) { this->top = _top; };
+	void setLeft(short _left) { this->left = _left; };
+	void setWidth(short _width) { this->width = _width; };
 	void setHeight(short _height) { this->height = _height; };
-	void setBackground(ColorType _bg) {this->bg = _bg; };
-	void setForeground(ColorType _fg) {this->fg = _fg; };
+	void setBackground(ColorType _bg) { this->bg = _bg; };
+	void setForeground(ColorType _fg) { this->fg = _fg; };
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 	static void setFocus(Control& control) { static_control = &control; };
 	void setBorderType(BorderType* _bt) { bt = _bt; };

@@ -8,6 +8,8 @@
 #include <iostream>
 #include <fstream>
 #include "../Common/Logger.h"
+#include "../Common/NumericBox.h"
+//#include "../Common/Button.h"
 using namespace std;
 
 class Form : public Panel
@@ -16,7 +18,7 @@ class Form : public Panel
 	TextBox tb;
 	Label l;
 	Button button;
-
+	NumericBox numric;
 public:
 		Form()
 		{
@@ -43,8 +45,9 @@ public:
 			tb.setColor(ColorType::Green, ColorType::Orange);
 			
 			Add(&tb);
-
-			button.setValue("button");
+			//string button("button");
+			string bbb("button");
+			button.setValue(bbb);
 			button.setBorderType(b);
 			button.setTop(12);
 			button.setHeight(1);
@@ -52,6 +55,20 @@ public:
 			button.setLeft(2);
 			button.setColor(ColorType::Purple,ColorType::Orange);
 			Add(&button);
+
+			numric.SetMaxValue(5);
+			numric.SetMinValue(1);
+			//numric.setValue(value);
+			numric.setTop(19);
+			numric.setLeft(11);
+			numric.setHeight(1);
+			numric.setWidth(value.size());
+			numric.setBorderType(b);
+			numric.setColor(ColorType::Blue, ColorType::Red);
+
+
+
+			Add(&numric);
 
 		}
 

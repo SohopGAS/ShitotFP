@@ -1,3 +1,4 @@
+#pragma once
 #include "Control.h"
 
 class Panel : public Control

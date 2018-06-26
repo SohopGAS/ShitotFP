@@ -13,7 +13,7 @@ EventEngine::EventEngine(DWORD input, DWORD output)
 
 void EventEngine::run(Control &c)
 {
-	CLogger::GetLogger()->Log("event engine runinng");
+//	CLogger::GetLogger()->Log("event engine runinng");
 	for (bool redraw = true;;)
 	{
 		if (redraw)

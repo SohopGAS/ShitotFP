@@ -18,6 +18,5 @@ public:
 		OutputDebugStringW(L"focus on panel");
 	}
 	
-	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
 };
 

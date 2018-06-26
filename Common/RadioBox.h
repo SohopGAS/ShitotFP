@@ -1,20 +1,13 @@
 #pragma once
 #include "Control.h"
 #include "Label.h"
+#include "Panel.h"
 
-class RadioBox : public Control
+class RadioBox : public Panel
 {
-private:
-	Label l1;
-	Label l2;
-	Label l3;
+
 public:
-	RadioBox() {
-		string s = "radio box :";
-		l1.setValue(s) ;
-		l2.setValue(s);
-		l3.setValue(s);
-	};
+	RadioBox();
 	~RadioBox() {};
 	void draw(Graphics& g, short x, short y, size_t z);
 

@@ -1,3 +1,4 @@
+#pragma once
 #include "Control.h"
 
 class Panel : public Control
@@ -13,6 +14,10 @@ public:
 	virtual void keyDown(int keyCode, char charecter) ;
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return false; };
-	void Add(Control* control);	
-	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
+	void Add(Control* control);
+	//vector<Control*> getControls() {return controls; };
+	void focusOn() {
+		OutputDebugStringW(L"focus on panel");
+	}
+
 };

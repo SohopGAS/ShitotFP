@@ -9,6 +9,7 @@
 #include <fstream>
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
+
 using namespace std;
 
 class Form : public Panel

@@ -12,6 +12,12 @@ Control::Control() : bt(NULL)
 
 Control::Control(Graphics & g, short x, short y, short width, short height) : bt(NULL)
 {
+	graphic = g;
+	left = x;
+	top = y;
+	width = width;
+	height = height;
+}
 
 };
 

@@ -2,10 +2,12 @@
 
 void Panel::mousePressed(int x, int y, bool isLeft)
 {
+	OutputDebugStringW(L"Panel::mousePressed\n");
 	int i;
 	for (i = 0; i < controls.size(); i++) {
-		if( isInside(x,y,controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight() ) );
+		if( isInside(x,y,controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight() ) )
 		{
+			OutputDebugStringW(L"Panel::mousePressed is inside\n");
 			controls[i]->mousePressed(x, y, isLeft);
 		}
 	}

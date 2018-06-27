@@ -17,6 +17,7 @@ protected:
 	static Control* static_control;
 	ColorType bg, fg;
 	BorderType* bt;
+	Graphics graphic;
 
 public:
 	// Constructors & Destructors.
@@ -35,8 +36,10 @@ public:
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 	static void setFocus(Control& control);
 	void setBorderType(BorderType* _bt) { bt = _bt; };
-
-	// Getter functions. (1) Virtual.
+	// position getter
+	virtual void focusOn() {
+		OutputDebugStringW(L"focus on Control");
+	};
 	virtual	short getLeft() { return left; };
 	virtual	short getTop() { return top; };
 	virtual	short getWidth() { return width; };
@@ -52,7 +55,9 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft) {};
 	virtual void keyDown(WORD keyCode, char charecter) {};
 	virtual bool canGetFocus() { return false; };
-	virtual void focusOn() {};
-	// virtual bool myPureFunction() = 0;
+    //virtual bool myPureFunction() = 0;
+
+
+	virtual void nowInFocus() {};
 
 };

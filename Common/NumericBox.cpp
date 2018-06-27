@@ -1,68 +1,127 @@
 #include "NumericBox.h"
 
-
+#include <iostream>   // std::cout
+#include <string>     // std::string, std::stoi
 
 
 NumericBox::NumericBox()
-{	
+{
 }
 
 
 
 void NumericBox::mousePressed(int x, int y, bool isLeft) {
-	//CLogger::GetLogger()->Log("mouse pressed numric");
-	//CLogger::GetLogger()->Log("COORD %d ,%d , %d ", x, y, left);
-	if (isInside(x, y, getLeft(), getTop(), getWidth(), getHeight())) {
+	
+	OutputDebugStringW(L"Numric Box :: mousePressed\n");
+	std::string::size_type sz, sz2;
+	int result_change;
+	int i;
+	for (i = 0; i < controls.size(); i++) {
+		OutputDebugStringW(L"Numric Box :: for loop \n");/*if(controls[i].plus_ == true)
+				{
+					OutputDebugStringW(L"on click\n");
+				}*/
 
-		//for (MouseListener* listener : listeners) {
-		//	listener->MousePressed(x, y, isLeft);
-		//}
+		if ( i != 1) {
 
+			if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
+			{
+				Button* bt = (Button *)controls[i];
+				int j = 0;
+				string string_change1;
+				int string_change2;
+				//Label* lb = (Label *)controls[i + 1];
+				bt->listeners[0]->MousePressed(x, y, isLeft);
+				
+					//Label * lb = (Label *)controls[i];
+					//result_change =stoi(getva, &sz);
+					string_change2 = stoi(this->label_value.getValue(), &sz);
+					string_change2= string_change2+ 1;
+					string_change1=std::to_string(string_change2);
+					this->label_value.setValue(string_change1);
+
+					//Button* bt_minus = (Button *)controls[2];
+				
+					//string string_change_minus1;
+					//int string_change2_minus;
+					////Label* lb = (Label *)controls[i + 1];
+					//bt_minus->listeners[2]->MousePressed(x, y, isLeft);
+
+					////Label * lb = (Label *)controls[i];
+					////result_change =stoi(getva, &sz);
+					//string_change2_minus = stoi(this->label_value.getValue(), &sz2);
+					//string_change2_minus = string_change2_minus -1;
+					//string_change1 = std::to_string(string_change2_minus);
+					//this->label_value.setValue(string_change_minus1);
+
+				
+				
+				
+			
+				//if ( bt->listeners[0]->MousePressed(x, y, isLeft) == true) {
+				//	this->l
+				//	//label ++
+				//}
+				OutputDebugStringW(L"bla bla\n");
+			}
+		}
 	}
+
 }
+
+//void NumericBox::onClikck_plus()
+//{
+//	if (this->Add.plus_ = true)
+//	{
+//		this->Add
+//	}
+//}
 
 void NumericBox::init()
 {
 
 	plus.setValue("+");
 	minus.setValue("-");
-	plus.setTop( getTop() );
-	plus.setLeft( getLeft() );
-	plus.setHeight(3);
-	plus.setWidth(3);
+	plus.setTop( getTop()+(1));
+	plus.setLeft( getLeft()+1 );
+	//plus.setHeight(2);
+	//plus.setWidth(2);
 	plus.setWidth(plus.getValue().size());
 	
-	//BorderType* z = SingleLineBorder::getinstance();
-	//plus.setBorderType(z);
-	
-
-
+	BorderType* border_plus = SingleLineBorder::getinstance();
+	plus.setBorderType(border_plus);
 	plus.setColor(ColorType::Black, ColorType::Orange);
 
-
+	
 
 	label_value.setValue("1");
-	label_value.setLeft( plus.getLeft() +2 );
-	label_value.setTop( getTop() );
+	label_value.setLeft( plus.getLeft() +5);
+	label_value.setTop( getTop()+1 );
 
 	label_value.setColor(ColorType::Black, ColorType::Orange);
 
 
-	minus.setTop(getTop());
-	minus.setLeft( label_value.getLeft()+2 );
+	minus.setTop(getTop()+1);
+	minus.setLeft( plus.getLeft() +9);
 	minus.setWidth(minus.getValue().size());
 	//plus.setBorderType();
 	minus.setColor(ColorType::Black, ColorType::Orange);
+	BorderType* border_minus = SingleLineBorder::getinstance();
+	minus.setBorderType(border_minus);
 
 	
 	//getLeft()  minus.getLeft() +1 
 	//  need to place elsewhere 
-	setWidth(5);
-	setHeight(1);
+	setWidth(12);
+	setHeight(3);
+
+	plus.AddListener(this->plus_);
+	minus.AddListener(this->minus_);
 
 
-	Add(&minus);
-	Add(&label_value);
+
 	Add(&plus);
+	Add(&label_value);
+	Add(&minus);
 
 }

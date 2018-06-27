@@ -10,9 +10,8 @@ using namespace std;
 
 class Button : public Label
 {
-private:
-	vector<MouseListener*> listeners;
 public:
+	vector<MouseListener*> listeners;
 	Button() { setHeight(1); };
 	Button(string& _s) { this->setValue(_s); };
 	~Button() {};

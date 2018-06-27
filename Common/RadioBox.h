@@ -24,5 +24,7 @@ public:
 	boolean SelectedItem(int index) {};
 	boolean ClearSelection() {};
 
+	bool canGetFocus() { return true; };
+
 };
 

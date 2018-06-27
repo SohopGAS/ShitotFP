@@ -4,7 +4,7 @@ TextBox::TextBox()
 {
 }
 
-TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 10) : Control()
+TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 1) : Control()
 {
 	setLeft(_left);
 	setTop(_top);
@@ -17,24 +17,28 @@ TextBox::~TextBox()
 {
 }
 
-void TextBox::draw(Graphics& g, short x, short y, size_t z) {
+void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
-	g.moveTo(getLeft(), getTop());
 
-	g.setBackground(this->bg);
-	g.setForeground(this->fg);
-	g.moveTo(getLeft(), getTop());
+//	OutputDebugStringW(L"TextBox::draw\n");
+
 	g.setCursorVisibility(true);
-	if (!z)
-		g.write(value);
-	
+	g.write(left + 1, top + 1, value);
+	g.moveTo(left + value.size(), top);
+
+}
 
 
-	// Control::draw(g, 10, 10, 2);
-	setValue("heeyyyyyy");
+void TextBox::keyDown(int keyCode, char charecter) {
+	OutputDebugStringW(L"TextBox::keyDown\n");
+}
+void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
 
+	OutputDebugStringW(L"TextBox::mousePressed\n");
 
-//	g.write(this->_value);
+	g.setCursorVisibility(true);
+	g.setBackground(bg);
+	g.setForeground(fg);
 }
 //
 //void TextBox::keyDown(WORD code, CHAR c) {
@@ -109,11 +113,4 @@ void TextBox::draw(Graphics& g, short x, short y, size_t z) {
 //		logicalPosition = pressed;
 //	
 //}
-void TextBox::keyDown(int keyCode, char charecter) {
 
-}
-void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
-	g.setCursorVisibility(true);
-	g.setBackground(bg);
-	g.setForeground(fg);
-}

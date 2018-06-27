@@ -18,7 +18,7 @@ protected:
 	ColorType bg, fg;
 	BorderType* bt;	
 	
-	
+	Graphics graphic;
 
 public:
 	Control();
@@ -37,7 +37,7 @@ public:
 	void setBorderType(BorderType* _bt) { bt = _bt; };
 	// position getter
 	virtual void focusOn() {
-	
+		OutputDebugStringW(L"focus on Control");
 	};
 	virtual	short getLeft() { return left; };
 	virtual	short getTop() { return top; };
@@ -55,8 +55,10 @@ public:
 
 	virtual void getAllControls(vector<Control*>* controls) {};
 	virtual bool canGetFocus() { return false; };
-    //virtual bool myPureFunction() = 0;
+    //virtual bool myPureFunction() = 0;	
 
+
+	virtual void nowInFocus() {};
 
 	~Control();
 };

@@ -1,15 +1,19 @@
+#include <iostream>
+#include <fstream>
+
 #include "../Common/Graphics.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
-#include "../Common/Panel.h"
 #include "../Common/BorderType.h"
+#include "../Common/DoubleLineBorder.h"
 #include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
-#include <iostream>
-#include <fstream>
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
-#include "../Common/DoubleLineBorder.h"
+#include "../Common/RadioBox.h"
+#include "../Common/NumericBox.h"
+#include "../Common/Panel.h"
+
 using namespace std;
 
 class Form : public Panel
@@ -18,8 +22,9 @@ class Form : public Panel
 	Label l;
 	CheckList ck;
 	Button button;
-
-
+	RadioBox rb;
+	NumericBox nb;
+	
 public:
 	Control* _control;
 		Form()
@@ -52,7 +57,6 @@ public:
 			tb.setLeft(5);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-			//tb.setValue("hello world");
 			tb.setColor(ColorType::Black, ColorType::Orange);
 			
 			Add(&tb);
@@ -65,6 +69,23 @@ public:
 			_control = &tb;
 			Add(&ck);
 			
+
+			rb.setTop(8);
+			rb.setLeft(20);
+			rb.setBorderType(b);
+			rb.setColor(ColorType::Black, ColorType::Orange);
+			rb.init();
+
+			Add(&rb);
+
+			nb.setTop(15);
+			nb.setLeft(20);
+			nb.setBorderType(b);
+			nb.SetMaxValue(10);
+			nb.SetMinValue(2);
+			nb.setColor(ColorType::Black, ColorType::Orange);
+			nb.init();
+			Add(&nb);
 		}
 
 };
@@ -75,7 +96,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(30);
+	f.setWidth(40);
 	f.setHeight(20);
 	f.setTop(0);
 	f.setLeft(0);

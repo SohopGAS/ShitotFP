@@ -1,51 +1,17 @@
-
 #include "NumericBox.h"
 
 
 
 
-
-
 NumericBox::NumericBox()
-{
-
-	plus.setValue("+");
-	minus.setValue("-");
-	plus.setTop(1);
-	plus.setLeft(2);
-	plus.setHeight(1);
-	plus.setWidth(plus.getValue().size());
-	//plus.setBorderType();
-	plus.setColor(ColorType::Blue, ColorType::Red);
-
-	minus.setTop(9);
-	minus.setLeft(10);
-	minus.setHeight(1);
-	minus.setWidth(plus.getValue().size());
-	//plus.setBorderType();
-	minus.setColor(ColorType::Blue, ColorType::Red);
-
-
-	Add(&minus);
-	Add(&plus);
-
-
-
-
-	
-	
-
-
-
-
+{	
 }
 
 
 
 void NumericBox::mousePressed(int x, int y, bool isLeft) {
-
-	CLogger::GetLogger()->Log("mouse pressed numric");
-	CLogger::GetLogger()->Log("COORD %d ,%d , %d ", x, y, left);
+	//CLogger::GetLogger()->Log("mouse pressed numric");
+	//CLogger::GetLogger()->Log("COORD %d ,%d , %d ", x, y, left);
 	if (isInside(x, y, getLeft(), getTop(), getWidth(), getHeight())) {
 
 		//for (MouseListener* listener : listeners) {
@@ -53,4 +19,50 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 		//}
 
 	}
+}
+
+void NumericBox::init()
+{
+
+	plus.setValue("+");
+	minus.setValue("-");
+	plus.setTop( getTop() );
+	plus.setLeft( getLeft() );
+	plus.setHeight(3);
+	plus.setWidth(3);
+	plus.setWidth(plus.getValue().size());
+	
+	//BorderType* z = SingleLineBorder::getinstance();
+	//plus.setBorderType(z);
+	
+
+
+	plus.setColor(ColorType::Black, ColorType::Orange);
+
+
+
+	label_value.setValue("1");
+	label_value.setLeft( plus.getLeft() +2 );
+	label_value.setTop( getTop() );
+
+	label_value.setColor(ColorType::Black, ColorType::Orange);
+
+
+	minus.setTop(getTop());
+	minus.setLeft( label_value.getLeft()+2 );
+	minus.setWidth(minus.getValue().size());
+	//plus.setBorderType();
+	minus.setColor(ColorType::Black, ColorType::Orange);
+
+	
+	//getLeft()  minus.getLeft() +1 
+	//  need to place elsewhere 
+	setWidth(5);
+	setHeight(1);
+
+
+	Add(&minus);
+	Add(&label_value);
+	Add(&plus);
+
 }

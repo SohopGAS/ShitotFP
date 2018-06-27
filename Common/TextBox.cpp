@@ -2,6 +2,11 @@
 
 TextBox::TextBox()
 {
+	setLeft(0);
+	setTop(0);
+	setWidth(3);
+	setHeight(1);
+
 }
 
 TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 1) : Control()

@@ -1,16 +1,19 @@
+#include <iostream>
+#include <fstream>
+
 #include "../Common/Graphics.h"
 #include "../Common/EventEngine.h"
 #include "../Common/TextBox.h"
-#include "../Common/Panel.h"
 #include "../Common/BorderType.h"
+#include "../Common/DoubleLineBorder.h"
 #include "../Common/SingleLineBorder.h"
 #include "../Common/Button.h"
-#include <iostream>
-#include <fstream>
 #include "../Common/CheckList.h"
 #include "../Common/Logger.h"
-#include "../Common/DoubleLineBorder.h"
-#include"../Common/NumericBox.h"
+#include "../Common/RadioBox.h"
+#include "../Common/NumericBox.h"
+#include "../Common/Panel.h"
+
 using namespace std;
 
 class Form : public Panel
@@ -19,9 +22,9 @@ class Form : public Panel
 	Label l;
 	CheckList ck;
 	Button button;
-	NumericBox numric;
-
-
+	RadioBox rb;
+	NumericBox nb;
+	
 public:
 	Control* _control;
 		Form()
@@ -54,7 +57,6 @@ public:
 			tb.setLeft(5);
 			tb.setHeight(1);
 			tb.setBorderType(b);
-			//tb.setValue("hello world");
 			tb.setColor(ColorType::Black, ColorType::Orange);
 			
 			Add(&tb);
@@ -68,24 +70,22 @@ public:
 			Add(&ck);
 			
 
-			numric.SetMaxValue(5);
-			numric.SetMinValue(1);
-			//numric.setValue(value);
-			numric.setTop(20);
-			numric.setLeft(9);
-			numric.setHeight(1);
-			//numric.setWidth(value.size());
-			numric.setWidth(5);
-			numric.setBorderType(b);
-			numric.setColor(ColorType::Blue, ColorType::Red);
+			rb.setTop(8);
+			rb.setLeft(20);
+			rb.setBorderType(b);
+			rb.setColor(ColorType::Black, ColorType::Orange);
+			rb.init();
 
+			Add(&rb);
 
-
-			Add(&numric);
-
-
-
-
+			nb.setTop(15);
+			nb.setLeft(20);
+			nb.setBorderType(b);
+			nb.SetMaxValue(10);
+			nb.SetMinValue(2);
+			nb.setColor(ColorType::Black, ColorType::Orange);
+			nb.init();
+			Add(&nb);
 		}
 
 };
@@ -96,7 +96,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(30);
+	f.setWidth(40);
 	f.setHeight(20);
 	f.setTop(0);
 	f.setLeft(0);

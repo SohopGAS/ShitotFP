@@ -7,7 +7,6 @@ class CheckList:public Control
 	// using controls form panel - using labels
 	vector <string> _options;
 
-
 	vector <bool> optionsSelected;
 	int logicalPosition = 0;
 

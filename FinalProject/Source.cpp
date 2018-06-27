@@ -12,8 +12,7 @@
 #include "../Common/Logger.h"
 #include "../Common/RadioBox.h"
 #include "../Common/NumericBox.h"
-#include "../Common/Panel.h"
-
+#include "../Common/Message.h"
 using namespace std;
 
 class Form : public Panel
@@ -24,7 +23,8 @@ class Form : public Panel
 	Button button;
 	RadioBox rb;
 	NumericBox nb;
-	
+	Message msg;
+
 public:
 	Control* _control;
 		Form()
@@ -86,6 +86,16 @@ public:
 			nb.setColor(ColorType::Black, ColorType::Orange);
 			nb.init();
 			Add(&nb);
+
+			msg.setTop(18);
+			msg.setLeft(8);
+			msg.setBorderType(b);
+			msg.setWidth(10);
+			msg.setHeight(1);
+			msg.setColor(ColorType::Black, ColorType::Orange);
+			msg.init();
+			Add(&msg);
+				
 		}
 
 };

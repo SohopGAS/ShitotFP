@@ -19,7 +19,7 @@ public:
 	void keyDown(WORD  code, char charecter);
 	void mousePressed(int x, int y, bool isLeft);
 	void init();
-	boolean SelectedItem(int logicalPosition);
+	boolean SelectedItem(int index);
 	boolean ClearSelection();
 
 	// return label value 

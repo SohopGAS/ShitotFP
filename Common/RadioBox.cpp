@@ -14,7 +14,7 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 		if (i == logicalPosition) {
 			
 			
-			// check this again  ---- 
+			// check this loop again  ---- 
 			if (Control::getFocus() == this) {
 				g.setBackground(ColorType::Red);
 			}
@@ -35,9 +35,6 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 		}
 
 	}
-
-	//g.setBackground(this->bg);
-
 }
 
 
@@ -55,26 +52,22 @@ void RadioBox::selectOption() {
 		
 
 		// change string in Label    Based on logicalPosition
-		// cast from vector controls Control* to Label*   
-		Label* l = (Label*)controls[logicalPosition];
+		Label* l = (Label*)controls[logicalPosition];					// cast from vector controls Control* to Label*   
 		
 		l->setValue( l->getValue().replace(1, 1, "X") );
 		
 		int i = 0;		
 		for (; i < optionsSelected.size();i++ ) {
-			
 			if ( i !=  logicalPosition) {
 				optionsSelected[i] = false;
 				Label* tmp_label = (Label*)controls[i];
 				tmp_label->setValue(  tmp_label->getValue().replace(1, 1, " ")  );
 			}
-			
 		}
-		
 	}
 	else {
 		//		if true -- press again on selcted option   ---   do nothing if is there 
-		OutputDebugStringW(L"  optionsSelected[logicalPosition] =      false    ;\n");
+		OutputDebugStringW(L"  optionsSelected[logicalPosition] =      true -- not change     ;\n");
 	}
 
 }
@@ -82,6 +75,11 @@ void RadioBox::selectOption() {
 
 boolean RadioBox::ClearSelection()
 {
+	for (bool op : optionsSelected) {
+		op = false;
+	}
+	logicalPosition = 0;
+
 	return true;
 }
 

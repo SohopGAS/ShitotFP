@@ -1,6 +1,8 @@
 #pragma once
 #include "../Common/Button.h"
 #include "../Common/Panel.h"
+#include "../Common/BorderType.h"
+#include "../Common/SingleLineBorder.h""
 
 class OnClickPlus : public MouseListener
 {

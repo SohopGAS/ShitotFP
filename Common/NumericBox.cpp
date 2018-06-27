@@ -28,10 +28,18 @@ void NumericBox::init()
 	minus.setValue("-");
 	plus.setTop( getTop() );
 	plus.setLeft( getLeft() );
-
+	plus.setHeight(3);
+	plus.setWidth(3);
 	plus.setWidth(plus.getValue().size());
-	//plus.setBorderType();
+	
+	//BorderType* z = SingleLineBorder::getinstance();
+	//plus.setBorderType(z);
+	
+
+
 	plus.setColor(ColorType::Black, ColorType::Orange);
+
+
 
 	label_value.setValue("1");
 	label_value.setLeft( plus.getLeft() +2 );

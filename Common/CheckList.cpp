@@ -17,14 +17,14 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 				g.setBackground(ColorType::Red);
 			}
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);
+			g.moveTo(this->getLeft() + left, this->getTop() + top + i + 1);
 
 		}
 		else {
 			g.setBackground(this->bg);
 			g.setForeground(this->fg);
 			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left , this->getLeft() + left + i + 1);
+			g.moveTo(this->getLeft() + left , this->getTop() + top + i + 1);
 		}
 
 	}

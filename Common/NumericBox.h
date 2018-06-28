@@ -60,8 +60,8 @@ public:
 	void set_maxVal(int _maxVal) { this->maxVal = _maxVal; };
 	// need 
 	void mousePressed(int x, int y, bool isLeft);
-
-	
+	int get_minVal() { return minVal; };
+	int get_maxVal() { return maxVal; };
 	// no need to handel keydown
 	void keyDown(int keyCode, char charecter) {};
 

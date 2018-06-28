@@ -22,7 +22,7 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 					OutputDebugStringW(L"on click\n");
 				}*/
 
-		if ( i == 0) {
+		if (i == 0) {
 
 			if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
 			{
@@ -32,32 +32,75 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 				int string_change2;
 				//Label* lb = (Label *)controls[i + 1];
 				bt->listeners[0]->MousePressed(x, y, isLeft);
-				
-					//Label * lb = (Label *)controls[i];
-					//result_change =stoi(getva, &sz);
-					string_change2 = stoi(this->label_value.getValue(), &sz);
-					string_change2= string_change2+ 1;
-					string_change1=std::to_string(string_change2);
-					this->label_value.setValue(string_change1);
 
-					//Button* bt_minus = (Button *)controls[2];
-				
-					//string string_change_minus1;
-					//int string_change2_minus;
-					////Label* lb = (Label *)controls[i + 1];
-					//bt_minus->listeners[2]->MousePressed(x, y, isLeft);
+				//Label * lb = (Label *)controls[i];
+				//result_change =stoi(getva, &sz);
+				string_change2 = stoi(this->label_value.getValue(), &sz);
+				string_change2 = string_change2 + 1;
+				string_change1 = std::to_string(string_change2);
+				this->label_value.setValue(string_change1);
 
-					////Label * lb = (Label *)controls[i];
-					////result_change =stoi(getva, &sz);
-					//string_change2_minus = stoi(this->label_value.getValue(), &sz2);
-					//string_change2_minus = string_change2_minus -1;
-					//string_change1 = std::to_string(string_change2_minus);
-					//this->label_value.setValue(string_change_minus1);
+				//Button* bt_minus = (Button *)controls[2];
 
-				
-				
-				
-			
+				//string string_change_minus1;
+				//int string_change2_minus;
+				////Label* lb = (Label *)controls[i + 1];
+				//bt_minus->listeners[2]->MousePressed(x, y, isLeft);
+
+				////Label * lb = (Label *)controls[i];
+				////result_change =stoi(getva, &sz);
+				//string_change2_minus = stoi(this->label_value.getValue(), &sz2);
+				//string_change2_minus = string_change2_minus -1;
+				//string_change1 = std::to_string(string_change2_minus);
+				//this->label_value.setValue(string_change_minus1);
+
+
+
+
+
+			//if ( bt->listeners[0]->MousePressed(x, y, isLeft) == true) {
+			//	this->l
+			//	//label ++
+			//}
+				OutputDebugStringW(L"bla bla\n");
+			}
+		}
+
+		else if (i == 2) {
+			if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
+			{
+				Button* bt_minus = (Button *)controls[i];
+				int j = 0;
+				string string_change1_minus;
+				int string_change2_minus;
+				//Label* lb = (Label *)controls[i + 1];
+				bt_minus->listeners[0]->MousePressed(x, y, isLeft);
+
+				//Label * lb = (Label *)controls[i];
+				//result_change =stoi(getva, &sz);
+				string_change2_minus = stoi(this->label_value.getValue(), &sz2);
+				string_change2_minus = string_change2_minus - 1;
+				string_change1_minus = std::to_string(string_change2_minus);
+				this->label_value.setValue(string_change1_minus);
+
+				//Button* bt_minus = (Button *)controls[2];
+
+				//string string_change_minus1;
+				//int string_change2_minus;
+				////Label* lb = (Label *)controls[i + 1];
+				//bt_minus->listeners[2]->MousePressed(x, y, isLeft);
+
+				////Label * lb = (Label *)controls[i];
+				////result_change =stoi(getva, &sz);
+				//string_change2_minus = stoi(this->label_value.getValue(), &sz2);
+				//string_change2_minus = string_change2_minus -1;
+				//string_change1 = std::to_string(string_change2_minus);
+				//this->label_value.setValue(string_change_minus1);
+
+
+
+
+
 				//if ( bt->listeners[0]->MousePressed(x, y, isLeft) == true) {
 				//	this->l
 				//	//label ++
@@ -65,9 +108,13 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 				OutputDebugStringW(L"bla bla\n");
 			}
 		}
+
 	}
 
-}
+
+	}
+
+
 
 //void NumericBox::onClikck_plus()
 //{

@@ -1,36 +1,5 @@
-#include "CheckList.h"
+#include "../Common/CheckList.h"
 
-
-void CheckList::draw(Graphics &g, short left, short top, size_t layer)
-{
-
-	
-
-	Control::draw(g, this->getLeft() + left, this->getTop() + top, layer);
-	int vector_size = _options.size();
-	g.moveTo(this->getLeft(), this->getTop());
-	for (int i = 0; i < vector_size; i++) {
-		g.setBackground(this->bg);
-		g.setForeground(this->fg);
-		if (i == logicalPosition) {
-			if (Control::getFocus() == this) {
-				g.setBackground(this->fg);
-			}
-			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);
-
-		}
-		else {
-			g.setBackground(this->bg);
-			g.setForeground(this->fg);
-			g.write(_options[i]);
-			g.moveTo(this->getLeft() + left, this->getLeft() + left + i + 1);
-		}
-
-	}
-	g.setBackground(this->bg);
-
-}
 
 //void CheckList::Update() {
 //	Control::graphics.clearScreen();
@@ -150,6 +119,44 @@ vector<size_t> CheckList::GetSelectedIndexs() {
 	}
 	return result;
 }
+
+
+void CheckList::draw(Graphics &g, short left, short top, size_t layer)
+{
+	Control::draw(g, this->getLeft(), this->getTop() , layer);
+	
+	int vector_size = _options.size();
+	g.moveTo(this->getLeft() , this->getTop() );
+
+	for (int i = 0; i < vector_size; i++) {
+		g.setBackground(this->bg);
+		g.setForeground(this->fg);
+		if (i == logicalPosition) {
+			if (Control::getFocus() == this) {
+				g.setBackground(ColorType::Red);
+			}
+			g.write(_options[i]);
+			g.moveTo(this->getLeft() , this->getTop()  + i + 1);
+
+		}
+		else {
+			g.setBackground(this->bg);
+			g.setForeground(this->fg);
+			g.write(_options[i]);
+			g.moveTo(this->getLeft() , this->getTop() + i + 1);
+		}
+
+	}
+	
+	//g.setBackground(this->bg);
+
+}
+
+//void CheckList::Update() {
+//	Control::graphics.clearScreen();
+//	this->draw(Control::graphics, panelLeft, panelTop, 1);
+//	Control::graphics.moveTo(panelLeft + 2, panelTop + logicalPosition + 1);
+//}
 
 bool CheckList::indexInVector() {
 	return optionsSelected[logicalPosition];

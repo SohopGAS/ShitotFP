@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2D460596-459D-4E55-A35E-A392971604BE}</ProjectGuid>
     <RootNamespace>Common</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -111,7 +111,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ActionListener.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="BorderType.cpp" />
     <ClCompile Include="CheckList.cpp" />
@@ -130,7 +129,6 @@
     <ClCompile Include="TextBox.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ActionListener.h" />
     <ClInclude Include="BorderType.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="CheckList.h" />

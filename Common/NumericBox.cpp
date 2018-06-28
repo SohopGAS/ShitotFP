@@ -22,7 +22,7 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 					OutputDebugStringW(L"on click\n");
 				}*/
 
-		if ( i != 1) {
+		if ( i == 0) {
 
 			if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
 			{

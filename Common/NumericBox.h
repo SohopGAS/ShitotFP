@@ -7,8 +7,6 @@
 class OnClickPlus : public MouseListener
 {
 
-
-	
 public:
 	int plus_id = 2;
 	bool addNum = false;

@@ -26,7 +26,7 @@ class Form : public Panel
 	Message msg;
 
 public:
-	Control* _control;
+		Control* _control;
 		Form()
 		{
 			
@@ -79,7 +79,7 @@ public:
 			Add(&rb);
 
 			nb.setTop(15);
-			nb.setLeft(20);
+			nb.setLeft(23);
 			nb.setBorderType(b);
 			nb.SetMaxValue(10);
 			nb.SetMinValue(2);

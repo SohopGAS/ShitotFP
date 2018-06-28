@@ -55,24 +55,24 @@ public:
 
 	void init();
 
-	// need 
+	/// setter Minimum and Maximum
 	void set_minVal(int _minVal) { this->minVal = _minVal; };
 	void set_maxVal(int _maxVal) { this->maxVal = _maxVal; };
-	// need 
-	void mousePressed(int x, int y, bool isLeft);
+	
+	/// getters Minimum and Maximum
 	int get_minVal() { return minVal; };
 	int get_maxVal() { return maxVal; };
-	// no need to handel keydown
+	
 	void keyDown(int keyCode, char charecter) {};
 
+	void mousePressed(int x, int y, bool isLeft);
+	
 	//void SetValue(int val);
 	void SetMaxValue(int val) { maxVal = val; }
 	void SetMinValue(int val) { minVal = val; }
 	//void onClikck_plus();
 	int GetValue() {
 		return val;
-		// string to int converter
-		// val=  label_value.getValue();
 	}
 	bool canGetFocus() { return false; }
 

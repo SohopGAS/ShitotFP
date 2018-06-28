@@ -18,16 +18,14 @@ public:
 	void setCursorPosition(int _cp) { this->cursorPosition = _cp; };
 	int getCursorPosition() { return this->cursorPosition; }
 	
-	bool canGetFocus() { return true; };
+	void draw(Graphics& g, short x, short y, size_t z);
+	void keyDown(WORD keyCode, char charecter);
+	void mousePressed(int x, int y, bool isLeft);
 	void focusOn() {
-		OutputDebugStringW(L"focus on TextBox\n");
-		
+		OutputDebugStringW(L"focus on TextBoxxxxxxxxxx\n");
 		graphic.moveTo(left + logicalPosition, top );
 		graphic.setCursorVisibility(true);
-	}
-	void draw(Graphics& g, short x, short y, size_t z);
-	void keyDown(int keyCode, char charecter);
-	void mousePressed(int x, int y, bool isLeft, Graphics& g);
+	};
 	
 	
 };

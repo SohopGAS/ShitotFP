@@ -19,10 +19,6 @@ public:
 	virtual void keyDown(WORD keyCode, char charecter);
 
 	bool canGetFocus() { return false; };
-
 	void mousePressed(int x, int y, bool isLeft) {};
-	
-	
-	//bool myPureFunction() {}
 
 };

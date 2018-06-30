@@ -13,6 +13,7 @@
 #include "../Common/RadioBox.h"
 #include "../Common/NumericBox.h"
 #include "../Common/Message.h"
+#include "../Common/Combobox.h"
 using namespace std;
 
 class Form : public Panel
@@ -24,7 +25,7 @@ class Form : public Panel
 	RadioBox rb;
 	NumericBox nb;
 	Message msg;
-
+	Combobox cb;
 public:
 		Control* _control;
 		Form()
@@ -61,20 +62,23 @@ public:
 			
 			Add(&tb);
 
-			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
 			ck.setTop(8);
 			ck.setLeft(5);
 			ck.setBorderType(b);
 			ck.setColor(ColorType::Black, ColorType::Orange);
+			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
+
 			_control = &tb;
 			Add(&ck);
 			
 
-			rb.setTop(8);
+			rb.setTop(6);
 			rb.setLeft(20);
 			rb.setBorderType(b);
 			rb.setColor(ColorType::Black, ColorType::Orange);
-			rb.init();
+			rb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
+
+			//rb.init();
 
 			Add(&rb);
 
@@ -96,6 +100,17 @@ public:
 			msg.init();
 			Add(&msg);
 				
+
+			cb.setTop(5);
+			cb.setLeft(40);
+			cb.setBorderType(b);
+			cb.setWidth(10);
+			cb.setHeight(1);
+			cb.func();
+			cb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
+			cb.setColor(ColorType::Black, ColorType::Orange);
+
+			Add(&cb);
 		}
 
 };
@@ -106,7 +121,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(40);
+	f.setWidth(60);
 	f.setHeight(20);
 	f.setTop(0);
 	f.setLeft(0);

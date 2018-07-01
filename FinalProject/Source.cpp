@@ -8,8 +8,15 @@
 #include <iostream>
 #include <fstream>
 #include "../Common/CheckList.h"
+<<<<<<< HEAD
 //#include "../Common/Logger.h"
 
+=======
+#include "../Common/Logger.h"
+#include "../Common/RadioBox.h"
+#include "../Common/NumericBox.h"
+#include "../Common/Message.h"
+>>>>>>> e4194c59f25c5d0d7c4b091f1538e719195407b4
 using namespace std;
 
 class Form : public Panel
@@ -17,10 +24,20 @@ class Form : public Panel
 	TextBox tb;
 	Label l;
 	CheckList ck;
+<<<<<<< HEAD
 	Button b;
 
 
 public:
+=======
+	Button button;
+	RadioBox rb;
+	NumericBox nb;
+	Message msg;
+
+public:
+		Control* _control;
+>>>>>>> e4194c59f25c5d0d7c4b091f1538e719195407b4
 		Form()
 		{
 
@@ -46,6 +63,7 @@ public:
 
 			Add(&tb);
 
+<<<<<<< HEAD
 			// ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
 			// ck.setTop(5);
 			// ck.setLeft(5);
@@ -70,6 +88,43 @@ public:
 
 			Add(&tb);
 >>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
+=======
+			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
+			ck.setTop(8);
+			ck.setLeft(5);
+			ck.setBorderType(b);
+			ck.setColor(ColorType::Black, ColorType::Orange);
+			_control = &tb;
+			Add(&ck);
+			
+
+			rb.setTop(8);
+			rb.setLeft(20);
+			rb.setBorderType(b);
+			rb.setColor(ColorType::Black, ColorType::Orange);
+			rb.init();
+
+			Add(&rb);
+
+			nb.setTop(15);
+			nb.setLeft(23);
+			nb.setBorderType(b);
+			nb.SetMaxValue(10);
+			nb.SetMinValue(2);
+			nb.setColor(ColorType::Black, ColorType::Orange);
+			nb.init();
+			Add(&nb);
+
+			msg.setTop(18);
+			msg.setLeft(8);
+			msg.setBorderType(b);
+			msg.setWidth(10);
+			msg.setHeight(1);
+			msg.setColor(ColorType::Black, ColorType::Orange);
+			msg.init();
+			Add(&msg);
+				
+>>>>>>> e4194c59f25c5d0d7c4b091f1538e719195407b4
 		}
 
 };

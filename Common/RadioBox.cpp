@@ -38,9 +38,12 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 }
 
 
-boolean RadioBox::SelectedItem(int logicalPosition) {
-	
-	return true;
+boolean RadioBox::SelectedItem(int index) {
+	if (index < this->controls.size() && index >= 0) {
+		logicalPosition = index;
+		return true;
+	}
+	return false;
 }
 
 void RadioBox::selectOption() {
@@ -79,7 +82,6 @@ boolean RadioBox::ClearSelection()
 		op = false;
 	}
 	logicalPosition = 0;
-
 	return true;
 }
 
@@ -116,7 +118,6 @@ void RadioBox::keyDown(WORD code, char charecter) {
 		else {
 			logicalPosition = controls.size() - 1;
 		}
-		//Checklist::Update();
 		break;
 	case VK_DOWN:
 		OutputDebugStringW(L"RadioBox :: down \n");
@@ -136,12 +137,11 @@ void RadioBox::keyDown(WORD code, char charecter) {
 	case VK_TAB:
 		logicalPosition++;
 		if (logicalPosition > controls.size()) {
-			/// go to next 	
+			/// go to next component	
 		}
 		break;
 
 	}
-
 }
 
 void RadioBox::init(){

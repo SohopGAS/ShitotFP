@@ -28,7 +28,6 @@ void EventEngine::run(Control &c)
 			}
 			redraw = false;
 			Control::getFocus()->focusOn();
-
 		}
 
 		auto whichPAKADisFocus = Control::getFocus();

@@ -53,20 +53,9 @@ public:
 	// More virual functions implemnted by every component.
 	virtual void draw(Graphics& g, short x, short y, size_t z) ;
 	virtual void mousePressed(int x, int y, bool isLeft) {};
-<<<<<<< HEAD
 	virtual void keyDown(int keyCode, char charecter) {};
 	virtual bool canGetFocus() { return FALSE; };
     //virtual bool myPureFunction() = 0;
-=======
-	virtual void keyDown(WORD code, char charecter) {};
-
-	virtual void getAllControls(vector<Control*>* controls) {};
-	virtual bool canGetFocus() { return false; };
-    //virtual bool myPureFunction() = 0;	
-
-
 	virtual void nowInFocus() {};
 
-	~Control();
->>>>>>> e4194c59f25c5d0d7c4b091f1538e719195407b4
 };

@@ -8,16 +8,11 @@ class OnClickPlus : public MouseListener
 {
 
 public:
-<<<<<<< HEAD
 	NumericBox() {};
-	~NumericBox() {};
-
 	// need
 	void draw(Graphics& g, short x, short y, size_t z);
-
 	// need
 	void mousePressed(int x, int y, bool isLeft);
-=======
 	int plus_id = 2;
 	bool addNum = false;
 	int currentNumber;
@@ -25,15 +20,11 @@ public:
 	{
 		OutputDebugStringW(L"mouse preesed + \n");
 		addNum = true;
-
 	}
-
-
 };
 
 class OnClickMinus : public MouseListener
 {
-
 public:
 	int minus_id = 1;
 	bool subNum = false;
@@ -62,7 +53,6 @@ protected:
 
 public:
 	NumericBox();
-
 	void init();
 
 	/// setter Minimum and Maximum
@@ -72,10 +62,7 @@ public:
 	/// getters Minimum and Maximum
 	int get_minVal() { return minVal; };
 	int get_maxVal() { return maxVal; };
->>>>>>> master
-
 	void keyDown(int keyCode, char charecter) {};
-
 	void mousePressed(int x, int y, bool isLeft);
 
 	//void SetValue(int val);

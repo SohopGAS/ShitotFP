@@ -24,13 +24,9 @@ public:
 	}
 	~CheckList();
 	void draw(Graphics& g, short x, short y, size_t z);
-<<<<<<< HEAD
-
 	void keyDown(int keyCode, char charecter);
-=======
 	int getSize() { return _options.size(); };
 	void keyDown(WORD keyCode, char charecter);
->>>>>>> master
 	void mousePressed(int x, int y, bool isLeft);
 	void Update();
 	void SetList(vector<string> ListOfStrings, string Square_shape);

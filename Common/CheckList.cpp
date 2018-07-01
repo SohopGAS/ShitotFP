@@ -62,11 +62,8 @@ void CheckList::SetList(vector<string> ListOfStrings, string Square_shape = "( )
 		if (_options[i].size() - 1 < maxsize)
 			for (int j = 0; j < ezer; j++) {
 				_options[i].insert(_options[i].size(), " ");
-
 			}
-
 	}
-
 	optionsSelected = vector<bool>(ListOfStrings.size());
 }
 
@@ -124,7 +121,6 @@ vector<size_t> CheckList::GetSelectedIndexs() {
 void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 {
 	Control::draw(g, this->getLeft(), this->getTop() , layer);
-
 	int vector_size = _options.size();
 	g.moveTo(this->getLeft() , this->getTop() );
 
@@ -145,35 +141,15 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 			g.write(_options[i]);
 			g.moveTo(this->getLeft() , this->getTop() + i + 1);
 		}
-
 	}
-
 	//g.setBackground(this->bg);
-
 }
-
-//void CheckList::Update() {
-//	Control::graphics.clearScreen();
-//	this->draw(Control::graphics, panelLeft, panelTop, 1);
-//	Control::graphics.moveTo(panelLeft + 2, panelTop + logicalPosition + 1);
-//}
 
 bool CheckList::indexInVector() {
 	return optionsSelected[logicalPosition];
 }
 
-
-CheckList::CheckList()
-{
-
-};
-
-void CheckList::draw(Graphics& g, short x, short y, size_t z){};
-
-void CheckList::keyDown(int keyCode, char charecter) {
-
-};
-
-void CheckList::mousePressed(int x, int y, bool isLeft) {
-
-};
+CheckList::CheckList() {};
+void CheckList::draw(Graphics& g, short x, short y, size_t z) {};
+void CheckList::keyDown(int keyCode, char charecter) {};
+void CheckList::mousePressed(int x, int y, bool isLeft) {};

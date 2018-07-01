@@ -24,11 +24,11 @@ Control::~Control()
 
 };
 
-<<<<<<< HEAD
-void Control::draw(Graphics& g, short x, short y, size_t z) {
-	// TODO: add drow border
-}
-=======
+
+// void Control::draw(Graphics& g, short x, short y, size_t z) {
+// 	// TODO: add drow border
+// }
+
 void Control::draw(Graphics& g, short x, short y, size_t z)
 {
 	if (this->bt != NULL)
@@ -55,4 +55,3 @@ void Control::setFocus(Control& control)
 	}
 	// Control::static_control->focusOn();
 };
->>>>>>> master

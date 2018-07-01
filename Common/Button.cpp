@@ -3,20 +3,17 @@
 
 using namespace std;
 
-<<<<<<< HEAD
 Button::Button() {
-	
+	setHeight(1);
 };
 
 Button::Button(string & s)
 {
-	expand_string(s);
-}
+	this->setValue(s);
+};
 
-void Button::setValue(string s)
-=======
+
 void Button::mousePressed(int x, int y, bool isLeft)
->>>>>>> master
 {
 	OutputDebugStringW(L"Button::mousePressed\n");
 
@@ -30,14 +27,9 @@ void Button::mousePressed(int x, int y, bool isLeft)
 		for (MouseListener* listener : listeners) {
 			listener->MousePressed(x, y, isLeft);
 		}
-
-<<<<<<< HEAD
 	unsigned sz = s.size();
 	s.resize(sz + 2, ' ');
-
-=======
 	}
->>>>>>> master
 }
 
 
@@ -54,10 +46,7 @@ void Button::draw(Graphics& g, short x, short y, size_t z)
 		g.write( getValue() );
 
 }
-<<<<<<< HEAD
-=======
 
 void Button::keyDown(WORD keyCode, char charecter) {
 
 }
->>>>>>> master

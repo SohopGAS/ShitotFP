@@ -1,27 +1,40 @@
 #pragma once
-#include "Control.h"
-#include "Label.h"
+#include "../Common/Panel.h"
+#include "../Common/Label.h"
 
-class RadioBox : public Control
+
+class RadioBox : public Panel
 {
 private:
-	Label l1;
-	Label l2;
-	Label l3;
+	Label lab1, lab2, lab3;
+	int logicalPosition = 0;
+	vector <bool> optionsSelected;
+
 public:
-	RadioBox() {
-		string s = "radio box :";
-		l1.setValue(s) ;
-		l2.setValue(s);
-		l3.setValue(s);
-	};
+	RadioBox() {};
+	
 	~RadioBox() {};
+	
 	void draw(Graphics& g, short x, short y, size_t z);
+	void keyDown(WORD  code, char charecter);
+	void mousePressed(int x, int y, bool isLeft);
+	void init();
+	boolean SelectedItem(int index);
+	boolean ClearSelection();
 
-	void keyDown(int keyCode, char charecter) {};
-	void mousePressed(int x, int y, bool isLeft) {};
+	// return label value 
+	string getResult() { return lab1.getValue();  };
 
-	boolean SelectedItem(int index) {};
-	boolean ClearSelection() {};
+	bool canGetFocus() { return true; };
+
+	void focusOn() {
+		OutputDebugStringW(L"focus on RadioBox\n");
+		graphic.moveTo(left + 1, top + logicalPosition);
+		graphic.setCursorVisibility(true);
+	};
+
+	void selectOption();
+
+
 };
 

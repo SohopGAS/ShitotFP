@@ -13,18 +13,25 @@ EventEngine::EventEngine(DWORD input, DWORD output)
 
 void EventEngine::run(Control &c)
 {
+<<<<<<< HEAD
 	// CLogger::GetLogger()->Log("event engine runinng");
+=======
+//	CLogger::GetLogger()->Log("event engine runinng");
+>>>>>>> master
 	for (bool redraw = true;;)
 	{
 		if (redraw)
 		{
 			_graphics.clearScreen();
+			_graphics.setBackground(ColorType::Black);
 			_graphics.setCursorVisibility(false);
-			for (size_t z = 0; z < 5; ++z)
+
+			for (size_t z = 0; z < 1; ++z)
 			{
 				c.draw(_graphics, 0, 0, z);
 			}
 			redraw = false;
+			Control::getFocus()->focusOn();
 		}
 
 		auto whichPAKADisFocus = Control::getFocus();
@@ -40,7 +47,11 @@ void EventEngine::run(Control &c)
 		{
 		case KEY_EVENT:
 		{
+<<<<<<< HEAD
 			// CLogger::GetLogger()->Log("key event");
+=======
+			//CLogger::GetLogger()->Log("key event");
+>>>>>>> master
 			auto f = Control::getFocus();
 			if (f != nullptr && record.Event.KeyEvent.bKeyDown)
 			{
@@ -56,14 +67,25 @@ void EventEngine::run(Control &c)
 		}
 		case MOUSE_EVENT:
 		{
+<<<<<<< HEAD
 			// CLogger::GetLogger()->Log("MouseEvent");
+=======
+			//CLogger::GetLogger()->Log("MouseEvent");
+			//OutputDebugStringW(L"case MOUSE_EVENT\n");
+
+>>>>>>> master
 			auto button = record.Event.MouseEvent.dwButtonState;
 			auto coord = record.Event.MouseEvent.dwMousePosition;
 			auto x = coord.X - c.getLeft();
 			auto y = coord.Y - c.getTop();
 			if (button == FROM_LEFT_1ST_BUTTON_PRESSED || button == RIGHTMOST_BUTTON_PRESSED)
 			{
+<<<<<<< HEAD
 				// CLogger::GetLogger()->Log("Mouse option left or right");
+=======
+			//	CLogger::GetLogger()->Log("Mouse option left or right");
+				OutputDebugStringW(L"Mouse option left or right\n");
+>>>>>>> master
 				c.mousePressed(x, y, button == FROM_LEFT_1ST_BUTTON_PRESSED);
 				redraw = true;
 			}

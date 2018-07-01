@@ -1,5 +1,8 @@
 #include "Logger.h"
+<<<<<<< HEAD
 #include "Logger.h"
+=======
+>>>>>>> master
 #include "Utilities.h"
 
 const string CLogger::m_sFileName = "Log.txt";
@@ -26,8 +29,8 @@ void CLogger::Log(const char * format, ...)
 	// _vscprintf doesn't count terminating '\0' (that's why +1)
 	nLength = _vscprintf(format, args) + 1;
 	sMessage = new char[nLength];
-	vsprintf_s(sMessage, nLength, format, args);
-	//vsprintf(sMessage, format, args);
+	//vsprintf_s(sMessage, nLength, format, args);
+	vsprintf(sMessage, format, args);
 	m_Logfile << Util::CurrentDateTime() << ":\t";
 	m_Logfile << sMessage << "\n";
 	va_end(args);

@@ -11,26 +11,34 @@ BorderType* SingleLineBorder::getinstance() {
 	return instance;
 }
 
-void SingleLineBorder::drawBorder(COORD start, COORD size)
+void SingleLineBorder::drawBorder(Graphics& g,short start_x, short start_y, short _width, short _height)
 {
-	auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
-	
-	//draw upper line
-	SetConsoleCursorPosition(handle, start);
-	for (short i = 0; i<size.X; i++)
+	//auto handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	//COORD start = { start_x, start_y };
+	//COORD size = { _width, _height };
 
-		for (short i = 1; i<size.Y - 1; i++)
-		{
-			//draw left and right lines
-			SetConsoleCursorPosition(handle, { start.X, start.Y + i });
-			cout << "*";
-			SetConsoleCursorPosition(handle, { start.X + size.X, start.Y + i });
-			cout << "*";
-		}
-	//draw bottom line
-	SetConsoleCursorPosition(handle, { start.X, start.Y + size.Y });
-	for (int i = 0; i<size.X; i++)
-		cout << '*';
+	short newYPos = start_y;
+	short newXPos = start_x;
+	g.moveTo(newXPos, newYPos);
+	cout << TOP_LEFT;
+	for (short i = 0; i<_width-1; i++)
+		cout << LINE_HORIZONTAL;
+	cout << TOP_RIGHT;
+
+	for (int i = 1; i<_height-1; i++)
+	{
+		g.moveTo(newXPos, newYPos + i); 
+		cout << LINE_VERTICAL;
+		g.moveTo(newXPos + _width, newYPos + i);
+		cout << LINE_VERTICAL;
+	}
+
+	g.moveTo(newXPos, newYPos+ _height-1);
+	cout << BTM_LEFT;
+	for (short i = 0; i<_width-1; i++)
+		cout << LINE_HORIZONTAL;
+	cout << BTM_RIGHT;
+
 
 }
 

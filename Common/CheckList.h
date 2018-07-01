@@ -42,10 +42,5 @@ public:
 	};
 
 
-<<<<<<< HEAD
 	bool canGetFocus() { return true; };
-=======
-	void keyDown(int keyCode, char charecter);
-	void mousePressed(int x, int y, bool isLeft);
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 };

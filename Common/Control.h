@@ -22,7 +22,6 @@ protected:
 public:
 	// Constructors & Destructors.
 	Control();
-<<<<<<< HEAD
 	Control(BorderType* _bt) : bt(_bt) {};
 	Control(Graphics& g, short x, short y, short width, short height);
 	~Control();
@@ -31,12 +30,6 @@ public:
 	void setTop(short _top) {  this->top = _top; };
 	void setLeft(short _left) { this->left = _left; };
 	void setWidth(short _width) { this->width= _width; };
-=======
-	// position setter
-	void setTop(short _top) { this->top = _top; 			};
-	void setLeft(short _left) { this->left = _left; 		};
-	void setWidth(short _width) { this->width = _width; 		};
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 	void setHeight(short _height) { this->height = _height; };
 	void setBackground(ColorType _bg) {this->bg = _bg; };
 	void setForeground(ColorType _fg) {this->fg = _fg; };
@@ -60,20 +53,10 @@ public:
 	// More virual functions implemnted by every component.
 	virtual void draw(Graphics& g, short x, short y, size_t z) ;
 	virtual void mousePressed(int x, int y, bool isLeft) {};
-<<<<<<< HEAD
-	virtual void keyDown(WORD keyCode, char charecter) {};
-	virtual bool canGetFocus() { return false; };
-    //virtual bool myPureFunction() = 0;
-
-
-	virtual void nowInFocus() {};
-
-=======
 	virtual void keyDown(int keyCode, char charecter) {};
 	virtual void getAllControls(vector<Control*>* controls) {};
 	virtual bool canGetFocus() { return FALSE; };
     //virtual bool myPureFunction() = 0;
 
 	~Control();
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 };

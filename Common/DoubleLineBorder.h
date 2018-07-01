@@ -19,14 +19,9 @@ private:
 	DoubleLineBorder() {};
 
 public:
-<<<<<<< HEAD
 	void drawBorder(Graphics& g,short start_x, short start_y, short width, short height);
 
 
-=======
-	void drawBorder(COORD start, COORD size);
-	DoubleLineBorder() {};
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 	static BorderType* getinstance();
 	~DoubleLineBorder();
 

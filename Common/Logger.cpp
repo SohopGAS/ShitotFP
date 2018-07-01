@@ -26,13 +26,8 @@ void CLogger::Log(const char * format, ...)
 	// _vscprintf doesn't count terminating '\0' (that's why +1)
 	nLength = _vscprintf(format, args) + 1;
 	sMessage = new char[nLength];
-<<<<<<< HEAD
 	//vsprintf_s(sMessage, nLength, format, args);
 	vsprintf(sMessage, format, args);
-=======
-	vsprintf_s(sMessage, nLength, format, args);
-	//vsprintf(sMessage, format, args);
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 	m_Logfile << Util::CurrentDateTime() << ":\t";
 	m_Logfile << sMessage << "\n";
 	va_end(args);

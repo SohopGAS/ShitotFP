@@ -41,7 +41,7 @@ void CheckList::keyDown(WORD code, CHAR chr) {
 //	{
 //		//dos
 //	}
-//	
+//
 //}
 void CheckList::SetList(vector<string> ListOfStrings, string Square_shape = "( ) ") {
 	_options = ListOfStrings;
@@ -123,9 +123,8 @@ vector<size_t> CheckList::GetSelectedIndexs() {
 
 void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 {
-<<<<<<< HEAD
 	Control::draw(g, this->getLeft(), this->getTop() , layer);
-	
+
 	int vector_size = _options.size();
 	g.moveTo(this->getLeft() , this->getTop() );
 
@@ -148,14 +147,10 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 		}
 
 	}
-	
+
 	//g.setBackground(this->bg);
 
 }
-=======
-
-};
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 
 //void CheckList::Update() {
 //	Control::graphics.clearScreen();
@@ -171,13 +166,6 @@ bool CheckList::indexInVector() {
 CheckList::CheckList()
 {
 
-<<<<<<< HEAD
-}
-
-CheckList::~CheckList()
-{
-}
-=======
 };
 
 void CheckList::draw(Graphics& g, int x, int y, size_t z) {
@@ -191,4 +179,3 @@ void CheckList::keyDown(int keyCode, char charecter) {
 void CheckList::mousePressed(int x, int y, bool isLeft) {
 
 };
->>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff

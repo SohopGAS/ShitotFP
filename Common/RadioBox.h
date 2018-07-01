@@ -20,9 +20,6 @@ public:
 	boolean SelectedItem(int index);
 	boolean ClearSelection();
 
-	// return label value 
-	//string getResult() { return lab1.getValue();  };
-
 	bool canGetFocus() { return true; };
 
 	void focusOn() {
@@ -30,11 +27,16 @@ public:
 		graphic.moveTo(left + 1, top + logicalPosition);
 		graphic.setCursorVisibility(true);
 	};
-
-	void SetList(vector<string> ListOfStrings);
+	
+	int getlogicalPosition() { return logicalPosition; };
+	
+	void SetList(vector<string> ListOfStrings,string Square_shape);
 
 	void selectOption();
 
-
+	string GetChosen() {
+		Label *pp = (Label*)this->controls[logicalPosition];
+		return  pp->getValue();
+	}
 };
 

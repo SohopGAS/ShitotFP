@@ -26,8 +26,11 @@ void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
 
 //	OutputDebugStringW(L"TextBox::draw\n");
+// check this loop again  ---- 
+	if (Control::getFocus() == this) {
+		focusOn();
+	}
 
-	g.setCursorVisibility(true);
 	g.moveTo(left, top);
 	g.write(value);
 }
@@ -37,7 +40,6 @@ void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 void TextBox::keyDown(WORD keyCode, char charecter) {
 	if (value.size() < width - 2) {
 		if (charecter >= ' ' && charecter <= '~') {
-			//cout << charecter;
 			if (value.size() == logicalPosition - 1) {
 				value += charecter;
 			}
@@ -45,7 +47,6 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 				char temp[] = { charecter };
 				value.insert(logicalPosition, temp, 1);
 			}
-			//graphic.moveTo(getLeft() + 1 + value.size(), getTop() + 1);
 			logicalPosition++;
 			return;
 		}
@@ -56,7 +57,6 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 		if (value.size() < getWidth() - 3) {
 			logicalPosition++;
 			value += " ";
-			//graphic.moveTo(getLeft() + 1 + value.size(), getTop() + 1);
 		}
 		break;
 	}
@@ -65,21 +65,18 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 		if (value.size() < getWidth() - 3) {
 			logicalPosition++;
 			value += " ";
-			//graphic.moveTo(getLeft() + 1 + value.size(), getTop() + 1);
 		}
 		break;
 	}
 	case VK_LEFT: {
 		if (logicalPosition >= 1) {
 			logicalPosition--;
-			//graphic.moveTo(getLeft() + 1 + value.size(), getTop() + 1);
 		}
 		break;
 	}
 	case VK_NUMPAD4: {
 		if (logicalPosition >= 1) {
 			logicalPosition--;
-			//graphic.moveTo(getLeft() + 1 + value.size(), getTop() + 1);
 		}
 		break;
 	}
@@ -119,8 +116,6 @@ void TextBox::mousePressed(int x, int y, bool isLeft) {
 			logicalPosition = x - getLeft();
 		}
 		Control::setFocus(*this);
-		focusOn();
-
 	}
 	return;
 

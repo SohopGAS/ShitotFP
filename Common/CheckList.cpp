@@ -132,8 +132,9 @@ vector<size_t> CheckList::GetSelectedIndexs() {
 
 void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 {
-	Control::draw(g, this->getLeft(), this->getTop() , layer);
+	Control::draw(g, this->getLeft(), this->getTop() , layer);	
 	
+
 	int vector_size = controls.size();
 	g.moveTo(this->getLeft(), this->getTop());
 
@@ -161,7 +162,10 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 		}
 
 	}
-	
+
+	if (Control::getFocus() == this) {
+		focusOn();
+	}
 }
 
 bool CheckList::indexInVector() {

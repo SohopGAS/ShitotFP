@@ -27,7 +27,6 @@ class Form : public Panel
 	Message msg;
 	Combobox cb;
 public:
-		Control* _control;
 		Form()
 		{
 			
@@ -68,7 +67,6 @@ public:
 			ck.setColor(ColorType::Black, ColorType::Orange);
 			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
 
-			_control = &tb;
 			Add(&ck);
 			
 
@@ -76,9 +74,7 @@ public:
 			rb.setLeft(20);
 			rb.setBorderType(b);
 			rb.setColor(ColorType::Black, ColorType::Orange);
-			rb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
-
-			//rb.init();
+			rb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" },"( )" );
 
 			Add(&rb);
 
@@ -107,10 +103,11 @@ public:
 			cb.setWidth(10);
 			cb.setHeight(1);
 			cb.func();
-			cb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
+			cb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "      ");
 			cb.setColor(ColorType::Black, ColorType::Orange);
 
 			Add(&cb);
+			Control::setFocus(tb);
 		}
 
 };
@@ -127,6 +124,5 @@ int main(int argc, char** argv)
 	f.setLeft(0);
 	BorderType* bo = DoubleLineBorder::getinstance();
 	f.setBorderType(bo);
-	f.setFocus(*f._control);
 	e.run(f);
 }

@@ -26,7 +26,8 @@ public:
 	void focusOn() {
 		OutputDebugStringW(L"focus on checklist\n");
 		graphic.moveTo(left+1, top + logicalPosition );
-		graphic.setCursorVisibility(true);
+		//graphic.setCursorVisibility(true);
+
 	};
 	
 

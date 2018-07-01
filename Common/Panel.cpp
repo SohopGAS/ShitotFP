@@ -17,6 +17,7 @@ void Panel::mousePressed(int x, int y, bool isLeft)
 
 void Panel::Add(Control* control) {
 	controls.push_back(control);
+	hasChildren = true;
 }
 
 void Panel::draw(Graphics& g, short x, short y, size_t z) {
@@ -29,9 +30,12 @@ void Panel::draw(Graphics& g, short x, short y, size_t z) {
 
 void Panel::getAllControls(vector<Control*>* controls_)
 {
-	for (Control *c : this->controls) {
-		controls_->push_back(c);
-	}
+		for (Control *c : this->controls) {
+			controls_->push_back(c);
+		}
+	
+	
+
 }
 
 

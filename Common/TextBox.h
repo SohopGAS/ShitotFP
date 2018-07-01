@@ -21,9 +21,10 @@ public:
 	bool canGetFocus() { return true; };
 	void focusOn() {
 		OutputDebugStringW(L"focus on TextBox\n");
-		
+
 		graphic.moveTo(left + logicalPosition, top );
 		graphic.setCursorVisibility(true);
+
 	}
 	void draw(Graphics& g, short x, short y, size_t z);
 	void keyDown(WORD keyCode, char charecter);

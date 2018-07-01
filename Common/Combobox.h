@@ -33,41 +33,24 @@ public:
 	Combobox();
 	~Combobox();
 	void func();
+	bool canGetFocus() { return false; };
+
 	void draw(Graphics& g, short x, short y, size_t z);
-	void SetList(vector<string> ListOfStrings);
+	void SetList(vector<string> ListOfStrings,string Square_shape);
 	void mousePressed(int x, int y, bool isLeft);
-	void getAllControls(vector<Control*>* controls) {};
-	virtual void keyDown(WORD keyCode, char charecter) {};
-};
+	void keyDown(WORD  code, char charecter);
 
-//#pragma once
-//#include "../Common/Panel.h"
-//#include "../Common/Label.h"
-//#include "../Common/Button.h"
-//
-//
-//class Combobox : public Panel
-//{
-//private:
-//	Button down_arraw;
-//	Label text;
-//	vector <string> _options;
-//	vector <bool> optionsSelected;
-//	int logicalPosition = 0;
-//
-//public:
-//	Combobox();
-//	~Combobox();
-//
-//	void draw(Graphics& g, short x, short y, size_t z);
-//
-//	void mousePressed(int x, int y, bool isLeft){};
-//	void getAllControls(vector<Control*>* controls) {};
-//	void keyDown(WORD keyCode, char charecter) {};
-//	void func();
-//
-//
-//	void SetList(vector<string> ListOfStrings);
-//
-//};
 
+	void focusOn() {
+
+		if (c.visable == true) {
+			this->setFocus(r);
+			r.focusOn();
+		}
+		else {
+			graphic.setCursorVisibility(false);
+			
+		}
+	};
+
+	};

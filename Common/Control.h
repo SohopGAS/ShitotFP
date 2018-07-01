@@ -9,7 +9,6 @@ class Control
 {
 
 protected:
-
 	short left;
 	short top;
 	short width;
@@ -17,7 +16,7 @@ protected:
 	static Control* static_control;
 	ColorType bg, fg;
 	BorderType* bt;	
-	
+	bool hasChildren;
 	Graphics graphic;
 
 public:

@@ -4,7 +4,7 @@
 void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 {
 	Control::draw(g, this->getLeft(), this->getTop(), layer);
-
+	
 	int vector_size = controls.size();
 	g.moveTo(this->getLeft(), this->getTop());
 
@@ -32,6 +32,10 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 		}
 
 	}
+
+	if (Control::getFocus() == this) {
+		focusOn();
+	}
 }
 
 
@@ -50,10 +54,10 @@ void RadioBox::selectOption() {
 		optionsSelected[logicalPosition] = true;
 		OutputDebugStringW(L"  optionsSelected[logicalPosition] =           true        ;\n");
 		
+		//Control::setFocus(*this);
 
 		// change string in Label    Based on logicalPosition
 		Label* l = (Label*)controls[logicalPosition];					// cast from vector controls Control* to Label*   
-		
 		l->setValue( l->getValue().replace(1, 1, "X") );
 		
 		int i = 0;		
@@ -131,20 +135,13 @@ void RadioBox::keyDown(WORD code, char charecter) {
 	case VK_SPACE:
 		RadioBox::selectOption();
 		break;
-	case VK_TAB:
-		logicalPosition++;
-		if (logicalPosition > controls.size()) {
-			/// go to next component	
-		}
-		break;
-
+	
 	}
 }
 
 
 
-void RadioBox::SetList(vector<string> ListOfStrings) {
-	string Square_shape = "( )";
+void RadioBox::SetList(vector<string> ListOfStrings, string Square_shape) {
 
 	int size = ListOfStrings.size();
 	int maxsize = 0;

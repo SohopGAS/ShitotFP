@@ -3,7 +3,6 @@
 #include "Graphics.h"
 #include <string>
 
-
 using namespace std;
 
 class Label : public Control

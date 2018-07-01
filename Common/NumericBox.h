@@ -5,6 +5,7 @@
 class OnClickPlus : public MouseListener
 {
 public:
+<<<<<<< HEAD
 	bool addNum = false;
 	int currentNumber;
 	void MousePressed(int x, int y, bool isLeft)
@@ -65,4 +66,17 @@ public:
 	bool canGetFocus() { return false; }
 	
 	~NumericBox() {};
+=======
+	NumericBox() {};
+	~NumericBox() {};
+
+	// need
+	void draw(Graphics& g, int x, int y, size_t z);
+
+	// need
+	void mousePressed(int x, int y, bool isLeft);
+
+	// no need to handel keydown
+	void keyDown(int keyCode, char charecter) {};
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 };

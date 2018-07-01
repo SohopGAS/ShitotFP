@@ -25,6 +25,7 @@ public:
 		{
 
 			string value("Enter Name:");
+<<<<<<< HEAD
 			// l.setValue(value);
 			// l.setTop(1);
 			// l.setLeft(5);
@@ -53,6 +54,22 @@ public:
 			// _control = &tb;
 			// Add(&ck);
 
+=======
+			l.setValue(value);
+			l.setTop(1);
+			l.setLeft(1);
+			l.setColor(ColorType::Blue, ColorType::Red);
+
+			Add(&l);
+
+			tb.setValue("My TextBox Example");
+			tb.setTop(50);
+			tb.setLeft(1 + (short)value.size() + 1);
+			tb.setHeight(50);
+			tb.setWidth(50);
+
+			Add(&tb);
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 		}
 
 };
@@ -63,6 +80,7 @@ int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
+<<<<<<< HEAD
 	f.setWidth(30);
 	f.setHeight(15);
 	f.setTop(0);
@@ -71,5 +89,7 @@ int main(int argc, char** argv)
 	f.setBorderType(bo);
 	Control::setFocus(f);
 //	f.setFocus(*f._control);
+=======
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 	e.run(f);
 }

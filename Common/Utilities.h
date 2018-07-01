@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #pragma once
 
+=======
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 #include <iostream>
 #include <string>
 #include <time.h>

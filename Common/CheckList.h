@@ -1,7 +1,7 @@
 #pragma once
 #include "../Common/Control.h"
 
-/// public panel 
+/// public panel
 class CheckList:public Control
 {
 	// using controls form panel - using labels
@@ -40,8 +40,12 @@ public:
 		graphic.moveTo(left+1, top + logicalPosition );
 		graphic.setCursorVisibility(true);
 	};
-	
 
+
+<<<<<<< HEAD
 	bool canGetFocus() { return true; };
+=======
+	void keyDown(int keyCode, char charecter);
+	void mousePressed(int x, int y, bool isLeft);
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 };
-

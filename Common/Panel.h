@@ -15,9 +15,13 @@ public:
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return false; };
 	void Add(Control* control);
+<<<<<<< HEAD
 	//vector<Control*> getControls() {return controls; };
 	void focusOn() {
 		OutputDebugStringW(L"focus on panel");
 	}
 
+=======
+	//void getAllControls(vector<Control*>* Controls) { controls= Controls; }
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 };

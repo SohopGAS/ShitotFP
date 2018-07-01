@@ -11,7 +11,11 @@ using namespace std;
 class Button : public Label
 {
 private:
+<<<<<<< HEAD
 	vector<MouseListener*> listeners;
+=======
+	
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff
 public:
 	Button() { setHeight(1); };
 	Button(string& _s) { this->setValue(_s); };
@@ -21,7 +25,11 @@ public:
 	void draw(Graphics& g, short x, short y, size_t z);
 	void keyDown(WORD keyCode, char charecter);
 
+<<<<<<< HEAD
 	bool canGetFocus() { return false; };
 
 
 };
+=======
+/*
+>>>>>>> 42f1bc5536035529e963704b3d4046fb4a3a12ff

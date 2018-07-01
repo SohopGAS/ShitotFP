@@ -11,7 +11,9 @@ OBJS += Common/Control.o \
 	Common/CheckList.o \
 	Common/Button.o \
 	Common/SingleLineBorder.o \
-	Common/Logger.o \
+	Common/DoubleLineBorder.o \
+	Common/BorderType.o \
+	Common/Combobox.o \
 
 %.o: %.cpp
 	$(CXX) $(CPPFLAGS) -c $< -o $@

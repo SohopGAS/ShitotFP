@@ -8,7 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include "../Common/CheckList.h"
-#include "../Common/Logger.h"
+//#include "../Common/Logger.h"
 
 using namespace std;
 

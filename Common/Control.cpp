@@ -17,8 +17,6 @@ Control::Control(Graphics & g, short x, short y, short width, short height) : bt
 	top = y;
 	width = width;
 	height = height;
-}
-
 };
 
 Control::~Control()

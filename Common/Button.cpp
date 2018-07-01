@@ -3,10 +3,6 @@
 
 using namespace std;
 
-Button::Button() {
-	setBorderType(SingleLineBorder::getinstance());
-}
-
 void Button::mousePressed(int x, int y, bool isLeft)
 {
 	OutputDebugStringW(L"Button::mousePressed\n");
@@ -24,7 +20,6 @@ void Button::mousePressed(int x, int y, bool isLeft)
 
 	}
 }
-
 
 
 void Button::draw(Graphics& g, short x, short y, size_t z)

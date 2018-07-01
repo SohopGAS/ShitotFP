@@ -118,50 +118,50 @@ void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
 //		logicalPosition = pressed;
 //
 //}
-<<<<<<< HEAD
-void TextBox::keyDown(int keyCode, char charecter) {
-	if (keyCode == VK_NUMPAD4 || keyCode == VK_LEFT) {
-		// todo: left button
+// <<<<<<< HEAD
+// void TextBox::keyDown(int keyCode, char charecter) {
+// 	if (keyCode == VK_NUMPAD4 || keyCode == VK_LEFT) {
+// 		// todo: left button
+//
+// 	}
+// 	else if (keyCode == VK_NUMPAD6 || keyCode == VK_RIGHT) {
+// 		// todo: right button
+// 	}
+// 	else if (keyCode == VK_NUMPAD8 || keyCode == VK_UP) {
+// 		// todo: up button
+// 	}
+// 	else if (keyCode == VK_NUMPAD2 || keyCode == VK_DOWN) {
+// 		// todo: down button
+// 	}
+// 	else if (keyCode == VK_BACK) {
+// 		// todo: backspace button
+// 	}
+// 	else if (keyCode == VK_TAB) {
+// 		// todo: tab button
+// 	}
+// 	else if (keyCode == VK_RETURN) {
+// 		// todo: return/enter button
+// 	}
+// 	else if (keyCode == VK_DELETE) {
+// 		// todo: delete button
+// 	}
+// 	else if ((keyCode >= 0x30 && keyCode <= 0x39) || (keyCode >= 0x60 && keyCode <= 0x69)) {
+// 		// todo: number button
+// 		setValue(value + charecter);
+// 	}
+// 	else if (keyCode >= 0x41 && keyCode <= 0x5A) {
+// 		// todo: capital letter button
+// 		//CLogger
+// 		setValue(getValue() + charecter);
+// 	}
+// }
 
-	}
-	else if (keyCode == VK_NUMPAD6 || keyCode == VK_RIGHT) {
-		// todo: right button
-	}
-	else if (keyCode == VK_NUMPAD8 || keyCode == VK_UP) {
-		// todo: up button
-	}
-	else if (keyCode == VK_NUMPAD2 || keyCode == VK_DOWN) {
-		// todo: down button
-	}
-	else if (keyCode == VK_BACK) {
-		// todo: backspace button
-	}
-	else if (keyCode == VK_TAB) {
-		// todo: tab button
-	}
-	else if (keyCode == VK_RETURN) {
-		// todo: return/enter button
-	}
-	else if (keyCode == VK_DELETE) {
-		// todo: delete button
-	}
-	else if ((keyCode >= 0x30 && keyCode <= 0x39) || (keyCode >= 0x60 && keyCode <= 0x69)) {
-		// todo: number button
-		setValue(value + charecter);
-	}
-	else if (keyCode >= 0x41 && keyCode <= 0x5A) {
-		// todo: capital letter button
-		//CLogger
-		setValue(getValue() + charecter);
-	}
-}
+//
+// void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
+// 	g.setCursorVisibility(true);
+// 	g.setBackground(bg);
+// 	g.setForeground(fg);
+// }
+// =======
 
-
-void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
-	g.setCursorVisibility(true);
-	g.setBackground(bg);
-	g.setForeground(fg);
-}
-=======
-
->>>>>>> 8aaa4697a50fd0e495817660898b3347455311b4
+// >>>>>>> 8aaa4697a50fd0e495817660898b3347455311b4

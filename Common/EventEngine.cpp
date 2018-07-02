@@ -26,7 +26,7 @@ void EventEngine::run(Control &c)
 				c.draw(_graphics, 0, 0, z);
 			}
 			redraw = false;
-			
+			Control::getFocus()->focusOn();
 		}
 
 		INPUT_RECORD record;

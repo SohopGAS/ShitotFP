@@ -33,7 +33,7 @@ public:
 	Combobox();
 	~Combobox();
 	void func();
-	bool canGetFocus() { return false; };
+	bool canGetFocus() { return true; };
 
 	void draw(Graphics& g, short x, short y, size_t z);
 	void SetList(vector<string> ListOfStrings,string Square_shape);

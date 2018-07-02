@@ -25,12 +25,6 @@ TextBox::~TextBox()
 void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
 
-//	OutputDebugStringW(L"TextBox::draw\n");
-// check this loop again  ---- 
-	if (Control::getFocus() == this) {
-		focusOn();
-	}
-
 	g.moveTo(left, top);
 	g.write(value);
 }

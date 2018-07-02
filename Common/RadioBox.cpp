@@ -33,9 +33,6 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 
 	}
 
-	if (Control::getFocus() == this) {
-		focusOn();
-	}
 }
 
 

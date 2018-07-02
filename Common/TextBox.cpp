@@ -25,97 +25,92 @@ TextBox::~TextBox()
 void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
 
-//	OutputDebugStringW(L"TextBox::draw\n");
-
-	g.setCursorVisibility(true);
-	g.write(left + 1, top + 1, value);
-	g.moveTo(left + value.size(), top);
-
+	g.moveTo(left, top);
+	g.write(value);
 }
 
 
-void TextBox::keyDown(int keyCode, char charecter) {
-	OutputDebugStringW(L"TextBox::keyDown\n");
+
+void TextBox::keyDown(WORD keyCode, char charecter) {
+	if (value.size() < width - 2) {
+		if (charecter >= ' ' && charecter <= '~') {
+			if (value.size() == logicalPosition - 1) {
+				value += charecter;
+			}
+			else {
+				char temp[] = { charecter };
+				value.insert(logicalPosition, temp, 1);
+			}
+			logicalPosition++;
+			return;
+		}
+	}
+	switch (keyCode) {
+	case VK_RIGHT: {
+
+		if (value.size() < getWidth() - 3) {
+			logicalPosition++;
+			value += " ";
+		}
+		break;
+	}
+	case VK_NUMPAD6: {
+
+		if (value.size() < getWidth() - 3) {
+			logicalPosition++;
+			value += " ";
+		}
+		break;
+	}
+	case VK_LEFT: {
+		if (logicalPosition >= 1) {
+			logicalPosition--;
+		}
+		break;
+	}
+	case VK_NUMPAD4: {
+		if (logicalPosition >= 1) {
+			logicalPosition--;
+		}
+		break;
+	}
+
+	case VK_BACK: {
+		if (logicalPosition  > 0) {
+			logicalPosition--;
+			value.erase(logicalPosition, 1);
+		}
+		break;
+	}
+
+	case VK_DELETE: {
+		if (logicalPosition > 0) {
+
+			value.erase(logicalPosition, 1);
+		}
+		break;
+	}
+
+	}
 }
-void TextBox::mousePressed(int x, int y, bool isLeft, Graphics& g) {
+
+
+	
+void TextBox::mousePressed(int x, int y, bool isLeft) {
 
 	OutputDebugStringW(L"TextBox::mousePressed\n");
 
-	g.setCursorVisibility(true);
-	g.setBackground(bg);
-	g.setForeground(fg);
-}
-//
-//void TextBox::keyDown(WORD code, CHAR c) {
-//	if (code == 0x46) { // F key for debaging
-//		string str = "";
-//		_graphics.write(10, 10, _value);
-//		getchar();
-//	}
-//	if (_value.size() < _width - 2) {
-//		if (c >= ' ' && c <= '~') {
-//			cout << c;
-//			if (_value.size() == logicalPosition - 1) {
-//				_value += c;
-//			}
-//			else {
-//				char temp[] = { c };
-//				_value.insert(logicalPosition, temp, 1);
-//			}
-//			graphics.moveTo(_left + 1 + _value.size(), _top + 1);
-//			logicalPosition++;
-//			return;
-//		}
-//	}
-//
-//	switch (code) {
-//	case VK_RIGHT: {
-//
-//		if (_value.size() < _width - 3) {
-//			logicalPosition++;
-//			_value += " ";
-//			graphics.moveTo(_left + 1 + _value.size(), _top + 2);
-//		}
-//		break;
-//	}
-//	case VK_LEFT: {
-//		if (logicalPosition >= 1) {
-//			logicalPosition--;
-//			graphics.moveTo(_left + 1 + _value.size(), _top + 2);
-//		}
-//		break;
-//	}
-//
-//	case VK_BACK: {
-//		if (logicalPosition  > 0) {
-//			logicalPosition--;
-//			_value.erase(logicalPosition, 1);
-//		}
-//		break;
-//	}
-//
-//	case VK_DELETE: {
-//		if (logicalPosition > 0) {
-//
-//			_value.erase(logicalPosition, 1);
-//		}
-//		break;
-//	}
-//
-//	}
-//}
-//
-//
-//void TextBox::mousePressed(int x, int y, bool ifFirstButton) {
-//	
-//		int pressed = x - this->getLeft() - 2;
-//		int yTest = y;
-//		if (pressed >= value.size() || (yTest != this->getTop() + 2)) { //checking if the mouse is on the textbox.
-//			return;
-//		
-//		Control::setFocus(*this);
-//
-//		logicalPosition = pressed;
-//	
-//}
+	if (isInside(x, y, this->getLeft(), this->getTop(), this->getWidth(), this->getHeight())) {
+		if (x > (getLeft() + value.size())) {
+			graphic.moveTo(getLeft() + value.size(), getTop());
+			logicalPosition = value.size();
+		}
+		else if (isLeft) {
+			graphic.moveTo(x, getTop());
+			logicalPosition = x - getLeft();
+		}
+		Control::setFocus(*this);
+	}
+	return;
 
+}

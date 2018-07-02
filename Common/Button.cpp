@@ -37,6 +37,6 @@ void Button::draw(Graphics& g, short x, short y, size_t z)
 	
 }
 
-void Button::keyDown(WORD keyCode, char charecter) {
+void Button::keyDown(WORD code, char charecter) {
 
 }

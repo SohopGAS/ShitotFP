@@ -45,9 +45,6 @@
     <ClCompile Include="SingleLineBorder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MessageBox.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NumericBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -61,6 +58,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,9 +95,6 @@
     <ClInclude Include="SingleLineBorder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MessageBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NumericBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -117,6 +114,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MouseListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

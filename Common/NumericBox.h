@@ -12,7 +12,6 @@ public:
 	int currentNumber;
 	void MousePressed(int x, int y, bool isLeft)
 	{
-		OutputDebugStringW(L"mouse preesed + \n");
 		addNum = true;
 	}
 };
@@ -24,7 +23,6 @@ public:
 	bool subNum = false;
 	int currentNumber;
 	void MousePressed(int x, int y, bool isLeft) {
-		OutputDebugStringW(L"mouse preesed - \n");
 		subNum = true;
 	}
 };
@@ -44,7 +42,7 @@ protected:
 	//  tow buttons and label
 	Button plus, minus;
 	Label label_value;
-
+	
 public:
 	NumericBox();
 
@@ -64,11 +62,12 @@ public:
 	//void onClikck_plus();
 	int GetValue() { return val;	}
 
+	
+	// function implement
 	bool canGetFocus() { return false; }
-	void keyDown(int keyCode, char charecter) {};
 	void mousePressed(int x, int y, bool isLeft);
-	// virtual function implement
-
+	void keyDown(WORD code, char charecter) {};
+	
 
 	~NumericBox() {};
 };

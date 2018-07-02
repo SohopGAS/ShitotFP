@@ -12,8 +12,6 @@ void Panel::mousePressed(int x, int y, bool isLeft)
 		}
 	}
 }
- void Panel:: keyDown(int keyCode, char charecter) {};
-
 
 void Panel::Add(Control* control) {
 	controls.push_back(control);

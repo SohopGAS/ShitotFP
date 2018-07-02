@@ -114,3 +114,10 @@ void TextBox::mousePressed(int x, int y, bool isLeft) {
 	return;
 
 }
+
+void TextBox::focusOn() 
+{
+	graphic.moveTo(left + logicalPosition, top);
+	graphic.setCursorVisibility(true);
+
+}

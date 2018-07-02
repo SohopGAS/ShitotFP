@@ -4,21 +4,22 @@
 class Panel : public Control
 {
 protected:
+	// vector to hold control* component
 	vector<Control*> controls;
 public:
 	Panel() {};
 	~Panel() {};
 
+	// add control* to Vector controls
+	void Add(Control* control);
+
+	// function implemnted 
 	void draw(Graphics& g, short x, short y, size_t z);
-	virtual void mousePressed(int x, int y, bool isLeft) ;
-	virtual void keyDown(int keyCode, char charecter) ;
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return true; };
-	void Add(Control* control);
-	//vector<Control*> getControls() {return controls; };
-	void focusOn() { 
-		OutputDebugStringW(L"focus on panel");
-	}
-	
+	void focusOn() { graphic.setCursorVisibility(false); };
+	virtual void mousePressed(int x, int y, bool isLeft);
+	virtual void keyDown(WORD code, char charecter) {};
+
 };
 

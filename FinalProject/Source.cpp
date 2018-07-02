@@ -102,7 +102,7 @@ public:
 			cb.setBorderType(b);
 			cb.setWidth(10);
 			cb.setHeight(1);
-			cb.func();
+			cb.init();
 			cb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "      ");
 			cb.setColor(ColorType::Black, ColorType::Orange);
 

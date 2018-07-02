@@ -37,7 +37,7 @@ void Combobox::draw(Graphics& g, short x, short y, size_t z) {
 
 
 };
-void Combobox::func() {
+void Combobox::init() {
 	b.AddListener(c);
 	b.setValue(">");
 	b.setTop(this->getTop());

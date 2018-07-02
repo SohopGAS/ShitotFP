@@ -4,6 +4,7 @@
 #include "Button.h"
 #include "RadioBox.h"
 
+// comboBox open list button listner
 class OnClick : public MouseListener
 {
 public:
@@ -20,25 +21,26 @@ public:
 class Combobox : public Panel
 {
 private:
-	OnClick c;
-	Label l;
-	Button b;
-	RadioBox r;
-	vector <string> _options;
-	vector <bool> optionsSelected;
-	int logicalPosition = 0;
-	bool hasChosen;
+	// ComboBox variable
+
+		
+	OnClick c;						// mouse listner 
+	Label l;						// title to update string variable
+	Button b;						// button ">"
+	RadioBox r;						// RadioBox for the list
+	bool hasChosen;					// checck if press already ro not
 public:
 	Combobox();
 	~Combobox();
 
-	void func();
-	bool canGetFocus() { return false; };
+	// initialize the numaric box 
+	void init();
 
+	// function implemnted 
 	void draw(Graphics& g, short x, short y, size_t z);
 	void SetList(vector<string> ListOfStrings,string Square_shape);
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD  code, char charecter);
 	void focusOn();
-
+	bool canGetFocus() { return false; };
 	};

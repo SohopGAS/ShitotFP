@@ -10,30 +10,31 @@ NumericBox::NumericBox()
 
 void NumericBox::mousePressed(int x, int y, bool isLeft) {
 
-	OutputDebugStringW(L"Numric Box :: mousePressed\n");
 	std::string::size_type sz, sz2;
 	int result_change;
 	int i;
 	for (i = 0; i < controls.size(); i++) {
-		OutputDebugStringW(L"Numric Box :: for loop \n");														 
 		if (i == 0) {
 			if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
 			{
+
+
 				Button* bt = (Button *)controls[i];
 				int j = 0;
 				string string_change1;
 				string max_value;
 				int string_change2;
-//				bt->listeners[0]->MousePressed(x, y, isLeft);
-
-				string_change2 = stoi(this->label_value.getValue(), &sz);
-				string_change2 = string_change2 + 1;
-				string_change1 = std::to_string(string_change2);
-				max_value = std::to_string(this->maxVal);
-				if (this->maxVal >= string_change2) {
-					this->label_value.setValue(string_change1);
+				bt->mousePressed(x,y,isLeft);
+				if (plus_.addNum) {
+					string_change2 = stoi(this->label_value.getValue(), &sz);
+					string_change2 = string_change2 + 1;
+					string_change1 = std::to_string(string_change2);
+					max_value = std::to_string(this->maxVal);
+					if (this->maxVal >= string_change2) {
+						this->label_value.setValue(string_change1);
+					}
+					else this->label_value.setValue(max_value);
 				}
-				else this->label_value.setValue(max_value);
 			}
 		}
 
@@ -46,19 +47,20 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 				string string_change1_minus;
 				int string_change2_minus;
 				
-//				bt_minus->listeners[0]->MousePressed(x, y, isLeft);
+				bt_minus->mousePressed(x, y, isLeft);
 
-				string_change2_minus = stoi(this->label_value.getValue(), &sz2);
-				string_change2_minus = string_change2_minus - 1;
-				string_change1_minus = std::to_string(string_change2_minus);
-				min_value = std::to_string(this->minVal);
-				if (this->minVal >= string_change2_minus) {
-					this->label_value.setValue(min_value);
+				if (minus_.subNum) {
+					string_change2_minus = stoi(this->label_value.getValue(), &sz2);
+					string_change2_minus = string_change2_minus - 1;
+					string_change1_minus = std::to_string(string_change2_minus);
+					min_value = std::to_string(this->minVal);
+					if (this->minVal >= string_change2_minus) {
+						this->label_value.setValue(min_value);
+					}
+
+					else this->label_value.setValue(string_change1_minus);
+
 				}
-
-				else this->label_value.setValue(string_change1_minus);
-
-				OutputDebugStringW(L"bla bla\n");
 			}
 		}
 	}

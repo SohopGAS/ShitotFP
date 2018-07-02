@@ -49,10 +49,7 @@ void RadioBox::selectOption() {
 
 	if ( ! optionsSelected[logicalPosition]) {
 		optionsSelected[logicalPosition] = true;
-		OutputDebugStringW(L"  optionsSelected[logicalPosition] =           true        ;\n");
 		
-		//Control::setFocus(*this);
-
 		// change string in Label    Based on logicalPosition
 		Label* l = (Label*)controls[logicalPosition];					// cast from vector controls Control* to Label*   
 		l->setValue( l->getValue().replace(1, 1, "X") );
@@ -68,7 +65,6 @@ void RadioBox::selectOption() {
 	}
 	else {
 		//		if true -- press again on selcted option   ---   do nothing if is there 
-		OutputDebugStringW(L"  optionsSelected[logicalPosition] =      true -- not change     ;\n");
 	}
 
 }
@@ -160,7 +156,7 @@ void RadioBox::SetList(vector<string> ListOfStrings, string Square_shape) {
 			}
 	}
 
-	// create label and puts in the list
+	// create label and puts in the list (controls)
 	for (int i = 0; i < size; i++) {
 		Control* tmp = (Control*)new Label(ListOfStrings[i]);
 		tmp->setTop(this->getTop()+i);

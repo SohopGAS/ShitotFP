@@ -3,9 +3,9 @@
 #include "Label.h"
 #include "Button.h"
 #include "RadioBox.h"
+
 class OnClick : public MouseListener
 {
-
 public:
 	bool visable = false;
 	void MousePressed(int x, int y, bool isLeft)
@@ -15,9 +15,8 @@ public:
 		else visable = false;
 
 	}
-
-
 };
+
 class Combobox : public Panel
 {
 private:
@@ -32,25 +31,14 @@ private:
 public:
 	Combobox();
 	~Combobox();
+
 	void func();
-	bool canGetFocus() { return true; };
+	bool canGetFocus() { return false; };
 
 	void draw(Graphics& g, short x, short y, size_t z);
 	void SetList(vector<string> ListOfStrings,string Square_shape);
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD  code, char charecter);
-
-
-	void focusOn() {
-
-		if (c.visable == true) {
-			this->setFocus(r);
-			r.focusOn();
-		}
-		else {
-			graphic.setCursorVisibility(false);
-			
-		}
-	};
+	void focusOn();
 
 	};

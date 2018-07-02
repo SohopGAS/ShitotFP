@@ -34,8 +34,6 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 					this->label_value.setValue(string_change1);
 				}
 				else this->label_value.setValue(max_value);
-
-				OutputDebugStringW(L"bla bla\n");
 			}
 		}
 

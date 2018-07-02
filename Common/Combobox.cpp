@@ -23,9 +23,7 @@ void Combobox::draw(Graphics& g, short x, short y, size_t z) {
 	if (c.visable == true) {
 		l.draw(g, x, y, z);
 		b.draw(g, x, y, z);
-		
 		r.draw(g, x, y, z);
-
 		this->setWidth(b.getWidth() + r.getWidth());
 		this->setHeight(b.getHeight() + r.getHeight());
 	}
@@ -68,12 +66,21 @@ void Combobox::func() {
 	this->Add(&b);
 }
 void Combobox::SetList(vector<string> ListOfStrings,string Square_shape) {
-
 	r.SetList(ListOfStrings, Square_shape);
-
 }
 
 
 void Combobox::keyDown(WORD  code, char charecter) {
 	r.keyDown(code, charecter);
 }
+
+
+void Combobox::focusOn() {
+	if (c.visable == true) {
+		this->setFocus(r);
+		r.focusOn();
+	}
+	else {
+		graphic.setCursorVisibility(false);
+	}
+};

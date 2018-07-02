@@ -13,12 +13,17 @@ private:
 public:
 	Label() { setHeight(1); };
 	Label(string);
-	string getValue() { return value; };
-	void setValue(string);
-	void draw(Graphics& g, short x, short y, size_t z);
-	virtual void keyDown(WORD keyCode, char charecter);
 
+	// set label text
+	void setValue(string);
+	
+	// get label text
+	string getValue() { return value; };
+	
+
+	// virtual function implement
 	bool canGetFocus() { return false; };
 	void mousePressed(int x, int y, bool isLeft) {};
-
+	void keyDown(WORD code, char charecter) {};
+	void draw(Graphics& g, short x, short y, size_t z);
 };

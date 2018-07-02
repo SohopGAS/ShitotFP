@@ -10,26 +10,20 @@
 class OnPress : public MouseListener {
 private:
 	string title;
-//	Message* msg;
+	int value_from_MB=0;
 public:
-
-
-	void MousePressed(int x, int y, bool isLeft)
-	{
-		//OutputDebugStringW(L"MousePressed on OnPress\n");
-
-		// i  1 = ok , 2 = cnacel
-		int value_from_MB = MessageBoxA(nullptr, title.c_str(), "MessageBox", MB_OKCANCEL);
-		if (value_from_MB == 1) {
-			//msg->update(value_from_MB);
-		}
-		else {
-		//	msg->update(value_from_MB);
-		}
-	}
+	
+	// set title 
 	void setTitle(string s) { title = s; };
+	
+	// get title
 	string getTitle() { return title; };
-	//void setMessage(Message* _msg) { msg = _msg; };
+	int get_value_from_MB() { return value_from_MB; }
+
+	// on mouse press listner update the value of value_from_MB
+	// result:   1 = ok , 2 = cnacel
+	void MousePressed(int x, int y, bool isLeft){ value_from_MB = MessageBoxA(nullptr, title.c_str(), "MessageBox", MB_OKCANCEL);} 
+	
 
 };
 
@@ -44,9 +38,16 @@ private:
 public:
 	Message();
 	~Message();
+	
+	// initialize MassageBox 
 	void init();
+
+	// change the value of button value and the massage box value
+	void setMassegeBoxText(string button_value, string str) { onPress.setTitle(str); press.setValue(button_value); };
+
+	// virtual function implement
+	void keyDown(WORD code, char charecter) {};
 	void draw(Graphics& g, short x, short y, size_t z);
-	void keyDown(WORD code, char charecter);
-	void setMassegeBoxText(string str) { onPress.setTitle(str); };
-//	void update(int value_from_MB) {};
+	bool canGetFocus() { return false; };
+
 };

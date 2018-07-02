@@ -22,11 +22,7 @@ public:
 
 	bool canGetFocus() { return true; };
 
-	void focusOn() {
-		OutputDebugStringW(L"focus on RadioBox\n");
-		graphic.moveTo(left + 1, top + logicalPosition);
-		graphic.setCursorVisibility(true);
-	};
+	void focusOn() { graphic.moveTo(left + 1, top + logicalPosition); graphic.setCursorVisibility(true); };
 	
 	int getlogicalPosition() { return logicalPosition; };
 	
@@ -34,9 +30,6 @@ public:
 
 	void selectOption();
 
-	string GetChosen() {
-		Label *pp = (Label*)this->controls[logicalPosition];
-		return  pp->getValue();
-	}
+	string GetChosen() {Label *pp = (Label*)this->controls[logicalPosition];return  pp->getValue();	}
 };
 

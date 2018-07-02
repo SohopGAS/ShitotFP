@@ -87,10 +87,8 @@ void CheckList::mousePressed(int x, int y, bool ifFirstButton) {
 
 	int i;
 	for (i = 0; i < controls.size(); i++) {
-		OutputDebugStringW(L"CheckList :: for loop \n");
 		if (isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight()))
 		{
-			OutputDebugStringW(L"CheckList::mousePressed is inside\n");
 			logicalPosition = i;
 			CheckList::selectOption();
 		}
@@ -133,7 +131,6 @@ vector<size_t> CheckList::GetSelectedIndexs() {
 void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 {
 	Control::draw(g, this->getLeft(), this->getTop() , layer);	
-	
 
 	int vector_size = controls.size();
 	g.moveTo(this->getLeft(), this->getTop());
@@ -144,14 +141,14 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 		if (i == logicalPosition) {
 
 
-			// check this loop again  ---- 
+			// mark background
 			if (Control::getFocus() == this) {
 				g.setBackground(ColorType::Red);
 			}
+
 			Label* lb = (Label*)controls[i];
 			g.write(lb->getValue());
 			g.moveTo(this->getLeft(), this->getTop() + i + 1);
-
 		}
 		else {
 			g.setBackground(this->bg);
@@ -160,14 +157,16 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 			g.write(lb->getValue());
 			g.moveTo(this->getLeft(), this->getTop() + i + 1);
 		}
-
 	}
-
 }
 
 bool CheckList::indexInVector() {
 	return optionsSelected[logicalPosition];
 }
+
+void CheckList::focusOn() {
+	graphic.moveTo(left + 1, top + logicalPosition);
+};
 
 
 CheckList::CheckList()

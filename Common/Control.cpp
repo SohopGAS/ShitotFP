@@ -9,7 +9,6 @@ Control::~Control()
 
 Control::Control():bt(NULL)
 {
-	hasChildren = false;
 }
 
 Control::Control(Graphics & g, short x, short y, short width, short height) : bt(NULL)
@@ -19,7 +18,6 @@ Control::Control(Graphics & g, short x, short y, short width, short height) : bt
 	top = y;
 	width = width;
 	height = height;
-	hasChildren = false;
 }
 
 void Control::draw(Graphics& g, short x, short y, size_t z) {

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../Common/Control.h"
 
 /// public panel
@@ -13,15 +14,7 @@ class CheckList:public Control
 
 public:
 	CheckList();
-	CheckList(int height, int width, vector<string> ListOfStrings, string Square_shape = "( ) ")  {
-		int size = _options.size();
-		for (int i = 0; i < size; i++) {
-			_options[i].insert(0, Square_shape);
-		}
-		optionsSelected = vector<bool>(ListOfStrings.size());
-		this->setHeight(height);
-		this->setWidth(width);
-	}
+	CheckList(int height, int width, vector<string> ListOfStrings, string Square_shape = "( ) ");
 	~CheckList();
 	void draw(Graphics& g, short x, short y, size_t z);
 	void keyDown(int keyCode, char charecter);
@@ -35,11 +28,7 @@ public:
 	void selectOption();
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
-	void focusOn() {
-		OutputDebugStringW(L"focus on checklist\n");
-		graphic.moveTo(left+1, top + logicalPosition );
-		graphic.setCursorVisibility(true);
-	};
+	void focusOn() ;
 
 
 	bool canGetFocus() { return true; };

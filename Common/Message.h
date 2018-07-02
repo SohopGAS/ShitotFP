@@ -1,9 +1,10 @@
 #pragma once
+
 #include "../Common/Panel.h"
 #include "../Common/Button.h"
 #include "../Common/Graphics.h"
 
-#include "windows.h"
+// #include "windows.h"
 
 
 
@@ -12,8 +13,6 @@ private:
 	string title;
 //	Message* msg;
 public:
-
-
 	void MousePressed(int x, int y, bool isLeft)
 	{
 		//OutputDebugStringW(L"MousePressed on OnPress\n");

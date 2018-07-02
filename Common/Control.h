@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Graphics.h"
 #include <vector>
+#include "Graphics.h"
 #include "BorderType.h"
 #include "SingleLineBorder.h"
 

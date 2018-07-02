@@ -20,7 +20,7 @@ class Form : public Panel
 {
 	TextBox tb;
 	Label l;
-	CheckList cl;
+	CheckList ck;
 	Button b1,  b2;
 	RadioBox rb;
 	NumericBox nb;
@@ -30,7 +30,7 @@ public:
 		Control* _control;
 		Form()
 		{
-			tb.setWidth((short)value.size());
+			// tb.setWidth((short)value.size());
 			tb.setTop(3);
 			tb.setHeight(1);
 			//tb.setBorderType(bd);
@@ -39,7 +39,7 @@ public:
 			Add(&tb);
 			// _control.add(&tb);
 
-			l.setValue(value);
+			l.setValue("setValue to label");
 			l.setTop(1);
 			l.setLeft(1);
 			l.setColor(ColorType::Blue, ColorType::Red);
@@ -47,7 +47,7 @@ public:
 
 			tb.setValue("My TextBox Example");
 			tb.setTop(50);
-			tb.setLeft(1 + (short)value.size() + 1);
+			tb.setLeft(5);
 			tb.setHeight(50);
 			tb.setWidth(50);
 			Add(&tb);
@@ -55,7 +55,7 @@ public:
 			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "[ ] ");
 			ck.setTop(8);
 			ck.setLeft(5);
-			ck.setBorderType(b);
+			// ck.setBorderType(b1);
 			ck.setColor(ColorType::Black, ColorType::Orange);
 			_control = &tb;
 			Add(&ck);
@@ -63,14 +63,14 @@ public:
 
 			rb.setTop(8);
 			rb.setLeft(20);
-			rb.setBorderType(b);
+			// rb.setBorderType(b1);
 			rb.setColor(ColorType::Black, ColorType::Orange);
 			rb.init();
 			Add(&rb);
 
 			nb.setTop(15);
 			nb.setLeft(23);
-			nb.setBorderType(b);
+			// nb.setBorderType(b1);
 			nb.SetMaxValue(10);
 			nb.SetMinValue(2);
 			nb.setColor(ColorType::Black, ColorType::Orange);
@@ -79,7 +79,7 @@ public:
 
 			msg.setTop(18);
 			msg.setLeft(8);
-			msg.setBorderType(b);
+			msg.setBorderType(b1);
 			msg.setWidth(10);
 			msg.setHeight(1);
 			msg.setColor(ColorType::Black, ColorType::Orange);
@@ -98,7 +98,7 @@ int main(int argc, char** argv)
 	f.setHeight(15);
 	f.setTop(0);
 	f.setLeft(0);
-	BorderType* bo = SingleLineBorder::getinstance();
+	BorderType* b = SingleLineBorder::getinstance();
 	f.setBorderType(bo);
 	Control::setFocus(f);
 //	f.setFocus(*f._control);

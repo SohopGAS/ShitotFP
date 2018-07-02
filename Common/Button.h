@@ -1,10 +1,10 @@
 #pragma once
-#include "../Common/Label.h"
 
 #include <iostream>
 #include <vector>
-#include "../Common/MouseListener.h"
 #include "Logger.h"
+#include "../Common/MouseListener.h"
+#include "../Common/Label.h"
 
 using namespace std;
 

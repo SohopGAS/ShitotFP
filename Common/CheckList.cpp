@@ -1,11 +1,15 @@
 #include "../Common/CheckList.h"
 
+CheckList::CheckList(int height, int width, vector<string> ListOfStrings, string Square_shape)  {
+	int size = _options.size();
+	for (int i = 0; i < size; i++) {
+		_options[i].insert(0, Square_shape);
+	}
+	optionsSelected = vector<bool>(ListOfStrings.size());
+	this->setHeight(height);
+	this->setWidth(width);
+}
 
-//void CheckList::Update() {
-//	Control::graphics.clearScreen();
-//	this->draw(Control::graphics, panelLeft, panelTop, 1);
-//	Control::graphics.moveTo(panelLeft + 2, panelTop + logicalPosition + 1);
-//}
 void CheckList::keyDown(WORD code, CHAR chr) {
 
 	switch (code) {
@@ -36,13 +40,7 @@ void CheckList::keyDown(WORD code, CHAR chr) {
 
 	}
 }
-//void CheckList::mousePressed(int x, int y, bool isLeft) {
-//	if (isInside(x, y, this->getLeft(), this->getTop(), this->getWidth(), this->getHeight()))
-//	{
-//		//dos
-//	}
-//
-//}
+
 void CheckList::SetList(vector<string> ListOfStrings, string Square_shape = "( ) ") {
 	_options = ListOfStrings;
 	int size = ListOfStrings.size();
@@ -145,11 +143,18 @@ void CheckList::draw(Graphics &g, short left, short top, size_t layer)
 	//g.setBackground(this->bg);
 }
 
+void CheckList::focusOn() {
+	OutputDebugStringW(L"focus on checklist\n");
+	graphic.moveTo(left+1, top + logicalPosition );
+	graphic.setCursorVisibility(true);
+};
+
+
+
 bool CheckList::indexInVector() {
 	return optionsSelected[logicalPosition];
 }
 
 CheckList::CheckList() {};
-void CheckList::draw(Graphics& g, short x, short y, size_t z) {};
+
 void CheckList::keyDown(int keyCode, char charecter) {};
-void CheckList::mousePressed(int x, int y, bool isLeft) {};

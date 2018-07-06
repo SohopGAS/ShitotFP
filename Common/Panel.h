@@ -14,7 +14,7 @@ public:
 	virtual void mousePressed(int x, int y, bool isLeft) ;
 	virtual void keyDown(int keyCode, char charecter) ;
 	void getAllControls(vector<Control*>* controls);
-	bool canGetFocus() { return false; };
+	bool canGetFocus() { return true; };
 	void Add(Control* control);
 	//vector<Control*> getControls() {return controls; };
 	void focusOn() { 

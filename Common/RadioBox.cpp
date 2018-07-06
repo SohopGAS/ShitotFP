@@ -4,7 +4,7 @@
 void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 {
 	Control::draw(g, this->getLeft(), this->getTop(), layer);
-
+	
 	int vector_size = controls.size();
 	g.moveTo(this->getLeft(), this->getTop());
 
@@ -18,9 +18,6 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 			if (Control::getFocus() == this) {
 				g.setBackground(ColorType::Red);
 			}
-
-
-
 			Label* lb = (Label*) controls[i];
 			g.write( lb->getValue()  );
 			g.moveTo(this->getLeft(), this->getTop() + i + 1);
@@ -35,12 +32,16 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 		}
 
 	}
+
 }
 
 
-boolean RadioBox::SelectedItem(int logicalPosition) {
-	
-	return true;
+boolean RadioBox::SelectedItem(int index) {
+	if (index < this->controls.size() && index >= 0) {
+		logicalPosition = index;
+		return true;
+	}
+	return false;
 }
 
 void RadioBox::selectOption() {
@@ -48,12 +49,9 @@ void RadioBox::selectOption() {
 
 	if ( ! optionsSelected[logicalPosition]) {
 		optionsSelected[logicalPosition] = true;
-		OutputDebugStringW(L"  optionsSelected[logicalPosition] =           true        ;\n");
 		
-
 		// change string in Label    Based on logicalPosition
 		Label* l = (Label*)controls[logicalPosition];					// cast from vector controls Control* to Label*   
-		
 		l->setValue( l->getValue().replace(1, 1, "X") );
 		
 		int i = 0;		
@@ -67,7 +65,6 @@ void RadioBox::selectOption() {
 	}
 	else {
 		//		if true -- press again on selcted option   ---   do nothing if is there 
-		OutputDebugStringW(L"  optionsSelected[logicalPosition] =      true -- not change     ;\n");
 	}
 
 }
@@ -79,7 +76,6 @@ boolean RadioBox::ClearSelection()
 		op = false;
 	}
 	logicalPosition = 0;
-
 	return true;
 }
 
@@ -92,7 +88,7 @@ void RadioBox::mousePressed(int x, int y, bool isLeft) {
 		if (  isInside(x, y, controls[i]->getLeft(), controls[i]->getTop(), controls[i]->getWidth(), controls[i]->getHeight())  )
 		{
 			
-			OutputDebugStringW(L"Panel::mousePressed is inside\n");
+			OutputDebugStringW(L"RadioBox::mousePressed is inside\n");
 
 			logicalPosition = i;
 			RadioBox::selectOption();
@@ -116,7 +112,6 @@ void RadioBox::keyDown(WORD code, char charecter) {
 		else {
 			logicalPosition = controls.size() - 1;
 		}
-		//Checklist::Update();
 		break;
 	case VK_DOWN:
 		OutputDebugStringW(L"RadioBox :: down \n");
@@ -133,46 +128,46 @@ void RadioBox::keyDown(WORD code, char charecter) {
 	case VK_SPACE:
 		RadioBox::selectOption();
 		break;
-	case VK_TAB:
-		logicalPosition++;
-		if (logicalPosition > controls.size()) {
-			/// go to next 	
-		}
-		break;
-
+	
 	}
-
 }
 
-void RadioBox::init(){
-	
-	// insert to label value ( ) 
-	string s = "( ) radio box ";
-	
-	lab1.setValue(s);
-	lab1.setTop(this->getTop() );
-	lab1.setLeft(this->getLeft() );
-	lab1.setWidth(10);
-	lab1.setColor(ColorType::Black, ColorType::Orange);
 
-	lab2.setValue(s);
-	lab2.setTop(this->getTop() + 1);
-	lab2.setLeft(this->getLeft());
-	lab2.setColor(ColorType::Black, ColorType::Orange);
-	lab2.setWidth(10);
 
-	lab3.setValue(s);
-	lab3.setTop(this->getTop() + 2);
-	lab3.setLeft(this->getLeft());
-	lab3.setColor(ColorType::Black, ColorType::Orange);
-	lab3.setWidth(10);
+void RadioBox::SetList(vector<string> ListOfStrings, string Square_shape) {
 
-	Add(&lab1);
-	Add(&lab2);
-	Add(&lab3);
+	int size = ListOfStrings.size();
+	int maxsize = 0;
+	int ezer = 0;
+	int heCalc = 1;
+	for (int i = 0; i < size; i++) {
+		ListOfStrings[i].insert(0, Square_shape);
+		if (maxsize < ListOfStrings[i].size() - 1)
+			maxsize = ListOfStrings[i].size() - 1;
+	}
+	this->setWidth(maxsize + 1);
+	this->setHeight(ListOfStrings.size());
+	for (int i = 0; i < size; i++) {
+		ezer = maxsize - ListOfStrings[i].size() + 1;
+		if (ListOfStrings[i].size() - 1 < maxsize)
+			for (int j = 0; j < ezer; j++) {
+				ListOfStrings[i].insert(ListOfStrings[i].size(), " ");
 
-	this->setHeight(controls.size() );
-	this->setWidth(lab1.getValue().size() + 1);
+			}
+	}
 
-	optionsSelected = vector<bool>(controls.size());
+	// create label and puts in the list (controls)
+	for (int i = 0; i < size; i++) {
+		Control* tmp = (Control*)new Label(ListOfStrings[i]);
+		tmp->setTop(this->getTop()+i);
+		tmp->setLeft(this->getLeft() );
+		tmp->setWidth(maxsize);
+		tmp->setHeight(1);
+		Add(tmp);
+	}
+
+	optionsSelected = vector<bool>(ListOfStrings.size());
+	this->setHeight(controls.size());
+	this->setWidth(maxsize + 1);
+
 }

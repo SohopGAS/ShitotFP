@@ -8,14 +8,15 @@ Combobox::Combobox()
 Combobox::~Combobox()
 {
 }
+
 void Combobox::mousePressed(int x, int y, bool isLeft) {
 	Panel::mousePressed(x, y, isLeft);
 	if (c.visable == true)
 	{
 		hasChosen == true;
 		r.mousePressed(x, y, isLeft);
-
-		l.setValue( r.GetChosen() );
+		string t = r.GetChosen().substr(3, r.GetChosen().length() - 2);
+		l.setValue( t );
 	}	
 }
 void Combobox::draw(Graphics& g, short x, short y, size_t z) {
@@ -34,9 +35,8 @@ void Combobox::draw(Graphics& g, short x, short y, size_t z) {
 		this->setHeight(b.getHeight());
 	}
 	g.setCursorVisibility(false);
-
-
 };
+
 void Combobox::init() {
 	b.AddListener(c);
 	b.setValue(">");

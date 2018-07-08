@@ -97,6 +97,9 @@ void Graphics::updateConsoleAttributes()
 	SetConsoleTextAttribute(_console, attributes);
 }
 
+typedef long long long64;
+
+
 bool isInside(int x, int y, int left, int top, int width, int height)
 {
 	x -= left;

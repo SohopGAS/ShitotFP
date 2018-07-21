@@ -106,8 +106,8 @@ public:
 			nb.setTop(2);
 			nb.setLeft(56);
 			nb.setBorderType(b);
-			nb.SetMaxValue(4);
-			nb.SetMinValue(1);
+			nb.setMaxValue(4);
+			nb.setMinValue(1);
 			nb.setColor(ColorType::Black, ColorType::Orange);
 			nb.init();
 			add(&nb);

@@ -57,8 +57,8 @@ public:
 	int get_maxVal() { return maxVal; };
 
 	//void SetValue(int val);
-	void SetMaxValue(int val) { maxVal = val; }
-	void SetMinValue(int val) { minVal = val; }
+	void setMaxValue(int val) { maxVal = val; }
+	void setMinValue(int val) { minVal = val; }
 	// void SetFirstValue(int _val) {val = _val;}
 	//void onClikck_plus();
 	int GetValue() { return val;	}

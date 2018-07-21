@@ -3,9 +3,9 @@ Low Level Graphics in CPP (ncurses)
 
 **Contributers** <br/>
 [Adi Cantor](https://github.com/adican12) <br/>
-[Yarden Hazan](https://github.com/BiliTheKid) <br/>
 [Asaf Louk](https://github.com/louksky) <br/>
 [Batihon Licount](https://github.com/blicount)<br/>
+[Yarden Hazan](https://github.com/BiliTheKid) <br/>
 [Gal Argov Sofer](https://github.com/SohopGAS)
 
 **List of ncurses** <br/>

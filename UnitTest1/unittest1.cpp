@@ -13,7 +13,6 @@ namespace UnitTest1
 	TEST_CLASS(UnitTest1)
 	{
 	public:
-
 		TEST_METHOD(testLabel)
 		{
 			Label l;
@@ -21,7 +20,6 @@ namespace UnitTest1
 			string v = "val";
 			l.setValue(v);
 			Assert::AreEqual(v,l.getValue(),false);
-
 		}
 
 		TEST_METHOD(testPanel)
@@ -37,9 +35,5 @@ namespace UnitTest1
 			Assert::IsNotNull(p.getBorderType());
 			Assert::IsNull(l.getBorderType());
 		}
-
-
-
-
 	};
 }

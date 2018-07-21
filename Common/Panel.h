@@ -20,5 +20,4 @@ public:
 	void focusOn() { graphic.setCursorVisibility(false); };
 	virtual void mousePressed(int x, int y, bool isLeft);
 	virtual void keyDown(WORD code, char charecter) {};
-
 };

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../Common/Button.h"
 #include "../Common/Panel.h"
 #include "../Common/BorderType.h"
@@ -36,11 +37,10 @@ protected:
 
 	//  two buttons and label.
 	Button plus, minus;
-	Label label_value;
+	Label labelValue;
 
 public:
 	NumericBox();
-
 	void init();
 
 	// setter Minimum and Maximum
@@ -54,16 +54,12 @@ public:
 	//void SetValue(int val);
 	void setMaxValue(int val) { maxVal = val; }
 	void setMinValue(int val) { minVal = val; }
-	// void SetFirstValue(int _val) {val = _val;}
-	//void onClikck_plus();
 	int getValue() { return val;	}
-
 
 	// function implement
 	bool canGetFocus() { return false; }
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD code, char charecter) {};
-
 
 	~NumericBox() {};
 };

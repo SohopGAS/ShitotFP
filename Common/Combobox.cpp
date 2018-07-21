@@ -6,8 +6,7 @@ Combobox::Combobox()
 }
 
 Combobox::~Combobox()
-{
-}
+{}
 
 void Combobox::mousePressed(int x, int y, bool isLeft) {
 	Panel::mousePressed(x, y, isLeft);
@@ -20,7 +19,6 @@ void Combobox::mousePressed(int x, int y, bool isLeft) {
 	}
 }
 void Combobox::draw(Graphics& g, short x, short y, size_t z) {
-
 	if (c.visable == true) {
 		l.draw(g, x, y, z);
 		b.draw(g, x, y, z);
@@ -71,11 +69,9 @@ void Combobox::setList(vector<string> ListOfStrings, string Square_shape) {
 	r.setList(ListOfStrings, Square_shape);
 }
 
-
 void Combobox::keyDown(WORD code, char charecter) {
 	r.keyDown(code, charecter);
 }
-
 
 void Combobox::focusOn() {
 	if (c.visable == true) {

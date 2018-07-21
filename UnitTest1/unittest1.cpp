@@ -9,7 +9,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest1
-{		
+{
 	TEST_CLASS(UnitTest1)
 	{
 	public:
@@ -23,13 +23,13 @@ namespace UnitTest1
 			Assert::AreEqual(v,l.getValue(),false);
 
 		}
-		
+
 		TEST_METHOD(testPanel)
 		{
 			Panel p;
 			Label l;
-			
-			p.Add(&l);
+
+			p.add(&l);
 			BorderType* b = DoubleLineBorder::getinstance();
 			p.setBorderType(b);
 

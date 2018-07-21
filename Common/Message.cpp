@@ -25,3 +25,9 @@ void Message::init() {
 	press.AddListener(onPress);
 	add(&press);
 }
+
+
+void Message::setMassegeBoxText(string button_value, string str) {
+	onPress.setTitle(str);
+	press.setValue(button_value);
+};

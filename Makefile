@@ -16,8 +16,6 @@ OBJS += Common/BorderType.o \
 	FinalProject/Source.o \
 	Common/RadioBox.o \
 	Common/Message.o \
-	#Common/MessageBox.o \
-	Common/Logger.o \
 
 %.o: %.cpp
 	$(CXX) $(CPPFLAGS) -c $< -o $@

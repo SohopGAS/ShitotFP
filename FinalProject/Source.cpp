@@ -68,7 +68,7 @@ public:
 			rb.setLeft(20);
 			rb.setBorderType(b);
 			rb.setColor(ColorType::Black, ColorType::Orange);
-			rb.SetList({ "Art","Design","Engineering"},"( )" );
+			rb.setList({ "Art","Design","Engineering"},"( )" );
 			add(&rb);
 
 			string value3("Addicted to:");
@@ -88,7 +88,7 @@ public:
 			cb.setWidth(10);
 			cb.setHeight(1);
 			cb.init();
-			cb.SetList({"Bamba","Grass","Caffeine","Other"}, "   ");
+			cb.setList({"Bamba","Grass","Caffeine","Other"}, "   ");
 			cb.setColor(ColorType::Black, ColorType::Orange);
 			add(&cb);
 
@@ -127,7 +127,7 @@ public:
 			ck.setLeft(40);
 			ck.setBorderType(b);
 			ck.setColor(ColorType::Black, ColorType::Orange);
-			ck.SetList({"Machine Learning","Artificial Intelligence","Internet Of Things","WEB and Cloud","Design & Develop Algorithms","Hardware Security"});
+			ck.setList({"Machine Learning","Artificial Intelligence","Internet Of Things","WEB and Cloud","Design & Develop Algorithms","Hardware Security"});
 			add(&ck);
 
 			button.setValue("Cancel");

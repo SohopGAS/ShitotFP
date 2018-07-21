@@ -10,10 +10,10 @@ class CheckList:public Panel
 public:
 	CheckList();
 	~CheckList();
-	
+
 	// initialize list
-	void SetList(vector<string> ListOfStrings);
-	
+	void setList(vector<string> ListOfStrings);
+
 	// select option  - mark the choosen
 	void selectOption();
 
@@ -22,7 +22,7 @@ public:
 
 	// Deselect Index
 	void DeselectIndex(size_t index);
-	
+
 	// Get Selected Indexs
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
@@ -34,4 +34,3 @@ public:
 	void keyDown(WORD code, char charecter);
 	void mousePressed(int x, int y, bool isLeft);
 };
-

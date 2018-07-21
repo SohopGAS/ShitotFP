@@ -67,8 +67,8 @@ void Combobox::init() {
 	this->add(&b);
 }
 
-void Combobox::SetList(vector<string> ListOfStrings, string Square_shape) {
-	r.SetList(ListOfStrings, Square_shape);
+void Combobox::setList(vector<string> ListOfStrings, string Square_shape) {
+	r.setList(ListOfStrings, Square_shape);
 }
 
 

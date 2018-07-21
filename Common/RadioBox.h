@@ -31,7 +31,7 @@ public:
 	int getlogicalPosition() { return logicalPosition; };
 
 	// Initilize list.
-	void SetList(vector<string> ListOfStrings,string Square_shape);
+	void setList(vector<string> ListOfStrings,string Square_shape);
 
 	// Update select option.
 	void selectOption();

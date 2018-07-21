@@ -29,7 +29,7 @@ void CheckList::keyDown(WORD code, char chr) {
 	}
 }
 
-void CheckList::SetList(vector<string> ListOfStrings) {
+void CheckList::setList(vector<string> ListOfStrings) {
 	string Square_shape = "[ ] ";
 	int size = ListOfStrings.size();
 	int maxsize = 0;

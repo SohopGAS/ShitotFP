@@ -127,9 +127,9 @@ void RadioBox::keyDown(WORD code, char charecter) {
 	}
 }
 
-void RadioBox::SetList(vector<string> ListOfStrings, string Square_shape) {
+void RadioBox::setList(vector<string> ListOfStrings, string Square_shape) {
 
-	OutputDebugStringW(L"RadioBox::SetList\n");
+	OutputDebugStringW(L"RadioBox::setList\n");
 
 	int size = ListOfStrings.size();
 	int maxsize = 0;

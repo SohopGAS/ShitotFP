@@ -40,7 +40,7 @@ public:
 
 	// Function implemnted.
 	void draw(Graphics& g, short x, short y, size_t z);
-	void SetList(vector<string> ListOfStrings, string Square_shape);
+	void setList(vector<string> ListOfStrings, string Square_shape);
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD code, char charecter);
 	void focusOn();

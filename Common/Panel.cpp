@@ -18,11 +18,9 @@ void Panel::add(Control* control) {
 }
 
 void Panel::draw(Graphics& g, short x, short y, size_t z) {
-
 		Control::draw(g, x, y, z);
 		for(Control* c : this->controls)
 			c->draw(g, x, y, z);
-
 }
 
 void Panel::getAllControls(vector<Control*>* controls_)
@@ -30,5 +28,4 @@ void Panel::getAllControls(vector<Control*>* controls_)
 		for (Control *c : this->controls) {
 			controls_->push_back(c);
 		}
-
 }

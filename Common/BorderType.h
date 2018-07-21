@@ -2,7 +2,6 @@
 #ifndef BORDERTYPE_H
 #define BORDERTYPE_H
 
-
 #include <iostream>
 #include "Graphics.h"
 
@@ -16,5 +15,4 @@ using namespace std;
 	virtual void drawBorder(Graphics& g,short start_x, short start_y, short width, short height) = 0;
 };
 
-#endif 
-
+#endif

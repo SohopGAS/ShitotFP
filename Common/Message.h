@@ -9,7 +9,7 @@
 class OnPress : public MouseListener {
 private:
 	string title;
-	int value_from_MB=0;
+	int value_from_MB = 0;
 
 public:
 	// set title
@@ -21,7 +21,9 @@ public:
 
 	// on mouse press listner update the value of value_from_MB
 	// result:   1 = ok , 2 = cnacel
-	void MousePressed(int x, int y, bool isLeft){ value_from_MB = MessageBoxA(nullptr, title.c_str(), "MessageBox", MB_OKCANCEL);}
+	void MousePressed(int x, int y, bool isLeft){
+		value_from_MB = MessageBoxA(nullptr, title.c_str(), "MessageBox", MB_OKCANCEL);
+	}
 
 };
 

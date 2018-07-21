@@ -18,7 +18,7 @@ public:
 	~Button() {};
 
 	// add listner to the Listeners
-	void AddListener(MouseListener &listener) { listeners.push_back(&listener); }
+	void addListener(MouseListener &listener) { listeners.push_back(&listener); }
 
 	// virtual function implement
 	bool canGetFocus() { return false; };

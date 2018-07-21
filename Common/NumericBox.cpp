@@ -1,7 +1,7 @@
-#include "NumericBox.h"
-
 #include <iostream>
 #include <string>
+
+#include "NumericBox.h"
 
 NumericBox::NumericBox()
 {}

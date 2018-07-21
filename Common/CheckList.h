@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../Common/Panel.h"
 
 class CheckList:public Panel

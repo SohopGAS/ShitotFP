@@ -1,16 +1,15 @@
+#include <iostream>
+
 #include "Label.h"
 #include "Control.h"
 #include "Logger.h"
-#include <iostream>
 
 Label::Label(string value) : Control(), value(value) {};
-
 
 void Label::setValue(string value)
 {
 	this->value = value;
 }
-
 
 void Label::draw(Graphics& g, short x, short y, size_t z)
 {
@@ -21,5 +20,4 @@ void Label::draw(Graphics& g, short x, short y, size_t z)
 	g.moveTo(getLeft(), getTop());
 	if (!z)
 		g.write(value);
-	
 }

@@ -1,21 +1,17 @@
 #pragma once
 
+#include "windows.h"
+
 #include "../Common/Panel.h"
 #include "../Common/Button.h"
 #include "../Common/Graphics.h"
-
-#include "windows.h"
 
 class OnPress : public MouseListener {
 private:
 	string title;
 	int value_from_MB = 0;
-
 public:
-	// set title
 	void setTitle(string s) { title = s; };
-
-	// get title
 	string getTitle() { return title; };
 	int get_value_from_MB() { return value_from_MB; }
 
@@ -24,10 +20,7 @@ public:
 	void MousePressed(int x, int y, bool isLeft){
 		value_from_MB = MessageBoxA(nullptr, title.c_str(), "MessageBox", MB_OKCANCEL);
 	}
-
 };
-
-
 
 class Message : public Panel
 {
@@ -38,8 +31,6 @@ private:
 public:
 	Message();
 	~Message();
-
-	// initialize MassageBox
 	void init();
 
 	// change the value of button value and the massage box value

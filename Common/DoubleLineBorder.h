@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <windows.h>
+
 #include "BorderType.h"
 
 #define TOP_LEFT '\xC9'

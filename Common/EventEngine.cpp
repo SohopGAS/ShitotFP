@@ -1,7 +1,9 @@
-#include "EventEngine.h"
-#include "Logger.h"
 #include <vector>
 #include <algorithm>
+
+#include "EventEngine.h"
+#include "Logger.h"
+
 using namespace std;
 
 EventEngine::EventEngine(DWORD input, DWORD output)

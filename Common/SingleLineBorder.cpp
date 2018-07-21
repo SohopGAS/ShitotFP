@@ -1,5 +1,6 @@
-#include "SingleLineBorder.h"
 #include <iostream>
+
+#include "SingleLineBorder.h"
 
 BorderType* SingleLineBorder::instance = NULL;
 
@@ -35,7 +36,7 @@ void SingleLineBorder::drawBorder(Graphics& g,short start_x, short start_y, shor
 
 	for (short i = 0; i<_width-1; i++)
 		cout << LINE_HORIZONTAL;
-		
+
 	cout << BTM_RIGHT;
 }
 

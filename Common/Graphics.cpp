@@ -99,7 +99,6 @@ void Graphics::updateConsoleAttributes()
 
 typedef long long long64;
 
-
 bool isInside(int x, int y, int left, int top, int width, int height)
 {
 	x -= left;

@@ -1,11 +1,11 @@
 #pragma once
+
 #include "../Common/Panel.h"
 #include "../Common/Label.h"
 
 class RadioBox : public Panel
 {
 private:
-	// variable
 	int logicalPosition = 0;
 	vector <bool> optionsSelected;
 

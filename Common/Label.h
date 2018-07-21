@@ -1,8 +1,9 @@
 #pragma once
-#include "Control.h"
-#include "Graphics.h"
+
 #include <string>
 
+#include "Control.h"
+#include "Graphics.h"
 
 using namespace std;
 
@@ -13,15 +14,10 @@ private:
 public:
 	Label() { setHeight(1); };
 	Label(string);
-
-	// set label text
 	void setValue(string);
-	
-	// get label text
 	string getValue() { return value; };
-	
 
-	// virtual function implement
+	// virtual function implement.
 	bool canGetFocus() { return false; };
 	void mousePressed(int x, int y, bool isLeft) {};
 	void keyDown(WORD code, char charecter) {};

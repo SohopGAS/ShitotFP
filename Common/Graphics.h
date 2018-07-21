@@ -21,10 +21,8 @@ public:
 	void write(int x, int y, wstring s);
 	void setCursorVisibility(bool isVisible);
 private:
-
 	HANDLE _console;
 	ColorType _background, _foreground;
-
 	void updateConsoleAttributes();
 };
 

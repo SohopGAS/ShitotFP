@@ -34,7 +34,7 @@ Create your form in the Source.cpp file and save.
 Open terminal and use the following commands:
 
 ```cpp
-cd /<path_to_project/ShitotFP
+cd /<path_to_project>/ShitotFP
 make
 wineconsole final.exe
 ```

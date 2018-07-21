@@ -2,7 +2,6 @@
 #include "../Common/Panel.h"
 #include "../Common/Label.h"
 
-
 class RadioBox : public Panel
 {
 private:
@@ -25,7 +24,7 @@ public:
 	boolean SelectedItem(int index);
 
 	// Set logical to 0.
-	boolean ClearSelection();
+	boolean clearSelection();
 
 	// Return logical position.
 	int getlogicalPosition() { return logicalPosition; };
@@ -37,5 +36,9 @@ public:
 	void selectOption();
 
 	// Get the string value from choosen label.
-	string GetChosen() {Label *pp = (Label*)this->controls[logicalPosition];return  pp->getValue();	}
+	string GetChosen() {
+		Label *pp = (Label*)this->controls[logicalPosition];
+		return pp->getValue();
+	}
+
 };

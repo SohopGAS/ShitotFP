@@ -69,9 +69,9 @@ void RadioBox::selectOption() {
 }
 
 
-boolean RadioBox::ClearSelection()
+boolean RadioBox::clearSelection()
 {
-	OutputDebugStringW(L"RadioBox::ClearSelection\n");
+	OutputDebugStringW(L"RadioBox::clearSelection\n");
 
 	for (bool op : optionsSelected) {
 		op = false;

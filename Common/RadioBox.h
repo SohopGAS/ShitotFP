@@ -36,7 +36,7 @@ public:
 	void selectOption();
 
 	// Get the string value from choosen label.
-	string GetChosen() {
+	string getChosen() {
 		Label *pp = (Label*)this->controls[logicalPosition];
 		return pp->getValue();
 	}

@@ -6,7 +6,8 @@ Combobox::Combobox()
 }
 
 Combobox::~Combobox()
-{}
+{
+}
 
 void Combobox::mousePressed(int x, int y, bool isLeft) {
 	Panel::mousePressed(x, y, isLeft);
@@ -14,7 +15,8 @@ void Combobox::mousePressed(int x, int y, bool isLeft) {
 	{
 		hasChosen == true;
 		r.mousePressed(x, y, isLeft);
-		l.setValue(r.GetChosen());
+		string t = r.GetChosen().substr(3, r.GetChosen().length() - 2);
+		l.setValue( t );
 	}
 }
 void Combobox::draw(Graphics& g, short x, short y, size_t z) {

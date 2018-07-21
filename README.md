@@ -1,5 +1,5 @@
 # ShitotFP
-Low Level Graphics in CPP (ncurses)
+Low Level Graphics in CPP (ncurses) is an API to create your own form using static library.
 
 **Contributers** <br/>
 [Adi Cantor](https://github.com/adican12) <br/>

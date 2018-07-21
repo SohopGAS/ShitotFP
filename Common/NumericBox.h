@@ -10,8 +10,7 @@ public:
 	int plus_id = 2;
 	bool addNum = false;
 	int currentNumber;
-	void MousePressed(int x, int y, bool isLeft)
-	{
+	void MousePressed(int x, int y, bool isLeft) {
 		addNum = true;
 	}
 };
@@ -27,19 +26,15 @@ public:
 	}
 };
 
-
-
-
 class NumericBox : public Panel
 {
-
 protected:
 	int val, maxVal, minVal;
-	// listner implements
+	// listner implements.
 	OnClickPlus plus_;
 	OnClickMinus minus_;
 
-	//  tow buttons and label
+	//  two buttons and label.
 	Button plus, minus;
 	Label label_value;
 
@@ -61,7 +56,7 @@ public:
 	void setMinValue(int val) { minVal = val; }
 	// void SetFirstValue(int _val) {val = _val;}
 	//void onClikck_plus();
-	int GetValue() { return val;	}
+	int getValue() { return val;	}
 
 
 	// function implement

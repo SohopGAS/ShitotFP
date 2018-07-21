@@ -14,7 +14,7 @@ void Combobox::mousePressed(int x, int y, bool isLeft) {
 	{
 		hasChosen == true;
 		r.mousePressed(x, y, isLeft);
-		string t = r.GetChosen().substr(3, r.GetChosen().length() - 2);
+		string t = r.getChosen().substr(3, r.getChosen().length() - 2);
 		l.setValue( t );
 	}
 }

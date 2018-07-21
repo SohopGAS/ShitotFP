@@ -21,7 +21,7 @@ public:
 	void focusOn() { graphic.moveTo(left + 1, top + logicalPosition); graphic.setCursorVisibility(true); };
 
 	// Set logical position to index.
-	boolean SelectedItem(int index);
+	boolean selectedItem(int index);
 
 	// Set logical to 0.
 	boolean clearSelection();

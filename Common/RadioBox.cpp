@@ -30,9 +30,9 @@ void RadioBox::draw(Graphics &g, short left, short top, size_t layer)
 	}
 }
 
-boolean RadioBox::SelectedItem(int index) {
+boolean RadioBox::selectedItem(int index) {
 
-	OutputDebugStringW(L" RadioBox::SelectedItem\n");
+	OutputDebugStringW(L" RadioBox::selectedItem\n");
 
 	if (index < this->controls.size() && index >= 0) {
 		logicalPosition = index;

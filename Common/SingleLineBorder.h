@@ -12,10 +12,10 @@
 class SingleLineBorder : public BorderType {
 private:
 	static BorderType* instance;
-	SingleLineBorder() {};
-
+	
 public:
+	SingleLineBorder() {};
+	~SingleLineBorder();
 	static BorderType* getinstance();
 	void drawBorder(Graphics& g,short start_x, short start_y, short width, short height);
-	~SingleLineBorder();
 };

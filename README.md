@@ -39,4 +39,4 @@ make
 wineconsole final.exe
 ```
 
-After make command, check if there any errors.
+After make command, you can use ls command to check that the file final.exe was created.

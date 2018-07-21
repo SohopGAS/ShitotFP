@@ -32,7 +32,7 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 				value += charecter;
 			}
 			else {
-				char temp[] = {charecter};
+				char temp[] = {charecter};;
 				value.insert(logicalPosition, temp, 1);
 			}
 			logicalPosition++;

@@ -6,7 +6,6 @@ TextBox::TextBox()
 	setTop(0);
 	setWidth(3);
 	setHeight(1);
-
 }
 
 TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 1) : Control()
@@ -17,19 +16,14 @@ TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _heig
 	setHeight(_height);
 }
 
-
 TextBox::~TextBox()
-{
-}
+{}
 
 void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
 	Control::draw(g, x, y, z);
-
 	g.moveTo(left, top);
 	g.write(value);
 }
-
-
 
 void TextBox::keyDown(WORD keyCode, char charecter) {
 	if (value.size() < width - 2) {
@@ -38,7 +32,7 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 				value += charecter;
 			}
 			else {
-				char temp[] = { charecter };
+				char temp[] = {charecter};
 				value.insert(logicalPosition, temp, 1);
 			}
 			logicalPosition++;
@@ -47,7 +41,6 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 	}
 	switch (keyCode) {
 	case VK_RIGHT: {
-
 		if (value.size() < getWidth() - 3) {
 			logicalPosition++;
 			value += " ";
@@ -55,7 +48,6 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 		break;
 	}
 	case VK_NUMPAD6: {
-
 		if (value.size() < getWidth() - 3) {
 			logicalPosition++;
 			value += " ";
@@ -74,7 +66,6 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 		}
 		break;
 	}
-
 	case VK_BACK: {
 		if (logicalPosition  > 0) {
 			logicalPosition--;
@@ -82,20 +73,15 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 		}
 		break;
 	}
-
 	case VK_DELETE: {
 		if (logicalPosition > 0) {
-
 			value.erase(logicalPosition, 1);
 		}
 		break;
-	}
-
-	}
+	} // end lase case
+	} // end switch
 }
 
-
-	
 void TextBox::mousePressed(int x, int y, bool isLeft) {
 
 	OutputDebugStringW(L"TextBox::mousePressed\n");
@@ -112,12 +98,10 @@ void TextBox::mousePressed(int x, int y, bool isLeft) {
 		Control::setFocus(*this);
 	}
 	return;
-
 }
 
-void TextBox::focusOn() 
+void TextBox::focusOn()
 {
 	graphic.moveTo(left + logicalPosition, top);
 	graphic.setCursorVisibility(true);
-
 }

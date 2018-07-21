@@ -46,7 +46,7 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 				string min_value;
 				string string_change1_minus;
 				int string_change2_minus;
-				
+
 				bt_minus->mousePressed(x, y, isLeft);
 
 				if (minus_.subNum) {
@@ -87,7 +87,7 @@ void NumericBox::init()
 	minus.setTop( getTop() + 1 );
 	minus.setLeft( plus.getLeft() + 9 );
 	minus.setWidth( minus.getValue().size() );
-	
+
 	minus.setColor(ColorType::Black, ColorType::Orange);
 	BorderType* border_minus = SingleLineBorder::getinstance();
 	minus.setBorderType(border_minus);

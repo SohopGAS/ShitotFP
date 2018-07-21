@@ -3,7 +3,7 @@
 Message::Message()
 {
 	setHeight(1);
-	onPress.setTitle("pop up here : ");
+	onPress.setTitle("Generic Message pop up here:");
 }
 
 
@@ -17,12 +17,11 @@ void Message::draw(Graphics& g, short x, short y, size_t z) {
 }
 
 void Message::init() {
-	press.setValue("press here");
-	press.setTop( getTop() );
-	press.setLeft( getLeft() );
-	press.setWidth( 10 );
+	press.setValue("Press Here");
+	press.setTop(getTop());
+	press.setLeft(getLeft());
+	press.setWidth(10);
 	press.setColor(ColorType::Black, ColorType::Orange);
 	press.AddListener(onPress);
 	Add(&press);
 }
-

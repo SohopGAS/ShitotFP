@@ -42,7 +42,7 @@ protected:
 	//  tow buttons and label
 	Button plus, minus;
 	Label label_value;
-	
+
 public:
 	NumericBox();
 
@@ -51,23 +51,24 @@ public:
 	// setter Minimum and Maximum
 	void set_minVal(int _minVal) { this->minVal = _minVal; };
 	void set_maxVal(int _maxVal) { this->maxVal = _maxVal; };
-	
+
 	// getters Minimum and Maximum
 	int get_minVal() { return minVal; };
 	int get_maxVal() { return maxVal; };
-	
+
 	//void SetValue(int val);
 	void SetMaxValue(int val) { maxVal = val; }
 	void SetMinValue(int val) { minVal = val; }
+	// void SetFirstValue(int _val) {val = _val;}
 	//void onClikck_plus();
 	int GetValue() { return val;	}
 
-	
+
 	// function implement
 	bool canGetFocus() { return false; }
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD code, char charecter) {};
-	
+
 
 	~NumericBox() {};
 };

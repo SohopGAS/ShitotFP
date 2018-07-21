@@ -14,78 +14,130 @@
 #include "../Common/NumericBox.h"
 #include "../Common/Message.h"
 #include "../Common/Combobox.h"
+
 using namespace std;
 
 class Form : public Panel
 {
 	TextBox tb;
-	Label l;
+	Label l, l2, l3, l4, l5;
 	CheckList ck;
 	Button button;
 	RadioBox rb;
 	NumericBox nb;
 	Message msg;
 	Combobox cb;
+	BorderType* b = SingleLineBorder::getinstance();
+
 public:
 		Form()
 		{
-			
+
 			string value("Enter Name:");
 			l.setValue(value);
 			l.setTop(2);
-			l.setLeft(5);
+			l.setLeft(2);
 			l.setHeight(1);
 			l.setWidth(12);
 			l.setColor(ColorType::Black, ColorType::Orange);
-			BorderType* b = SingleLineBorder::getinstance();
+			b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
-
 			Add(&l);
 
-			button.setValue("button");
-			button.setTop(2);
-			button.setLeft(20);
+			tb.setWidth((short)value.size());
+			tb.setTop(2);
+			tb.setLeft(20);
+			tb.setHeight(1);
+			tb.setWidth(17);
+			tb.setBorderType(b);
+			tb.setColor(ColorType::Black, ColorType::Orange);
+			Add(&tb);
+
+			string value2("Department:");
+			l2.setValue(value2);
+			l2.setTop(5);
+			l2.setLeft(2);
+			l2.setHeight(1);
+			l2.setWidth(12);
+			l2.setColor(ColorType::Black, ColorType::Orange);
+			b = SingleLineBorder::getinstance();
+			l2.setBorderType(b);
+			Add(&l2);
+
+			rb.setTop(5);
+			rb.setLeft(20);
+			rb.setBorderType(b);
+			rb.setColor(ColorType::Black, ColorType::Orange);
+			rb.SetList({ "Art","Design","Engineering"},"( )" );
+			Add(&rb);
+
+			string value3("Addicted to:");
+			l3.setValue(value3);
+			l3.setTop(10);
+			l3.setLeft(2);
+			l3.setHeight(1);
+			l3.setWidth(12);
+			l3.setColor(ColorType::Black, ColorType::Orange);
+			b = SingleLineBorder::getinstance();
+			l3.setBorderType(b);
+			Add(&l3);
+
+			cb.setTop(10);
+			cb.setLeft(20);
+			cb.setBorderType(b);
+			cb.setWidth(10);
+			cb.setHeight(1);
+			cb.init();
+			cb.SetList({"Bamba","Grass","Caffeine","Other"}, "   ");
+			cb.setColor(ColorType::Black, ColorType::Orange);
+			Add(&cb);
+
+			string value4("Year study:");
+			l4.setValue(value4);
+			l4.setTop(2);
+			l4.setLeft(40);
+			l4.setHeight(1);
+			l4.setWidth(12);
+			l4.setColor(ColorType::Black, ColorType::Orange);
+			b = SingleLineBorder::getinstance();
+			l4.setBorderType(b);
+			Add(&l4);
+
+			nb.setTop(2);
+			nb.setLeft(56);
+			nb.setBorderType(b);
+			nb.SetMaxValue(4);
+			nb.SetMinValue(1);
+			nb.setColor(ColorType::Black, ColorType::Orange);
+			nb.init();
+			Add(&nb);
+
+			string value5("Internship courses:");
+			l5.setValue(value5);
+			l5.setTop(7);
+			l5.setLeft(40);
+			l5.setHeight(1);
+			l5.setWidth(18);
+			l5.setColor(ColorType::Black, ColorType::Orange);
+			b = SingleLineBorder::getinstance();
+			l5.setBorderType(b);
+			Add(&l5);
+
+			ck.setTop(10);
+			ck.setLeft(40);
+			ck.setBorderType(b);
+			ck.setColor(ColorType::Black, ColorType::Orange);
+			ck.SetList({"Machine Learning","Artificial Intelligence","Internet Of Things","WEB and Cloud","Design & Develop Algorithms","Hardware Security"});
+			Add(&ck);
+
+			button.setValue("Cancel");
+			button.setTop(18);
+			button.setLeft(50);
 			button.setWidth(button.getValue().size() + 2);
 			button.setHeight(1);
 			button.setColor(ColorType::Black, ColorType::Orange);
 			button.setBorderType(b);
-			
 			Add(&button);
-
-			tb.setWidth((short)value.size());
-			tb.setTop(5);
-			tb.setLeft(5);
-			tb.setHeight(1);
-			tb.setBorderType(b);
-			tb.setColor(ColorType::Black, ColorType::Orange);
-			
-			Add(&tb);
-
-			ck.setTop(8);
-			ck.setLeft(5);
-			ck.setBorderType(b);
-			ck.setColor(ColorType::Black, ColorType::Orange);
-			ck.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" });
-
-			Add(&ck);
-			
-
-			rb.setTop(6);
-			rb.setLeft(20);
-			rb.setBorderType(b);
-			rb.setColor(ColorType::Black, ColorType::Orange);
-			rb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" },"( )" );
-
-			Add(&rb);
-
-			nb.setTop(15);
-			nb.setLeft(23);
-			nb.setBorderType(b);
-			nb.SetMaxValue(10);
-			nb.SetMinValue(2);
-			nb.setColor(ColorType::Black, ColorType::Orange);
-			nb.init();
-			Add(&nb);
 
 			msg.setTop(18);
 			msg.setLeft(8);
@@ -95,31 +147,18 @@ public:
 			msg.setColor(ColorType::Black, ColorType::Orange);
 			msg.init();
 			Add(&msg);
-				
 
-			cb.setTop(5);
-			cb.setLeft(40);
-			cb.setBorderType(b);
-			cb.setWidth(10);
-			cb.setHeight(1);
-			cb.init();
-			cb.SetList({ "ase","fre","asw","fds","vxv","fdfgggg" }, "      ");
-			cb.setColor(ColorType::Black, ColorType::Orange);
-
-			Add(&cb);
 			Control::setFocus(tb);
 		}
 
 };
 
-
-
 int main(int argc, char** argv)
 {
 	EventEngine e;
 	Form f;
-	f.setWidth(60);
-	f.setHeight(20);
+	f.setWidth(74);
+	f.setHeight(22);
 	f.setTop(0);
 	f.setLeft(0);
 	BorderType* bo = DoubleLineBorder::getinstance();

@@ -13,7 +13,7 @@ private:
 public:
 	RadioBox() {};
 	~RadioBox() {};
-	
+
 	// function implemnted
 	void draw(Graphics& g, short x, short y, size_t z);
 	void keyDown(WORD  code, char charecter);
@@ -21,22 +21,21 @@ public:
 	bool canGetFocus() { return true; };
 	void focusOn() { graphic.moveTo(left + 1, top + logicalPosition); graphic.setCursorVisibility(true); };
 
-	// set logical position to index
+	// Set logical position to index.
 	boolean SelectedItem(int index);
-	
-	// set logical to 0
+
+	// Set logical to 0.
 	boolean ClearSelection();
 
-	// return logical position
+	// Return logical position.
 	int getlogicalPosition() { return logicalPosition; };
 
-	// initilize list 
+	// Initilize list.
 	void SetList(vector<string> ListOfStrings,string Square_shape);
-	
-	// update select option
+
+	// Update select option.
 	void selectOption();
-	
-	// get the string value from choosen label
+
+	// Get the string value from choosen label.
 	string GetChosen() {Label *pp = (Label*)this->controls[logicalPosition];return  pp->getValue();	}
 };
-

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Graphics.h"
 #include <vector>
 #include "BorderType.h"
@@ -8,7 +9,7 @@ using namespace std;
 class Control
 {
 protected:
-	// posotion variable 
+	// posotion variable
 	short left;
 	short top;
 	short width;
@@ -16,7 +17,7 @@ protected:
 
 	// graphics variable
 	ColorType bg, fg;
-	BorderType* bt;	
+	BorderType* bt;
 	Graphics graphic;
 
 	static Control* static_control;
@@ -25,7 +26,7 @@ public:
 	Control();
 	Control(BorderType* _bt) : bt(_bt) {};
 	Control(Graphics& g, short x, short y, short width, short height);
-	
+
 	// setter
 	void setTop(short _top) {  this->top = _top; };
 	void setLeft(short _left) 		{ this->left = _left; 		};
@@ -36,7 +37,7 @@ public:
 	void setColor(ColorType _bg, ColorType _fg) { this->bg = _bg; this->fg = _fg; };
 	static void setFocus(Control& control) { static_control = &control; static_control->focusOn(); };
 	void setBorderType(BorderType* _bt) { bt = _bt; };
-	
+
 	// getter
 	short getLeft() { return left; };
 	short getTop() { return top; };
@@ -52,6 +53,6 @@ public:
 	virtual void getAllControls(vector<Control*>* controls) {};
 	virtual bool canGetFocus() { return false; };
 	virtual void focusOn() {};
-	
+
 	~Control();
 };

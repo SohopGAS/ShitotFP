@@ -98,7 +98,7 @@ void NumericBox::init()
 	plus.AddListener(this->plus_);
 	minus.AddListener(this->minus_);
 
-	Add(&plus);
-	Add(&label_value);
-	Add(&minus);
+	add(&plus);
+	add(&label_value);
+	add(&minus);
 }

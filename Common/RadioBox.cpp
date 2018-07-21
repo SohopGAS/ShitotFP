@@ -160,7 +160,7 @@ void RadioBox::SetList(vector<string> ListOfStrings, string Square_shape) {
 		tmp->setLeft(this->getLeft() );
 		tmp->setWidth(maxsize);
 		tmp->setHeight(1);
-		Add(tmp);
+		add(tmp);
 	}
 
 	optionsSelected = vector<bool>(ListOfStrings.size());

@@ -42,7 +42,7 @@ public:
 			l.setColor(ColorType::Black, ColorType::Orange);
 			b = SingleLineBorder::getinstance();
 			l.setBorderType(b);
-			Add(&l);
+			add(&l);
 
 			tb.setWidth((short)value.size());
 			tb.setTop(2);
@@ -51,7 +51,7 @@ public:
 			tb.setWidth(17);
 			tb.setBorderType(b);
 			tb.setColor(ColorType::Black, ColorType::Orange);
-			Add(&tb);
+			add(&tb);
 
 			string value2("Department:");
 			l2.setValue(value2);
@@ -62,14 +62,14 @@ public:
 			l2.setColor(ColorType::Black, ColorType::Orange);
 			b = SingleLineBorder::getinstance();
 			l2.setBorderType(b);
-			Add(&l2);
+			add(&l2);
 
 			rb.setTop(5);
 			rb.setLeft(20);
 			rb.setBorderType(b);
 			rb.setColor(ColorType::Black, ColorType::Orange);
 			rb.SetList({ "Art","Design","Engineering"},"( )" );
-			Add(&rb);
+			add(&rb);
 
 			string value3("Addicted to:");
 			l3.setValue(value3);
@@ -80,7 +80,7 @@ public:
 			l3.setColor(ColorType::Black, ColorType::Orange);
 			b = SingleLineBorder::getinstance();
 			l3.setBorderType(b);
-			Add(&l3);
+			add(&l3);
 
 			cb.setTop(10);
 			cb.setLeft(20);
@@ -90,7 +90,7 @@ public:
 			cb.init();
 			cb.SetList({"Bamba","Grass","Caffeine","Other"}, "   ");
 			cb.setColor(ColorType::Black, ColorType::Orange);
-			Add(&cb);
+			add(&cb);
 
 			string value4("Year study:");
 			l4.setValue(value4);
@@ -101,7 +101,7 @@ public:
 			l4.setColor(ColorType::Black, ColorType::Orange);
 			b = SingleLineBorder::getinstance();
 			l4.setBorderType(b);
-			Add(&l4);
+			add(&l4);
 
 			nb.setTop(2);
 			nb.setLeft(56);
@@ -110,7 +110,7 @@ public:
 			nb.SetMinValue(1);
 			nb.setColor(ColorType::Black, ColorType::Orange);
 			nb.init();
-			Add(&nb);
+			add(&nb);
 
 			string value5("Internship courses:");
 			l5.setValue(value5);
@@ -121,14 +121,14 @@ public:
 			l5.setColor(ColorType::Black, ColorType::Orange);
 			b = SingleLineBorder::getinstance();
 			l5.setBorderType(b);
-			Add(&l5);
+			add(&l5);
 
 			ck.setTop(10);
 			ck.setLeft(40);
 			ck.setBorderType(b);
 			ck.setColor(ColorType::Black, ColorType::Orange);
 			ck.SetList({"Machine Learning","Artificial Intelligence","Internet Of Things","WEB and Cloud","Design & Develop Algorithms","Hardware Security"});
-			Add(&ck);
+			add(&ck);
 
 			button.setValue("Cancel");
 			button.setTop(18);
@@ -137,7 +137,7 @@ public:
 			button.setHeight(1);
 			button.setColor(ColorType::Black, ColorType::Orange);
 			button.setBorderType(b);
-			Add(&button);
+			add(&button);
 
 			msg.setTop(18);
 			msg.setLeft(8);
@@ -146,7 +146,7 @@ public:
 			msg.setHeight(1);
 			msg.setColor(ColorType::Black, ColorType::Orange);
 			msg.init();
-			Add(&msg);
+			add(&msg);
 
 			Control::setFocus(tb);
 		}

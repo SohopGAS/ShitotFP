@@ -60,7 +60,7 @@ void CheckList::SetList(vector<string> ListOfStrings) {
 		tmp->setLeft(this->getLeft());
 		tmp->setWidth(maxsize);
 		tmp->setHeight(1);
-		Add(tmp);
+		add(tmp);
 	}
 
 	optionsSelected = vector<bool>(ListOfStrings.size());

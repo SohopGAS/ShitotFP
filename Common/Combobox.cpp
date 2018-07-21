@@ -62,9 +62,9 @@ void Combobox::init() {
 	r.setColor(ColorType::Black, ColorType::Orange);
 	r.setBorderType(this->getBorderType());
 
-	this->Add(&r);
-	this->Add(&l);
-	this->Add(&b);
+	this->add(&r);
+	this->add(&l);
+	this->add(&b);
 }
 
 void Combobox::SetList(vector<string> ListOfStrings, string Square_shape) {

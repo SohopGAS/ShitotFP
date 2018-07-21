@@ -23,5 +23,5 @@ void Message::init() {
 	press.setWidth(10);
 	press.setColor(ColorType::Black, ColorType::Orange);
 	press.AddListener(onPress);
-	Add(&press);
+	add(&press);
 }

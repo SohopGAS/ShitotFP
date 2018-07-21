@@ -11,9 +11,9 @@ public:
 	~Panel() {};
 
 	// add control* to Vector controls
-	void Add(Control* control);
+	void add(Control* control);
 
-	// function implemnted 
+	// function implemnted
 	void draw(Graphics& g, short x, short y, size_t z);
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return true; };
@@ -22,4 +22,3 @@ public:
 	virtual void keyDown(WORD code, char charecter) {};
 
 };
-

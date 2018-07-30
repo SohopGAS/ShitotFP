@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
-
 #include "NumericBox.h"
 
+
+// constrctor 
 NumericBox::NumericBox()
 {}
 
+// implement mousePressed - check where pressed and update logicalPosiiton
 void NumericBox::mousePressed(int x, int y, bool isLeft) {
 	std::string::size_type sz, sz2;
 	int change2, change2Minus;
@@ -53,6 +55,7 @@ void NumericBox::mousePressed(int x, int y, bool isLeft) {
 	}
 }
 
+// init function 
 void NumericBox::init()
 {
 	plus.setValue("+");

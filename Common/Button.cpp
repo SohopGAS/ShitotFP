@@ -18,8 +18,10 @@ void Button::mousePressed(int x, int y, bool isLeft)
 
 void Button::draw(Graphics& g, short x, short y, size_t z)
 {
+	// write border 
 	Control::draw(g, x, y, z);
 
+	// write 
 	g.setBackground(this->bg);
 	g.setForeground(this->fg);
 	g.moveTo(getLeft(), getTop());
@@ -27,4 +29,5 @@ void Button::draw(Graphics& g, short x, short y, size_t z)
 		g.write( getValue() );
 }
 
+// keyDown empty implement
 void Button::keyDown(WORD code, char charecter) {}

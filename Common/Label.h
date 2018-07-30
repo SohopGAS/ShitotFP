@@ -17,7 +17,7 @@ public:
 	void setValue(string);
 	string getValue() { return value; };
 
-	// virtual function implement.
+	// Control function 
 	bool canGetFocus() { return false; };
 	void mousePressed(int x, int y, bool isLeft) {};
 	void keyDown(WORD code, char charecter) {};

@@ -16,7 +16,7 @@ public:
 	// get value string
 	string getValue() { return this->value; }
 
-	// function implemnted
+	// Control function 
 	bool canGetFocus() { return true; };
 	void focusOn();
 	void draw(Graphics& g, short x, short y, size_t z);

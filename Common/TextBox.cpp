@@ -1,5 +1,6 @@
 #include "TextBox.h"
 
+// constrctor
 TextBox::TextBox()
 {
 	setLeft(0);
@@ -8,6 +9,7 @@ TextBox::TextBox()
 	setHeight(1);
 }
 
+// parmeters constractor
 TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _height = 1) : Control()
 {
 	setLeft(_left);
@@ -16,15 +18,21 @@ TextBox::TextBox(short _left = 0, short _top = 0, short _width = 10, short _heig
 	setHeight(_height);
 }
 
+// destrctor
 TextBox::~TextBox()
 {}
 
-void	TextBox::draw(Graphics& g, short x, short y, size_t z) {
+// implement draw 
+void TextBox::draw(Graphics& g, short x, short y, size_t z) 
+{
+	// draw border
 	Control::draw(g, x, y, z);
 	g.moveTo(left, top);
 	g.write(value);
 }
 
+
+// implement keyDown
 void TextBox::keyDown(WORD keyCode, char charecter) {
 	if (value.size() < width - 2) {
 		if (charecter >= ' ' && charecter <= '~') {
@@ -82,10 +90,9 @@ void TextBox::keyDown(WORD keyCode, char charecter) {
 	} // end switch
 }
 
-void TextBox::mousePressed(int x, int y, bool isLeft) {
-
-	OutputDebugStringW(L"TextBox::mousePressed\n");
-
+// implements mousePressed
+void TextBox::mousePressed(int x, int y, bool isLeft) 
+{
 	if (isInside(x, y, this->getLeft(), this->getTop(), this->getWidth(), this->getHeight())) {
 		if (x > (getLeft() + value.size())) {
 			graphic.moveTo(getLeft() + value.size(), getTop());
@@ -100,6 +107,8 @@ void TextBox::mousePressed(int x, int y, bool isLeft) {
 	return;
 }
 
+
+// implement focusOn - change cursor position 
 void TextBox::focusOn()
 {
 	graphic.moveTo(left + logicalPosition, top);

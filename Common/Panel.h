@@ -14,7 +14,7 @@ public:
 	// add control* to Vector controls
 	void add(Control* control);
 
-	// function implemnted
+	// Control function 
 	void draw(Graphics& g, short x, short y, size_t z);
 	void getAllControls(vector<Control*>* controls);
 	bool canGetFocus() { return true; };

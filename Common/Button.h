@@ -21,7 +21,7 @@ public:
 	// add listner to the Listeners
 	void addListener(MouseListener &listener) { listeners.push_back(&listener); }
 
-	// virtual function implement
+	// Control function
 	bool canGetFocus() { return false; };
 	void mousePressed(int x, int y, bool isLeft);
 	void draw(Graphics& g, short x, short y, size_t z);

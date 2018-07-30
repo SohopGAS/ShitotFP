@@ -1,13 +1,17 @@
 #include "Combobox.h"
 
+// const
 Combobox::Combobox()
 {
 	hasChosen = false;
 }
 
+// destrctor
 Combobox::~Combobox()
 {}
 
+
+// implement mousePressed - check where pressed and update logicalPosition
 void Combobox::mousePressed(int x, int y, bool isLeft) {
 	Panel::mousePressed(x, y, isLeft);
 	if (c.visable == true)
@@ -18,6 +22,8 @@ void Combobox::mousePressed(int x, int y, bool isLeft) {
 		l.setValue( t );
 	}
 }
+
+// implemnt draw function 
 void Combobox::draw(Graphics& g, short x, short y, size_t z) {
 	if (c.visable == true) {
 		l.draw(g, x, y, z);
@@ -35,6 +41,7 @@ void Combobox::draw(Graphics& g, short x, short y, size_t z) {
 	g.setCursorVisibility(false);
 };
 
+// init the combobox 
 void Combobox::init() {
 	b.addListener(c);
 	b.setValue(">");
@@ -65,14 +72,17 @@ void Combobox::init() {
 	this->add(&b);
 }
 
+// setList function - input vector -list of string represnt label value , Square_shape add to the string 
 void Combobox::setList(vector<string> ListOfStrings, string Square_shape) {
 	r.setList(ListOfStrings, Square_shape);
 }
 
+// keyDown implement 
 void Combobox::keyDown(WORD code, char charecter) {
 	r.keyDown(code, charecter);
 }
 
+// focusOn - update the cursor position
 void Combobox::focusOn() {
 	if (c.visable == true) {
 		this->setFocus(r);

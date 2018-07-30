@@ -56,7 +56,7 @@ public:
 	void setMinValue(int val) { minVal = val; }
 	int getValue() { return val;	}
 
-	// function implement
+	// Control function 
 	bool canGetFocus() { return false; }
 	void mousePressed(int x, int y, bool isLeft);
 	void keyDown(WORD code, char charecter) {};

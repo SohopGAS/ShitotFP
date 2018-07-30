@@ -28,7 +28,7 @@ public:
 	vector<size_t> GetSelectedIndexs();
 	bool indexInVector();
 
-	// virtual function implement
+	// Control function
 	void focusOn();
 	bool canGetFocus() { return true; };
 	void draw(Graphics& g, short x, short y, size_t z);

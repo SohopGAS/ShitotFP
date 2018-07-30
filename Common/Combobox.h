@@ -38,7 +38,7 @@ public:
 	// Initialize the numaric box.
 	void init();
 
-	// Function implemnted.
+	// Control function 
 	void draw(Graphics& g, short x, short y, size_t z);
 	void setList(vector<string> ListOfStrings, string Square_shape);
 	void mousePressed(int x, int y, bool isLeft);

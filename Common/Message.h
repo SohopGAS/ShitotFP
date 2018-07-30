@@ -38,7 +38,7 @@ public:
 	// get value from massege box
 	int get_value_from_MB() { return onPress.get_value_from_MB(); };
 
-	// function implement
+	// Control function 
 	void keyDown(WORD code, char charecter) {};
 	void draw(Graphics& g, short x, short y, size_t z);
 	bool canGetFocus() { return false; };
